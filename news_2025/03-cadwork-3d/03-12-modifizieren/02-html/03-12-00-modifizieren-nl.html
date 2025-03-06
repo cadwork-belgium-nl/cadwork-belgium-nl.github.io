@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/063b56bfef.js" crossorigin="anonymous"></script>
+
+	<!-- KB styles -->
+	<link rel="stylesheet" href="https://kb.cadwork.ch/css/app.css?v1">
+	<link rel="icon" href="https://kb.cadwork.ch/img/favicons/kb-favicon.ico" type="image/x-icon">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../../../css/style-news.css" />
+
+	<title>3.12.0 - Wijzigen - NL - Article 1783</title>
+</head>
+
+<body>
+	<nav id="nav-left" aria-label="Site menu">
+		<iframe src="../../../menu.html" frameborder="0" title="Site-menu"></iframe>
+	</nav>
+
+	<div id="content" class="card-body">
+		<h1>3.12.0 - Wijzigen - Status 2025.01.20</h1>
+
+		<h2 id="modify-texture-transparency">
+			Wijzigen <span class="arrow arrow-right">&rarr;</span> Textuur / Transparantie
+		</h2>
+		<p>
+			De dialoog onder <span class="menu-cadwork">Wijzigen</span> <span class="arrow arrow-right">&rarr;</span>
+			<span class="menu-cadwork">Textuur / Transparantie</span> is herzien. Er zijn nu nieuwe "Verwijderen"
+			knoppen
+			voor textuur en kleur.<br>
+			<span class="bullet-number">1</span> "Verwijder Textuur" zet de textuur terug naar de materiaaltextuur. De
+			waarden voor kleur, Zoom-X, Zoom-Y en transparantie blijven behouden.<br>
+			<span class="bullet-number">2</span> "Waarden resetten" zet de textuur en de waarden voor kleur, Zoom-X,
+			Zoom-Y en transparantie terug naar de materiaaltextuur.<br>
+			<span class="bullet-number">3</span> "Verwijder Kleur" zet de kleur op wit. Als de kleur al wit is, is deze
+			optie niet beschikbaar.
+		</p>
+		<p>
+			<img src="../../../images/cadwork-news-documentation/2025/03-cadwork-3d/03-12-00-modify/de/modify-texture-de.png"
+				alt="modify-texture-de.png" width="444" height="454"><br>
+			<em>Wijzigen Textuur</em>
+		</p>
+
+		<h2 id="modify-options">
+			Wijzigen <span class="arrow arrow-right">&rarr;</span> Opties
+		</h2>
+		<p>
+			Het menu is herzien voor enveloppes (wand, dak, plafond).<br>
+			Als er minstens &eacute;&eacute;n enveloppe actief is, zijn de opties <span class="menu-cadwork">BVN
+				bewerkingsgroep</span>
+			en <span class="menu-cadwork">BTL bewerkingsgroep</span> niet beschikbaar.
+		</p>
+		<p>
+			Met de optie <span class="menu-cadwork">Referentiewand aanmaken</span> kan op basis van de actieve enveloppe
+			een nieuwe 2dc-enveloppe worden gemaakt. De functie is alleen beschikbaar voor enveloppes die niet als
+			meerlaagse enveloppes zijn gemaakt.
+		</p>
+
+		<h3 id="change-multilayer-wall-floor-roof">
+			Meerlaagse Wand/Plafond/Dak wijzigen
+		</h3>
+		<p>
+			Afhankelijk van de actieve enveloppe wordt de optie <span class="menu-cadwork">Meerlaagse wand
+				wijzigen</span>, <span class="menu-cadwork">Meerlaagse vloer wijzigen</span> of <span
+				class="menu-cadwork">Meerlaags dak wijzigen</span> aangeboden. Als verschillende enveloppes actief zijn,
+			is de optie om te wijzigen niet beschikbaar.
+		</p>
+
+		<h3 id="create-and-delete-layers">
+			Lagen maken en lagen verwijderen
+		</h3>
+		<p>
+			Een snelle visualisatie van de aan een meerlaagse enveloppe toegewezen lagen gebeurt via de toetscombinatie
+			<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>. Dit zijn alleen visualisaties van de lagen die niet voor
+			verdere verwerking kunnen worden gebruikt. Voor verdere bewerking van de lagen moeten cadwork-elementen
+			(balken en platen) uit de laaginformatie worden gemaakt. Hiervoor is voor actieve meerlaagse enveloppes
+			onder
+			<span class="menu-cadwork">Wijzigen</span> <span class="arrow arrow-right">&rarr;</span> <span
+				class="menu-cadwork">Opties...</span> de functie <span class="menu-cadwork">Lagen maken</span>
+			beschikbaar. Dit genereert uit de laaginformatie van de enveloppe de resulterende balken en platen, die
+			vervolgens aan de enveloppe worden toegewezen. <br>
+			Op deze manier gemaakte elementen van de lagen kunnen met de functie <span class="menu-cadwork">Lagen
+				verwijderen</span> weer worden verwijderd.
+		</p>
+		<p>
+			Via <span class="menu-cadwork">Wijzigen</span> <span class="arrow arrow-right">&rarr;</span> <span
+				class="menu-cadwork">Opties...</span> <span class="arrow arrow-right">&rarr;</span> <span
+				class="menu-cadwork">Lagen maken</span> wordt voor elke laag een element gemaakt. Voor lagen van het
+			type <span class="menu-cadwork-window">Bekleding</span>, <span class="menu-cadwork-window">Platen</span> en
+			<span class="menu-cadwork-window">Overige</span> wordt een element van het type "Plaat" gemaakt, voor de
+			laagtypen <span class="menu-cadwork-window">Structuur</span> en <span
+				class="menu-cadwork-window">Latwerk</span> een element van het type "Staaf" en voor het laagtype <span
+				class="menu-cadwork-window">Lucht</span> wordt geen element gemaakt.<br>
+			De elementen krijgen de attributen naam en materiaal uit de laagdefinitie van de meerlaagse enveloppe (wand,
+			plafond of dak). De kleur van de elementen wordt bepaald door de materiaal-kleurtoewijzing van de
+			materiaaldialoog. Als er voor een materiaal in de laagdefinitie geen materiaal-kleurtoewijzing is, krijgt
+			het element de kleur van de enveloppe.<br>
+			Bovendien kan in de dialoog voor meerlaagse enveloppes op het tabblad <span
+				class="menu-cadwork-window">Attributen</span> worden geselecteerd welke attributen van de enveloppe door
+			de gemaakte elementen van de lagen worden geërfd.
+		</p>
+		<p>
+			De functies <span class="menu-cadwork">Lagen maken</span> en <span class="menu-cadwork">Lagen
+				verwijderen</span> zijn alleen actief als meerlaagse enveloppes (wand, plafond of dak) actief zijn.
+		</p>
+		<p>
+			Als voorbeeld wordt hieronder een meerlaagse wand met zeven lagen bekeken.
+		</p>
+		<p>
+			<img src="../../../images/cadwork-news-documentation/2025/03-cadwork-3d/03-12-00-modify/all/modify-options-create-layer-elements-all.png"
+				alt="modify-options-create-layer-elements-all.png" width="856" height="1183"><br>
+			<em>Meerlaagse wand met 7 lagen</em>
+		</p>
+		<p>
+			<span class="bullet-number">1</span> Twee meerlaagse wanden met een openingsenveloppe.<br>
+			<span class="bullet-number">2</span> Met de toetscombinatie <kbd>Ctrl</kbd> + <kbd>Shift</kbd> +
+			<kbd>B</kbd> gemaakte laagvisualisatie in de axonometrie. Ook de referentiezijden en assen worden
+			weergegeven.<br>
+			<span class="bullet-number">3</span> Ter verduidelijking de eveneens met de toetscombinatie <kbd>Ctrl</kbd>
+			+ <kbd>Shift</kbd> + <kbd>B</kbd> gemaakte laagvisualisatie in het bovenaanzicht.<br>
+			<span class="bullet-number">4</span> Met de functie <span class="menu-cadwork">Lagen maken</span> uit de
+			laaginformatie gemaakte cadwork-elementen. De openingsenveloppe wordt daarbij uitgesneden. Om overlapping te
+			voorkomen, werden de laagvisualisaties eerder met de toetscombinatie <kbd>Ctrl</kbd> + <kbd>Shift</kbd> +
+			<kbd>B</kbd> verborgen.<br>
+			<span class="bullet-number">5</span> Weergave van de als cadwork-elementen gemaakte lagen inclusief
+			referentiezijden in het bovenaanzicht.
+		</p>
+		<p>
+			De elementen van de lagen worden standaard voor elke vorm van hoekverbinding met een verstekverbinding
+			gemaakt. Dit zorgt voor een nette weergave. Voor verdere bewerking van de lagen moet hun geometrie handmatig
+			worden aangepast aan de gewenste hoekverbinding. Het maken van de lagen kan ook worden gestart via de
+			functietoets <span class="menu-cadwork-window">Wijzigen <span class="arrow arrow-right">&rarr;</span> Lagen
+				van meerlaagse enveloppes toevoegen</span>.
+		</p>
+		<p>
+			<img src="../../../images/cadwork-news-documentation/2025/03-cadwork-3d/03-12-00-modify/all/modify-options-create-layer-wall-connection-all.png"
+				alt="modify-options-create-layer-wall-connection-all.png" width="318" height="142"><br>
+			<em>Standaard maken van de lagen met verstekverbinding</em>
+		</p>
+		<p>
+			Als de lagen moeten worden gemaakt volgens de gebruikte wandverbindingen, dus ook rekening houdend met de
+			doorlopende en aansluitende wand, is dit mogelijk met de functietoets <span
+				class="menu-cadwork-window">Wijzigen <span class="arrow arrow-right">&rarr;</span> Lagen volgens
+				wandverbinding toevoegen</span>.
+		</p>
+		<p>
+			<img src="../../../images/cadwork-news-documentation/2025/03-cadwork-3d/03-12-00-modify/all/modify-options-create-layer-wall-connection-f1f12-all.png"
+				alt="modify-options-create-layer-wall-connection-f1f12-all.png" width="318" height="142"><br>
+			<em>Meerlaagse wand met gemaakte lagen</em>
+		</p>
+		<p>
+			De gemaakte elementen van de lagen zijn toegewezen aan de enveloppes. Als een enveloppe achteraf wordt
+			verplaatst, worden alle toegewezen elementen samen met het enveloppe verplaatst. De elementen hoeven
+			hiervoor niet actief of zichtbaar te zijn. Bij het kopi&euml;ren van een enveloppe kan de gebruiker
+			beslissen of de aan de enveloppe toegewezen laagelementen ook moeten worden gekopieerd.
+		</p>
+		<p>
+			De toewijzing van de laagelementen aan de enveloppe blijft ook bij geometrische wijzigingen door snijden of
+			uitrekken behouden. Als elementen van een laag worden gekopieerd, worden deze niet aan de enveloppe
+			toegewezen. <br>
+			Of een element aan een enveloppe is toegewezen, kan worden bepaald met een reeds van het export volume en
+			container bekende functie. Met de toetscombinatie <kbd>Ctrl</kbd> + <kbd>A</kbd> <span
+				class="arrow arrow-right">&rarr;</span> <kbd>G</kbd> worden de aan de actieve enveloppes toegewezen
+			elementen geactiveerd. Omgekeerd kan een laagelement worden geactiveerd en met de toetscombinatie
+			<kbd>Ctrl</kbd> + <kbd>A</kbd> <span class="arrow arrow-right">&rarr;</span> <kbd>Shift</kbd> + <kbd>G</kbd>
+			wordt de toegewezen enveloppe ook actief.
+		</p>
+		<p>
+			Als een element van zijn enveloppe moet worden losgekoppeld, is de functietoets <span
+				class="menu-cadwork-window">Wijzigen <span class="arrow arrow-right">&rarr;</span> Laagelement van
+				enveloppe loskoppelen</span> beschikbaar.
+		</p>
+		<p>
+			Voor actieve meerlaagse enveloppes kunnen alle reeds gemaakte laagelementen via <span
+				class="menu-cadwork">Wijzigen</span> <span class="arrow arrow-right">&rarr;</span> <span
+				class="menu-cadwork">Opties...</span> <span class="arrow arrow-right">&rarr;</span> <span
+				class="menu-cadwork">Lagen verwijderen</span> weer worden verwijderd.
+		</p>
+	</div>
+
+	<nav id="nav-right" aria-label="Page menu">
+		<!-- Table of content generated automatically. -->
+	</nav>
+
+	<script src="../../../js/main.js"></script>
+
+</html>

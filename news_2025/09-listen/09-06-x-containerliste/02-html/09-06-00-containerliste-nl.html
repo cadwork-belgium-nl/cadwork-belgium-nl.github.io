@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/063b56bfef.js" crossorigin="anonymous"></script>
+
+	<!-- KB styles -->
+	<link rel="stylesheet" href="https://kb.cadwork.ch/css/app.css?v1">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../../../css/style-news.css" />
+
+	<title>9.6.0 - Containerlijst - NL - Article 1809</title>
+</head>
+
+<body>
+	<nav id="nav-left" aria-label="Site menu">
+		<iframe src="../../../menu.html" frameborder="0" title="Site-menu"></iframe>
+	</nav>
+
+	<div id="content" class="card-body">
+		<h1>9.6.0 Containerlijst - Status 2025.01.09</h1>
+
+		<h2 id="container-numbering">
+			Containernummering
+		</h2>
+		<p>
+			Al in versie 30 SP2024 werd de workflow bij de gezamenlijke berekening van productielijstnummers en
+			containerlijstnummers geoptimaliseerd. U kunt lijsten met onderdelen en bijbehorende containerelementen in
+			&euml;&euml;n stap berekenen. Voor de eigenlijke berekening kunt u de <span
+				class="menu-cadwork-window">Actieve voorkeur voor de containerlijst</span> en
+			de <span class="menu-cadwork-window">Actieve voorkeur voor de productielijst</span>
+			kiezen. Via de configuratieknoppen bereikt u hier het respectieve configuratiedialoogvenster voor de
+			lijstberekening.<br>
+			Vervolgens kunt u in het dialoogvenster voor elementen en containers afzonderlijk de respectieve
+			startnummers van de nummering defini&euml;ren.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/09-lists/9-6-0-container-list/de/ce-and-elements-together-de.png"
+				alt="ce-and-elements-together-de.png" width="755" height="439" v:shapes="Grafik_x0020_1"> <br>
+			<em>Dialoog bij de gelijktijdige nummering van onderdelen en containers.</em>
+		</p>
+
+		<h2 id="prefix-definition-separator-customizable">
+			Voorvoegseldefinitie, scheidingsteken vrij definieerbaar
+		</h2>
+		<p>
+			In de berekeningsconfiguratie van de containerlijst wordt het voorvoegsel voor het containernummer
+			gedefinieerd. Tot nu toe was altijd een streepje als scheidingsteken gedefinieerd. Dit scheidingsteken kan
+			nu samen met het voorvoegsel worden ingevoerd. Alle gangbare tekens zijn toegestaan. Als er geen
+			scheidingsteken wordt ingevoerd, wordt het voorvoegsel direct voor het containernummer geplaatst.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/09-lists/9-6-0-container-list/de/prefix-definition-de.png"
+				alt="prefix-definition-de.png" width="552" height="87" v:shapes="Grafik_x0020_2"> <br>
+			<em>Invoer van het voorvoegsel, het scheidingsteken kan vrij worden gekozen of volledig worden
+				weggelaten.</em>
+		</p>
+		<h2 id="different-message-when-checking-container-numbers">
+			Gedifferentieerde waarschuwingsmeldingen bij de controle van containernummers
+		</h2>
+		<p>
+			Net als bij de controle van positienummers wordt nu ook bij de controle van containernummers aangegeven
+			waarom de nummers niet (meer) identiek zijn.<br>
+			In een echt project zijn de verschillen zelden zo duidelijk als in de volgende voorbeelden, die laten zien
+			welke redenen voor verschillende containernummers worden aangegeven:
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/09-lists/9-6-0-container-list/all/different-size-all.png"
+				alt="different-size-all.png" width="605" height="364" v:shapes="Grafik_x0020_7"> <br>
+			<em>Is de grootte van de containers identiek?</em>
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/09-lists/9-6-0-container-list/all/different-number-of-elements-all.png"
+				alt="different-number-of-elements-all.png" width="605" height="419" v:shapes="Grafik_x0020_6"> <br>
+			<em>Is het aantal aan de container toegewezen elementen identiek?</em>
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/09-lists/9-6-0-container-list/all/element-placement-all.png"
+				alt="element-placement-all.png" width="605" height="419" v:shapes="Grafik_x0020_5"> <br>
+			<em>Is de positie van de aan de container toegewezen onderdelen onderling identiek?</em>
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/09-lists/9-6-0-container-list/all/different-production-number-all.png"
+				alt="different-production-number-all.png" width="605" height="419" v:shapes="Grafik_x0020_4"> <br>
+			<em>Krijgen de aan de verschillende containers toegewezen onderdelen hetzelfde nummer?</em>
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/09-lists/9-6-0-container-list/all/number-of-elements-all.png"
+				alt="number-of-elements-all.png" width="605" height="419" v:shapes="Grafik_x0020_3"> <br>
+			<em>Is het aantal aan de containers toegewezen onderdelen identiek?</em>
+		</p>
+		<p>
+			De getoonde fouten worden in de controle weergegeven zoals in het volgende voorbeeld:
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/09-lists/9-6-0-container-list/de/check-number-ce-de.png"
+				alt="check-number-ce-de.png" width="670" height="513" v:shapes="Grafik_x0020_8"> <br>
+			<em>Gedifferentieerde aanwijzingen voor verschillende positienummers in containers.</em>
+		</p>
+
+	</div>
+
+	<nav id="nav-right" aria-label="Page menu">
+		<!-- Table of content generated automatically. -->
+	</nav>
+
+	<script src="../../../js/main.js"></script>
+</body>
+
+</html>

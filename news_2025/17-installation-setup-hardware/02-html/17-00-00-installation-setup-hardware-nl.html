@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/063b56bfef.js" crossorigin="anonymous"></script>
+
+	<!-- KB styles -->
+	<link rel="stylesheet" href="https://kb.cadwork.ch/css/app.css?v1">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../../css/style-news.css" />
+
+	<title>17.0.0 - Installation, Setup, Hardware - DE - Article 1828</title>
+</head>
+
+<body>
+	<nav id="nav-left" aria-label="Site menu">
+		<iframe src="../../menu.html" frameborder="0" title="Site-menu"></iframe>
+	</nav>
+
+	<div id="content" class="card-body">
+		<h1>
+			17.0.0 - Installation, Setup, Hardware - Stand 2025.01.30
+		</h1>
+
+		<h2 id="general-information">
+			Allgemeines</h2>
+
+		<h3 id="operating-system-support">
+			Betriebssystemunterstützung
+		</h3>
+		<p>
+			Mit der Version 2025 werden weiterhin Windows 11 und Windows 10 als Betriebssysteme unterstützt. Da Microsoft im Oktober 2025 den Support für Windows 10 einstellt, ist geplant, dass die Version 2026 Windows 10 nicht mehr unterstützt.
+		</p>
+		<div class="box tip">
+			<p>
+				<strong>Hinweis</strong><br>
+				Beide Betriebssysteme sollten immer mit aktuellen Updates betrieben werden!
+			</p>
+		</div>
+
+		<h3 id="processor-support">
+			Prozessorunterstützung
+		</h3>
+		<p>
+			cadwork unterstützt weiterhin nur Prozessoren der x86 Architektur (Intel Core, Intel Core Ultra, Intel Core-i, AMD Ryzen). Prozessoren mit ARM-Architektur, wie z.B. Apple M1-M4 oder z.B. in aktuellen Microsoft Surface Pro Geräten verbaute Snapdragon X plus werden von cadwork aktuell nicht unterstützt!
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/17-installation-setup-hardware/all/x86-arm-all.png" alt="x86-arm-all.png" width="258" height="129"><br>
+			<em>x86 Prozessoren werden unterstützt, die ARM Architektur aktuell nicht.</em>
+		</p>
+		<div class="box warning">
+			<p>
+				<strong>Achtung</strong><br>
+				ARM-Prozessoren werden aktuell nicht unterstützt!
+			</p>
+		</div>
+
+		<h3 id="hardware-requirements">
+			Hardwareempfehlungen
+		</h3>
+		<p>
+			Auf der Internetseite Ihres zuständigen Supports finden Sie die Systemanforderungen mit den allgemeinen Hardwareempfehlungen für die aktuelle cadwork Version.
+		</p>
+		<div class="box tip">
+			<p>
+				<strong>Tipp</strong><br>
+				Soll neue Hardware angeschafft werden, setzen Sie sich vorher mit Ihrem zuständigen Support in Verbindung. Wir beraten Sie gerne hinsichtlich der optimalen Hardware zur Bearbeitung Ihrer Aufgaben im cadwork.
+			</p>
+		</div>
+
+		<h2 id="optimize-graphics-settings">
+			Grafikeinstellungen optimieren
+		</h2>
+		<p>
+			Die Grafikeinstellungen im cadwork erlauben viele Einstellungen, welche die Performance beeinflussen. Gerade auf älteren und/oder schwächeren Grafikkarten macht es durchaus einen Unterschied, welche Grafikeinstellungen verwendet werden. Grundsätzlich gilt: Je weniger Details, Schatten oder auch Transparenzen eingeschaltet werden, desto flüssiger sollte eine Grafikkarte die Gebäudemodelle darstellen.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/17-installation-setup-hardware/de/gpu-driver-speed-mode-antialiasing-combined-de.png" alt="gpu-driver-speed-mode-antialiasing-combined-de.png" width="915" height="703"><br>
+			<em>Register Allgemein im Dialog Grafik-Optionen</em>
+		</p>
+
+		<h3 id="speed-mode">
+			<span class="bullet-number"><strong>1</strong></span> Speed-Modus
+		</h3>
+		<p>
+			Der <span class="menu-cadwork-window">Speed-Modus</span> verwendet optimierte Einstellungen, um möglichst viel Geschwindigkeit bei guter Qualität bereitzustellen. Das <span class="menu-cadwork-window">Antialiasing</span> wird im Speed-Modus nicht geändert und kann bei Bedarf manuell auf einen geringeren Wert gestellt werden. Andere Einstellungen sind bei aktivem <span class="menu-cadwork-window">Speed-Modus</span> für die manuelle Einstellung gesperrt.<br>
+			Der <span class="menu-cadwork-window">Speed-Modus</span> kann auch über die rechte Maustaste <span class="mouse-button">R</span> auf das <span class="menu-cadwork">Grafik-Optionen</span> Icon im linken Menü aktiviert werden. Bei aktivem <span class="menu-cadwork-window">Speed-Modus</span> wird das Icon rot dargestellt.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/17-installation-setup-hardware/all/speed-mode-all.png" alt="speed-mode-all.png" width="120" height="120"><br>
+			<em>Speed-Modus</em>
+		</p>
+
+		<h3 id="visualization-of-container-blocks">
+			<span class="bullet-number"><strong>2</strong></span> Visualisierung von Containerblöcken
+		</h3>
+		<p>
+			Die Visualisierung von Elementen in Containerblöcken kann einen großen Einfluss auf die Performance haben. Sowohl die gestrichelten Linien als auch die Transparenz belasten die Performance. Verwenden Sie die <span class="menu-cadwork-window">Normale&nbsp;Elementvisualisierung</span>, wenn viele Containerblöcke verwendet werden!
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/17-installation-setup-hardware/all/container-compare-all.png" alt="container-compare-all.png" width="605" height="484"><br>
+			<em>
+				links: Containerblock gestrichelt/transparent <br>
+				rechts: Containerblock mit normaler Elementvisualisierung
+			</em>
+		</p>
+
+		<h3 id="change-graphics-driver">
+			<span class="bullet-number"><strong>3</strong></span> Grafiktreiber umstellen
+		</h3>
+		<p>
+			Aktuelle dedizierte Grafikkarten werden mit dem voreingestellten Treiber für DirectX 11 im cadwork 3D die beste Leistung erzielen. Sollte cadwork jedoch auf einem Rechner mit einer älteren oder einer leistungsschwachen Grafikkarte gestartet werden, kann die Umstellung auf einen anderen Grafiktreiber wie OpenGL2 zu einer Performanceverbesserung führen.
+		</p>
+
+		<h3 id="reduce-antialiasing">
+			<span class="bullet-number"><strong>4</strong></span> Antialiasing verringern
+		</h3>
+		<p>
+			Das <span class="menu-cadwork-window">Antialiasing</span> berechnet zusätzliche Pixel um z.B. Linien gerader und sauberer erscheinen zu lassen. Dadurch wird der sogenannte Treppeneffekt bei der Darstellung schräger Linien verringert.<br>
+			Wird der Wert für das Antialiasing verringert (Standard ist im cadwork 8-fach) oder das Antialiasing komplett deaktiviert, wird die Grafikkarte entlastet. Nach der Umstellung ist in jedem Fall ein Neustart der 3D Datei erforderlich, damit die neue Einstellung verwendet wird.
+		</p>
+		
+		<h3 id="graphics-card-information">
+			<span class="bullet-number"><strong>5</strong></span> Grafikkarten-Informationen
+		</h3>
+		<p>
+			Bei aktiviertem <span class="menu-cadwork-window">Expertenmodus</span> wird in Version 2025 im Register Allgemein immer die von cadwork 3D genutzte Grafikkarte angezeigt. Bei Systemen mit mehreren Grafikkarten wurde bisher die Grafikkarte angezeigt, die im Windows Gerätemanager zuoberst stand. Dies war nicht unbedingt die von cadwork 3D verwendete Grafikkarte.
+		</p>
+		<div class="box tip">
+			<p>
+				<strong>Tipp</strong><br>
+				Überprüfen und aktualisieren Sie regelmäßig (mindestens alle 2 Monate) die Treiber Ihrer Grafikkarte, um diese optimal zu nutzen! Die aktuellen Treiber können Sie direkt beim Hersteller der Grafikkarte herunterladen oder meist über eine Treiberverwaltungs-Software des Herstellers aktualisieren (z.B. Nvidia-App).
+			</p>
+		</div>
+
+		<h3 id="lod-for-ca-bolts-and-elements">
+			LOD für VBA Elemente
+		</h3>
+		<p>
+			Das Level of Detail (LOD) kann im <span class="menu-cadwork-window">Expertenmodus</span> der <span class="menu-cadwork-window">Grafikoptionen</span> unter <span class="menu-cadwork-window">Experteneinstellungen</span>&nbsp;<span class="arrow arrow-right">→</span>&nbsp;<span class="menu-cadwork-window">Leistung</span> für VBA und deren Elemente eingestellt werden. Es beeinflusst die Detaillierung der VBA in verschiedenen Zoomstufen. So werden bei einer Einstellung auf <span class="menu-cadwork-window">Leistung</span> VBA relativ schnell und sehr detailarm dargestellt, während bei <span class="menu-cadwork-window">Qualität</span> auch weit weg liegende VBA detailreich dargestellt werden. Bei Dateien mit vielen VBA kann das Einstellen des LOD in Richtung <span class="menu-cadwork-window">Leistung</span> eine flüssigere Navigation innerhalb der 3D-Datei bewirken.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/17-installation-setup-hardware/de/level-of-detail-de.png" alt="level-of-detail-de.png" width="915" height="703"><br>
+			<em>Einstellung <strong>L</strong>evel <strong>O</strong>f <strong>D</strong>etail für VBA</em>
+		</p>
+
+		<h2 id="3dconnexion-device-support">
+			3Dconnexion Geräteunterstützung
+		</h2>
+		<p>
+			Die zur Version 30 neue und verbesserte Unterstützung von 3D-Mäusen der Firma 3Dconnexion wurde in Version 2025 weiterentwickelt. Voraussetzung für die Nutzung einer 3D-Maus mit cadwork ist die Installation der aktuellen Treibersoftware von 3Dconnexion.
+		</p>
+
+		<h3 id="setting-up-3d-mouse">
+			Einstellen der 3D-Maus
+		</h3>
+		<p>
+			Sind Hardware und aktueller Treiber von 3Dconnexion installiert, muss im cadwork 3D unter Grafik-Optionen die Nutzung der 3D-Maus aktiviert werden, damit diese im cadwork&nbsp;3D korrekt funktioniert. Die Einstellung dazu befindet sich im Menü <span class="menu-cadwork-window">Grafik-Optionen</span> im <span class="menu-cadwork-window">Expertenmodus</span> unter <span class="menu-cadwork-window">Experteneinstellungen</span>&nbsp;<span class="arrow arrow-right">→</span>&nbsp;<span class="menu-cadwork-window">3D&nbsp;Maus</span>&nbsp;<span class="arrow arrow-right">→</span>&nbsp;<span class="menu-cadwork-window">3D&nbsp;Maus&nbsp;verwenden</span>.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/17-installation-setup-hardware/de/use-3d-connexion-de.png" alt="use-3d-connexion-de.png" width="915" height="703"><br>
+			<em>Die 3D-Maus muss einmalig im 3D aktiviert werden.</em>
+		</p>
+
+		<h3 id="support-for-function-keys">
+			Unterstützung der Funktionstasten
+		</h3>
+		<p>
+			Zur Version 2025 können in der 3Dconnexion Software in Abhängigkeit des verwendeten 3Dconnexion-Gerätes viele der 3D-Funktionen den verfügbaren Tasten des Gerätes zugewiesen werden.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/17-installation-setup-hardware/de/keybindings-3d-connexion-de.png" alt="keybindings-3d-connexion-de.png" width="806" height="868"><br>
+			<em>In der 3Dconnexion Software können jetzt direkt cadwork Funktionen auf beliebige Tasten der Geräte gelegt werden.</em>
+		</p>
+<!-- Weblogin / keep this as backup in case we want to use it later
+		<h2 id="preview-of-weblogin-licensing-method">
+			Ausblick auf die Lizensierungsmethode Weblogin
+		</h2>	
+
+		<h3 id="general-information-weblogin">
+			Allgemeines
+		</h3>
+		<p>
+			Mit der neuen Lizenzierungsart Weblogin wird das Arbeiten mit cadwork flexibler. Diese Methode wird mit Version 2025 ausgewählten Betatestern zur Verfügung stehen und soll zur Version 2026 für Kunden und auch Studentenversionen zur Verfügung stehen.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/17-installation-setup-hardware/de/weblogin1-de.png" alt="weblogin1-de.png" width="427" height="243"><br>
+			<em>Eine aktivierte Weblogin-Lizenz im cadwork Start Lizenz-Dialog</em>
+		</p>
+
+		<h3 id="advantages">
+			Vorteile
+		</h3>
+		<ul>
+			<li>
+				Es ist kein USB-Stick mehr notwendig.
+			</li>
+			<li>
+				Keine Hardwarebindung, die Lizenz kann an beliebigen Rechnern verwendet werden (Gerätewechsel und Anzahl begrenzt). An- und Abmeldung mit Kundennummer und Passwort.
+			</li>
+			<li>
+				Die Einzellizenzen können bequem per Weblogin administriert werden. Es ist auch möglich, einen Administrator zu definieren, der alle Weblogin-Lizenzen der Firma verwalten kann.
+			</li>
+			<li>
+				Die Bereitstellung zusätzlicher Lizenzen kann deutlich schneller erfolgen, ein Postversand für USB-Sticks entfällt.
+			</li>
+		</ul>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/17-installation-setup-hardware/de/weblogin2-de.png" alt="weblogin2-de.png" width="1058" height="189"><br>
+			<em>Administration einer Lizenz</em>
+		</p>
+
+		<h3 id="requirements">
+			Voraussetzungen
+		</h3>
+		<p>
+			Die Lizenzdaten werden von unseren Lizenzservern verifiziert. Die Lizenz läuft maximal 3 Tage ohne Verbindung zum Weblogin-Server. Somit wird eine regelmäßige/dauerhafte Internetverbindung benötigt. Die Lizenz muss auf einem Rechner deaktiviert werden, bevor sie auf einem anderen Rechner genutzt werden kann.
+		</p>
+
+		<h3 id="application-scenarios">
+			Anwendungsszenarien
+		</h3>
+		<p>
+			Einzellizenzen, die auf mehreren Rechnern und Standorten genutzt werden, machen keine Mitnahme des zugehörigen USB-Sticks mehr erforderlich. Auch im Firmennetzwerk können die Weblogin-Lizenzen z.B. jederzeit zwischen Kollegen ausgetauscht werden. Allerdings hat hier die Netzwerklizenz weiterhin Vorteile, da nur diese eine Übersicht der verfügbaren Lizenzpakete innerhalb des Netzwerkes zur Verfügung stellt.
+		</p>
+-->
+		<h2 id="operating-system-settings">
+			Betriebssystemeinstellungen
+		</h2>
+
+		<h3 id="general-information-os">
+			Allgemeines
+		</h3>
+		<p>
+			Durch einige Einstellungen am Betriebssystem kann die Performance von cadwork verbessert werden. Je nach System können diese Einstellungen unterschiedliche Auswirkungen haben.
+		</p>
+
+		<h3 id="free-disk-space">
+			Freier Speicherplatz
+		</h3>
+		<p>
+			cadwork Dateien werden unabhängig von ihrem eigentlichen Speicherort beim Öffnen immer auf die Systemfestplatte (normalerweise Laufwerk C:\) kopiert und dort entpackt und bearbeitet. Daher sollte auf der Systemfestplatte immer ausreichend freier Speicherplatz vorhanden sein. Die notwendige Größe des verfügbaren Speicherplatzes hängt von Größe und Anzahl der geöffneten Dateien ab. Andere Programme arbeiten auf gleiche Weise, auch dies muss berücksichtigt werden.<br>
+			Der minimal freie Speicher auf der Festplatte C:\ sollte nie unter 40 GB fallen. Auch andere Programme sowie Windows selbst können bei einem vollen Laufwerk C:\ nicht mehr korrekt arbeiten und das Speichern ist unter Umständen nicht mehr möglich. Prüfen Sie regelmäßig den freien Speicher auf Ihrer Systempartition.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/17-installation-setup-hardware/de/system-drive-free-space-de.png" alt="system-drive-free-space-de.png" width="363" height="499"><br>
+			<em>Prüfung des verfügbaren Speicherplatzes</em>
+		</p>
+
+		<h3 id="power-plan">
+			Energiesparplan
+		</h3>
+		<p>
+			Die Einstellungen für die Energiesparpläne finden Sie unter <span class="menu-cadwork-window">Systemsteuerung</span>&nbsp;<span class="arrow arrow-right">→</span>&nbsp;<span class="menu-cadwork-window">Alle&nbsp;Systemsteuerungselemente</span>&nbsp;<span class="arrow arrow-right">→</span>&nbsp;<span class="menu-cadwork-window">Energieoptionen</span>&nbsp;<span class="arrow arrow-right">→</span>&nbsp;<span class="menu-cadwork-window">Energiesparplaneinstellungen&nbsp;bearbeiten</span>. Die Windows-Energiesparpläne sollten für cadwork so konfiguriert werden, dass der Rechner niemals die Festplatten abschaltet, während cadwork Dateien geöffnet sind. Stellen Sie dieses Feature unter <span class="menu-cadwork-window">Erweiterte&nbsp;Energieeinstellungen&nbsp;ändern</span> des Energiesparplans aus oder schließen Sie alle cadwork Dateien, bevor Sie den Rechner längere Zeit nicht benutzen. Auch die Einstellung <span class="menu-cadwork-window">Hybriden&nbsp;Standbymodus&nbsp;zulassen</span> sollte in <span class="menu-cadwork-window">Erweiterte&nbsp;Energieeinstellungen&nbsp;ändern</span> unter dem Unterpunkt <span class="menu-cadwork-window">Energie&nbsp;sparen</span> deaktiviert werden.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/17-installation-setup-hardware/de/powerscheme-settings-de.png" alt="powerscheme-settings-de.png" width="1058" height="334"><br>
+			<em>Bearbeitung des Energiesparplans</em>
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/17-installation-setup-hardware/de/energy-advanced-settings-de.png" alt="energy-advanced-settings-de.png" width="404" height="442"><br>
+			<em>Einstellung der Energieoptionen in der Windows Systemsteuerung</em>
+		</p>
+
+		<h3 id="fast-startup">
+			Schnellstart
+		</h3>
+		<p>
+			Windows 10 und 11 haben eine Einstellung, um schneller zu starten. Diese Einstellung befindet sich in der <span class="menu-cadwork-window">Systemsteuerung</span>&nbsp;<span class="arrow arrow-right">→</span>&nbsp;<span class="menu-cadwork-window">Alle&nbsp;Systemsteuerungselemente</span>&nbsp;<span class="arrow arrow-right">→</span>&nbsp;<span class="menu-cadwork-window">Energieoptionen</span>&nbsp;<span class="arrow arrow-right">→</span>&nbsp;<span class="menu-cadwork-window">Systemeinstellungen</span>. Diese sollte deaktiviert werden, da die aktivierte Einstellung Fragmente der Dateien im Speicher belässt, um sie beim nächsten Start schneller verfügbar zu haben.<br>
+			Die Ersparnis beim Aufstarten durch diese Option ist bei modernen Computern mit SSD-Laufwerken als Betriebssystemspeicher recht gering. Ein deaktivierter Schnellstart startet den Computer immer mit einem bereinigten Speicher, was die Stabilität der eingesetzten Anwendungen verbessert.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/17-installation-setup-hardware/de/quick-start-de.png" alt="quick-start-de.png" width="1058" height="468"><br>
+			<em>Einstellung zum Schnellstart des Computers</em>
+		</p>
+	</div>
+
+	<nav id="nav-right" aria-label="Page menu">
+		<!-- Table of content generated automatically. -->
+	</nav>
+
+	<script src="../../js/main.js"></script>
+</body>
+
+</html>

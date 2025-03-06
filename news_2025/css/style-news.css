@@ -1,0 +1,172 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.6;
+    height: 100vh; /* Assure que le body occupe toute la hauteur de la fenêtre */
+}
+
+#content {
+    flex: 3; /* Occupe 75% de l'espace */
+	margin-left: 1em; /* Espacement entre le contenu et la table des matières */
+    margin-right: 1em; /* Espacement entre le contenu et la table des matières */
+	padding: 0 1.25rem 1.25rem; /* Espacement intérieur du contenu */
+    overflow-y: auto;
+}
+
+#nav-left,
+#nav-right {
+    flex: 1; /* Occupe 25% de l'espace */
+    position: sticky;
+    top: 0; /* Toujours visible en haut de la page */
+    max-height: 100vh; /* Ne dépasse pas la hauteur de la fenêtre */
+    background-color: #f9f9f9;
+    border: 0.0625em solid #ddd;
+    border-radius: 0.3em;
+    padding: 1em;
+    box-shadow: 0 0.3em 0.625em rgba(0, 0, 0, 0.1);
+}
+
+#nav-left {
+	padding: 0; /* Padding will be in the <iframe> of the menu */
+}
+
+#nav-right {
+	overflow-y: auto; /* Barre de défilement verticale si le contenu dépasse */
+}
+
+#nav-right h3 {
+    margin-bottom: 0.5em;
+    font-size: 1.25em;
+}
+
+#nav-right ol {
+    list-style-type: decimal;
+    padding-left: 1.5em;
+    margin: 0;
+}
+
+#nav-right li {
+    margin-bottom: 0.5em;
+}
+
+#nav-right a {
+    text-decoration: none;
+    color: #333;
+}
+
+#nav-right a.active {
+    font-weight: bold;
+    color: #007bff;
+}
+
+#nav-left iframe {
+	width: 100%;
+	height: 100%;
+}
+
+h1 {
+	position: sticky; /* Fixe l'élément à l'écran */
+	top: 0;          /* Positionné en haut de la page */
+	padding: 1.25rem 0;
+	background-color: white; /* Fond blanc pour contraster */
+	box-shadow: 0 0 2rem white, 0 0 2rem white;
+	z-index: 100;
+}
+
+pre {
+    position: relative;
+}
+
+pre code[class*=language-]::after {
+    position: absolute;
+    top: 0.4em;
+    right: 0.5em;
+    border-radius: 0.2em;
+    color: gray;
+    background: white;
+    padding: 0 0.5em;
+    font-size: 0.8em;
+}
+
+code.language-none::after { content: "Plain text"; }
+code.language-batch::after { content: "Batch"; }
+code.language-c::after { content: "C"; }
+code.language-csharp::after { content: "C#"; }
+code.language-cpp::after { content: "C++"; }
+code.language-css::after { content: "CSS"; }
+code.language-diff::after { content: "Diff"; }
+code.language-docker::after { content: "Docker"; }
+code.language-dot::after { content: "Dot (Graphviz)"; }
+code.language-fortran::after { content: "Fortran"; }
+code.language-git::after { content: "Git"; }
+code.language-handlebars::after { content: "Handlebars"; }
+code.language-html::after { content: "HTML"; }
+code.language-ini::after { content: "INI"; }
+code.language-jsdoc::after { content: "JS Doc"; }
+code.language-json::after { content: "JSON"; }
+code.language-jsx::after { content: "JSX"; }
+code.language-javascript::after { content: "JavaScript"; }
+code.language-less::after { content: "LESS"; }
+code.language-log::after { content: "Log"; }
+code.language-makefile::after { content: "Makefile"; }
+code.language-markdown::after { content: "Markdown"; }
+code.language-markup::after { content: "Markup"; }
+code.language-mermaid::after { content: "Mermaid"; }
+code.language-nginx::after { content: "NGINX"; }
+code.language-php::after { content: "PHP"; }
+code.language-powershell::after { content: "PowerShell"; }
+code.language-python::after { content: "Python"; }
+code.language-qml::after { content: "QML"; }
+code.language-regex::after { content: "Regex"; }
+code.language-sass::after { content: "SASS"; }
+code.language-scss::after { content: "SCSS"; }
+code.language-sql::after { content: "SQL"; }
+code.language-tsx::after { content: "TSX"; }
+code.language-twig::after { content: "Twig"; }
+code.language-typescript::after { content: "TypeScript"; }
+code.language-vbnet::after { content: "VB.NET"; }
+code.language-yaml::after { content: "YAML"; }
+
+@media print {
+    /* Set the body layout for printing */
+    body {
+        display: block; /* Use block layout instead of flex for printing */
+        margin: 1cm; /* Apply 1cm margins around the page */
+        height: auto; /* Ignore viewport height for printing */
+    }
+
+    /* Hide the left and right menus during printing */
+    #nav-left,
+    #nav-right {
+        display: none;
+    }
+
+    /* Ensure the content takes the full width available */
+    #content {
+        margin: 0; /* Remove inner margins for better use of space */
+        width: 100%; /* Make content span the entire printable width */
+    }
+
+    /* Define the page size and margins for printing */
+    @page {
+        size: A4; /* Set the page size to A4 */
+        margin: 1cm 1cm 1cm 2cm; /* Apply 1cm margins to the printed page */
+    }
+
+	/* Prevent page breaks between a paragraph and its following list */
+    p + ul,
+    p + ol {
+        page-break-before: avoid; /* Avoid breaking before the list */
+        page-break-inside: avoid; /* Avoid breaking within the list */
+    }
+
+	/* Prevent page breaks and ensure elements stay on the same line */
+    .menu-cadwork-window,
+    .menu-cadwork {
+        page-break-inside: avoid; /* Avoid breaking these elements across pages */
+        white-space: nowrap; /* Keep content on the same line */
+    }
+}

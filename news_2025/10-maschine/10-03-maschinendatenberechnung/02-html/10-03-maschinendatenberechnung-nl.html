@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/063b56bfef.js" crossorigin="anonymous"></script>
+
+	<!-- KB styles -->
+	<link rel="stylesheet" href="https://kb.cadwork.ch/css/app.css?v1">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../../../css/style-news.css" />
+
+	<title>10.3.0 - Maschinendatenberechnung - DE - Article 1817</title>
+</head>
+
+<body>
+	<nav id="nav-left" aria-label="Site menu">
+		<iframe src="../../../menu.html" frameborder="0" title="Site-menu"></iframe>
+	</nav>
+
+	<div id="content" class="card-body">
+		<h1>
+			10.3.0 - Maschinendatenberechnung - Stand 2025.02.03
+		</h1>
+
+		<h2 id="calculate-tenon-with-laps">
+			Zapfen mit Blättern berechnen
+		</h2>
+		<p>
+			Im Dialog&nbsp;<span class="menu-cadwork-window">Konfiguration&nbsp;Maschine</span> unter <span class="menu-cadwork-window">Endbearbeitungen</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork-window">Endtypen/Zapfen…</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork-window">Weitere&nbsp;Einstellungen&nbsp;für&nbsp;Zapfen</span> ist die Option&nbsp;<span class="menu-cadwork-window">eckige&nbsp;lange&nbsp;Zapfen&nbsp;mit&nbsp;Blattbearbeitungen&nbsp;berechnen</span>&nbsp;hinzugefügt worden. Hierbei werden Zapfen ab einer einzustellenden Länge nicht als Zapfenbearbeitung, sondern mithilfe von Blättern berechnet. Dadurch kann eine bessere Fertigungsstrategie angesteuert werden. Der Zapfen muss mit einer eckigen Form und ohne Housing ausgebildet sein.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/de/tenon-by-lap-menu-de.png" alt="tenon-by-lap-menu-de.png" width="869" height="519"><br>
+			<em>Option Zapfen mit Blättern berechnen</em>
+		</p>
+		<p>
+			<span class="bullet-number">1</span> Für diesen beidseitig abgesteckten eckigen Zapfen mit 80&nbsp;mm Länge werden die Maschinendaten mit der neuen Option berechnet. <br>
+			<span class="bullet-number">2</span> Es werden vier Blätter berechnet.<br>
+			<span class="bullet-number">3</span> Zur Verdeutlichung des Ergebnisses werden im Einzelstab das Originalbauteil und der Rohling mit den berechneten Blättern mithilfe der Tastenkombination <kbd>Strg</kbd>&nbsp;+&nbsp;<kbd>T</kbd> überlagert.&nbsp;
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/all/tenon-by-lap-calculation-all.png" alt="tenon-by-lap-calculation-all.png" width="602" height="791"><br>
+			<em>Zapfen mit Blättern berechnet</em>
+		</p>
+		<div class="box tip">
+			<p>
+				<strong>Tipp</strong><br>
+				Mit dieser Option können einfache Zapfen auf einer zusätzlich mit Fräser ausgestatten Kappanlage (z.B. Stromab, Tiger Stop) gefertigt werden.
+			</p>
+		</div>
+
+		<h2 id="contour-processing">
+			Konturbearbeitungen
+		</h2>
+
+		<h3 id="contour-pockets-with-islands">
+			Konturtaschen mit Inseln
+		</h3>
+		<p>
+			Konturtaschen mit Inseln werden in Version 2025 automatisch berechnet.<br>
+			Dieses Beispiel besteht aus einer großen Konturtasche mit den Buchstaben jeweils als Inseln. Zusätzlich befinden sich in den Buchstaben e und b sowie in der Zahl 0 kleine Konturtaschen, die ebenfalls mit dem Werkzeug geräumt werden müssen.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/all/contour-pocket-with-island-example-all.png" alt="contour-pocket-with-island-example-all.png" width="775" height="1086"><br>
+			<em>Konturtasche mit Inseln</em>
+		</p>
+
+		<h3 id="determine-start-point">
+			Startpunkt bestimmen
+		</h3>
+		<p>
+			Für die automatische Berechnung geschlossener Konturen können verschiedene Lagen des Startpunktes vorgegeben werden. Mit dieser Einstellung kann bereits im cadwork Einfluss auf die Bearbeitungsstrategie genommen werden.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/de/contour-pocket-start-point-de.png" alt="contour-pocket-start-point-de.png" width="866" height="646"><br>
+			<em>Startpunkt der Kontur bestimmen</em>
+		</p>
+		<p>
+			Der Startpunkt der Innenkontur soll in der Mitte eines möglichst langen Kontursegmentes in der Nähe der Bezugskante der Referenzseite (hier die blaue Kante der Referenzseite 3 in Längsrichtung) liegen.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/all/contour-pocket-start-point-example-all.png" alt="contour-pocket-start-point-example-all.png" width="869" height="390"><br>
+			<em>Innenkontur mit Startpunkt in einer Kantenmitte</em>
+		</p>
+		<p>
+			Die Option&nbsp;<span class="menu-cadwork-window">Startpunkt&nbsp;der&nbsp;Kontur&nbsp;bestimmen</span> steht für die&nbsp;<span class="menu-cadwork-window">Rohlingskontur</span>, die&nbsp;<span class="menu-cadwork-window">Außenkontur</span>, die&nbsp;<span class="menu-cadwork-window">Innenkontur</span>, die&nbsp;<span class="menu-cadwork-window">Konturtasche</span>, sowie den&nbsp;<span class="menu-cadwork-window">Umriss</span> und den&nbsp;<span class="menu-cadwork-window">Ausschnitt</span> zur Verfügung.
+		</p>
+
+		<h3 id="segment-contour-lines">
+			Konturlinien segmentieren
+		</h3>
+		<p>
+			Enthält die zu analysierende Geometrie gekrümmte Flächen, werden die Bearbeitungen in der Regel als Konturbearbeitungen mit Konturzügen bestehend aus Kreisbögen und Geraden berechnet. Oft entstehen in der Konstruktion durch Freiformen oder Verschneidungen mit runden Bauteilen unter einem Winkel jedoch Ellipsen oder Splines. Diese müssen für die Maschinenausgabe mit Hilfe von Bögen und Geraden angenähert werden. Bisher konnte die Genauigkeit, mit der die Konturlinien segmentiert werden sollen, nur bei der automatischen Maschinendatenberechnung von Fünfachskonturen oder während der manuellen Definition von Konturbearbeitungen beeinflusst werden. <br>
+			In Version 2025 können Sie für jede Konturart separat eine Genauigkeit für die Segmentierung angeben. Die Einstellungen finden Sie unter&nbsp;<span class="menu-cadwork-window">Konfiguration&nbsp;Maschine</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork-window">Optionen…</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork-window">Konturlinien&nbsp;segmentieren</span>.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/de/contour-line-segmentation-de.png" alt="contour-line-segmentation-de.png" width="869" height="649"><br>
+			<em>Konfiguration Maschine -&gt; Optionen… -&gt; Konturlinien segmentieren</em>
+		</p>
+		<p>
+			<span class="bullet-number">1</span> Im oberen Bereich legen Sie eine Default-Einstellung für alle Konturbearbeitungen fest. <br>
+			<span class="bullet-number">2</span> Im unteren Bereich können Sie für jede Konturart getrennt unterschiedliche Einstellungen vornehmen.<br>
+			<span class="bullet-number">3</span> Grundsätzlich können Sie Konturlinien&nbsp;<span class="menu-cadwork-window">mit&nbsp;Kreisbögen&nbsp;und&nbsp;Geraden&nbsp;aufteilen</span>&nbsp;oder&nbsp;<span class="menu-cadwork-window">nur&nbsp;mit&nbsp;Geraden&nbsp;aufteilen</span>&nbsp;lassen. Mit Kreisbögen kann eine bessere Annäherung bei gleichzeitig weniger Kontursegmenten erreicht werden. Jedoch können Kreissegmente unter Umständen bei einem weiterverarbeitenden CAM-System zu Problemen führen.<br>
+			<span class="bullet-number">4</span> Für die zugelassene&nbsp;<span class="menu-cadwork-window">Maximale&nbsp;Abweichung</span> stellen Sie als Wert eine maximal erlaubte Segmenthöhe&nbsp;<span class="menu-cadwork-window">h</span> ein, der größte Abstand eines Kontursegmentes zu der realen Kurve in diesem Bereich. Hier sind maximal 1&nbsp;mm Abweichung voreingestellt, die in Kombination mit Kreisbögen in der Regel gut erreichbar sind, ohne zu kleine Segmentlängen zu erhalten.<br>
+			<span class="bullet-number">5</span> Der&nbsp;<span class="menu-cadwork-window">Maximaler&nbsp;Übergangswinkel</span> steuert, wie stark Knicke zwischen zwei aufeinanderfolgenden Kontursegmenten sein dürfen. Hier sind 5 Grad voreingestellt.<br>
+			Je nach Bauteilgeometrie kann eine "sehr feine" Einstellung zu vielen kurzen Kontursegmenten und einer langen Bearbeitungszeit führen, während eine "zu grobe" Einstellung die Form nicht genügend wiedergibt.
+		</p>
+
+		<h3 id="five-axis-contour">
+			Fünfachskontur
+		</h3>
+		<p>
+			Bei einer Fünfachskontur wird die Bearbeitung mit einer oberen und einer unteren Konturlinie beschrieben, die Segment für Segment verbunden werden. Das Werkzeug wird entlang der oberen Kontursegmente fahren und dabei die Werkzeugspitze an den unteren Kontursegmenten ausrichten. Sind oberes und unteres Segment unterschiedlich lang oder versetzt, muss das Werkzeug während der Bearbeitung die Neigung ändern oder fräst in einem ungünstigen Winkel zum Werkstück. Um dieses zu vermeiden, müssen die obere und untere Konturlinie in der Länge angepasst werden. Hierfür steht in Version 2025 eine neue Option unter&nbsp;<span class="menu-cadwork-window">Konfiguration&nbsp;Maschine</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork-window">Fünfachskontur</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork-window">Fünfachskontur&nbsp;verlängern</span> zur Verfügung.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/de/five-axis-contour-extend-de.png" alt="five-axis-contour-extend-de.png" width="869" height="649"><br>
+			<em>Fünfachskontur verlängern</em>
+		</p>
+		<p>
+			<span class="bullet-number">1</span> Wählen Sie&nbsp;<span class="menu-cadwork-window">Kante&nbsp;verlängern</span>, wird je nach Geometrie die obere oder untere Kante am Ende verlängert.<br>
+			<span class="bullet-number">2</span> Wählen Sie&nbsp;<span class="menu-cadwork-window">Fläche&nbsp;verlängern</span>, wird zunächst eine möglichst gleichmäßige Segmentierung berechnet und die Fläche am Ende gestreckt.<br>
+			Je nach Geometrie kann die eine oder die andere Option zu besseren Ergebnissen führen.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/all/five-axis-contour-extend-example-all.png" alt="five-axis-contour-extend-example-all.png" width="869" height="1491"><br>
+			<em>Fünfachskontur verlängern am Beispiel</em>
+		</p>
+		<p>
+			<span class="bullet-number">1</span> Die Fünfachskonturen an dem Sparren einer Fledermausgaube sind <strong>ohne&nbsp;</strong>die Option&nbsp;<span class="menu-cadwork-window">Fünfachskontur&nbsp;verlängern</span> berechnet worden. Besonders in der Draufsicht ist zu erkennen, dass die Verbindungslinien der Kontursegmente zu den Bauteilenden hin schräger und dadurch länger werden.<br>
+			<span class="bullet-number">2</span> Die Fünfachskonturen an dem Sparren sind mit der Option&nbsp;<span class="menu-cadwork-window">Kante&nbsp;verlängern</span> berechnet worden. Die Verbindungslinien sind gleichmäßig über das gesamte Bauteil. Die kürzere Konturlinie ist für die Berechnung an den Bauteilenden verlängert worden.<br>
+			<span class="bullet-number">3</span> Die Fünfachskonturen sind mit der Option&nbsp;<span class="menu-cadwork-window">Fläche&nbsp;verlängern</span> berechnet worden. Das Ergebnis ist ähnlich gleichmäßig. Die beiden äußersten Kontursegmente sind am Ende der Berechnung mit dem gleichen Winkel vervollständigt worden.
+		</p>
+	</div>
+
+	<nav id="nav-right" aria-label="Page menu">
+		<!-- Table of content generated automatically. -->
+	</nav>
+
+	<script src="../../../js/main.js"></script>
+</body>
+
+</html>

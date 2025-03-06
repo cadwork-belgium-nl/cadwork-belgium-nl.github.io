@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/063b56bfef.js" crossorigin="anonymous"></script>
+
+	<!-- KB styles -->
+	<link rel="stylesheet" href="https://kb.cadwork.ch/css/app.css?v1">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../../../css/style-news.css" />
+
+	<title>15.2.0 - Tools - DE - Article 1826</title>
+</head>
+
+<body>
+	<nav id="nav-left" aria-label="Site menu">
+		<iframe src="../../../menu.html" frameborder="0" title="Site-menu"></iframe>
+	</nav>
+
+	<div id="content" class="card-body">
+		<h1>
+			15.2.0 - Tools - Stand 2025.02.01
+		</h1>
+
+		<h2 id="general">
+			Allgemeines
+		</h2>
+
+		<h3 id="symbols">
+			Symbole
+		</h3>
+		<p>
+			Zwei neue Symbole sind in der Symbolleiste sichtbar: <span class="bullet-number">1</span> <span class="menu-cadwork-window">Editieren</span> und <span class="bullet-number">2</span> <span class="menu-cadwork-window">Übermaße</span>. Das Symbol <span class="bullet-number">3</span> für <span class="menu-cadwork-window">Liste&nbsp;exportieren</span> wurde angepasst, um es besser vom neuen Symbol <span class="menu-cadwork-window">Editieren</span> zu unterscheiden.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/15-plugins-and-tools/15-02-00-tools/all/new-pictogram-all.png" alt="new-pictogram-all.png" width="300" height="80"><br>
+			<em>Neue Symbole</em>
+		</p>
+
+		<h3 id="strong-link">
+			Starke Verknüpfung
+		</h3>
+		<p>
+			Ein System für starke Verknüpfungen wurde zwischen den verschiedenen vom JTC eingefügten Teilen implementiert. Dieses System ermöglicht es, Parameter nach dem Einfügen zu ändern, ohne die danach eingefügten Elemente zu verlieren. Die starke Verknüpfung verhindert, dass JTC-Elemente in nicht geeigneten Volumen eingefügt werden können. Beispielsweise können Dübel nicht mehr in einem Innenvolumen eingefügt werden. Wenn das aktivierte Volumen das Einfügen eines JTC-Elements nicht erlaubt, erscheint im unteren Menü die Nachricht: "Bitte ein Element aktivieren".
+		</p>
+		
+		<h2 id="main-menu">
+			Hauptmenü
+		</h2>
+
+		<h3 id="edit">
+			Editieren
+		</h3>
+		<p>
+			Die Funktion <span class="menu-cadwork-window">Editieren</span> ermöglicht es, das Untermenü wieder zu öffnen, mit dem ein Objekt eingefügt wurde, um dessen Werte zu ändern und es erneut einzufügen. Aktivieren Sie einfach ein gewünschtes Element, um den Generator, der es erstellt hat, erneut zu öffnen.
+		</p>
+		<div class="box warning">
+			<p>
+				<strong>Hinweis</strong><br>
+				Das Element muss aktiv bleiben.
+			</p>
+		</div>
+		<div class="box tip">
+			<p>
+				<strong>Beispiel</strong><br>
+				Sie haben gerade die Verbindungen an dem Korpus hinzugefügt, bemerken aber, dass die Dicke der Rückwand falsch ist. Aktivieren Sie ein Teil, das mit <span class="menu-cadwork-window">Korpus</span> generiert wurde (z. B. die Rückwand), und betätigen Sie <span class="menu-cadwork-window">Editieren</span>. Im linken Bereich werden die beim Einfügen verwendeten Werte des <strong>Korpus Konfigurator</strong> angezeigt. Nach gewünschter Änderung können Sie mit <span class="menu-cadwork-window">Bestätigen</span> die Bearbeitung abschließen.
+			</p>
+		</div>
+		<p>
+			Sind mehrere aktive Elemente aus unterschiedlichen Mastern vorhanden, wird die Änderung auf alle aktivierten Elemente angewendet. Diese Funktion kann auch verwendet werden, um die Werte eines bereits eingefügten Elements aufzurufen, um es an anderer Stelle einzufügen. Aktivieren Sie z. B. einen Griff, verwenden Sie die Funktion <span class="menu-cadwork-window">Editieren</span>, deaktivieren Sie dann den Griff im 3D und aktivieren Sie eine Tür, in die Sie den Griff einfügen möchten, und bestätigen Sie diese. Um <span class="menu-cadwork-window">Editieren</span> schneller zu nutzen, können Sie die Tastenkombination <kbd>AltGr</kbd>&nbsp;+&nbsp;<kbd>1</kbd> benutzen.
+		</p>
+
+		<h3 id="oversize">
+			Übermaße
+		</h3>
+		<p>
+			Diese neue Funktion ermöglicht es, Übermaße vorab als Set zu speichern. Ein Fenster öffnet sich, in dem Sie verschiedene Sets erstellen können, indem Sie die Werte für Übermaße sowie Rundungen angeben. Nach der Konfiguration sind diese in den verschiedenen Generatoren für jedes einzufügende Bauteil verfügbar. Dies erlaubt es Ihnen, Bauteile direkt mit den gewünschten Rohwerten zu erstellen, die in Ihren Listen, Verschachtelungen oder bei Exporten zu CNC-Maschinen übernommen werden können. Alle Übermaß-Sets werden in Ihrem Userprofil abgespeichert.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/15-plugins-and-tools/15-02-00-tools/de/oversized-dialogue-de.png" alt="oversized-dialogue-de.png" width="672" height="549"><br>
+			<em>Übermaßset anlegen</em>
+		</p>
+
+		<h3 id="element-info">
+			Elementinformationen
+		</h3>
+		<p>
+			Um Informationen zu einem Element zu erhalten, verwenden Sie die Funktion <span class="menu-cadwork-window">Editieren</span>. Diese öffnet den entsprechenden Generator mit allen verwendeten Werten. In diesem Fenster verbleibt nur die Option zur Aktivierung nach Achsenausrichtung, eine Funktion, die für das Einfügen von Umleimern in Bauteile verwendet wird, die nicht vom JTC stammen.
+		</p>
+
+		<h2 id="volume-configurator">
+			Volumen Konfigurator
+		</h2>
+
+		<h3 id="adopt-values">
+			Werte übernehmen
+		</h3>
+		<p>
+			Das Symbol für Werte des aktiven Elements übernehmen <kbd>AltGr</kbd>&nbsp;+&nbsp;<kbd>L</kbd> ist in der oberen Leiste aller Konfiguratoren nicht mehr verfügbar. Um die Werte eines aktiven Masters zu übernehmen, verwenden Sie die neue Funktion <span class="menu-cadwork-window">Editieren</span> <kbd>AltGr</kbd>&nbsp;+&nbsp;<kbd>1</kbd>. Der <span class="menu-cadwork-window">Volumen&nbsp;Konfigurator</span> wird mit den Werten des aktiven Masters geöffnet.
+		</p>
+
+		<h2 id="corpus-configurator">
+			Korpus Konfigurator
+		</h2>
+
+		<h3 id="oversize">
+			Übermaße
+		</h3>
+		<p>
+			In allen Konfiguratoren ist der neue Punkt <span class="menu-cadwork-window">Übermaß-Set</span> für jedes einzufügende Bauteil verfügbar. Die dazugehörigen Voreinstelllungen müssen vorab im Konfigurationsfenster <span class="menu-cadwork-window">Übermaße</span> vorgenommen werden, das über dieses Symbol geöffnet wird: In den Konfiguratoren können Sie über ein Dropdown-Menü die Übermaße auswählen, die Sie auf das Element anwenden möchten. Die Option <span class="menu-cadwork-window">keine Übermaße</span> ist standardmäßig festgelegt. Die von Ihnen eingestellten Übermaße werden im Userprofil gespeichert.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/15-plugins-and-tools/15-02-00-tools/de/oversize-case-configuration-de.png" alt="oversize-case-configuration-de.png" width="335" height="324"><br>
+			<em>Übermaß-Set im Korpus Konfigurator</em>
+		</p>
+
+		<h3 id="gui">
+			GUI
+		</h3>
+		<p>
+			Der Abschnitt Dimension und Name im oberen Bereich des Korpus Konfigurators wurde entfernt, um Platz zu sparen und nur relevante Elemente anzuzeigen. Diese Anpassung wurde in allen JTC-Konfiguratoren vorgenommen. Das Bild zur Darstellung des Mastervolumens wurde in den Bereich <strong>Eckenmanagement </strong>verschoben. Auch das Symbol <span class="bullet-number">1</span>&nbsp;<span class="menu-cadwork-window">Werte&nbsp;des&nbsp;aktiven&nbsp;Elements&nbsp;übernehmen</span> wurde in diesen Bereich verlegt, um die Ecken-Prioritäten zu zentralisieren. Beim Ändern der Werte im Bereich Volumen passt sich das Bild an, und die Prioritäten der Winkel werden entsprechend aktualisiert.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/15-plugins-and-tools/15-02-00-tools/de/jtc-case-generator-de.png" alt="jtc-case-generator-de.png" width="406" height="500"><br>
+			<em>Anpassung Korpus Konfigurator</em>
+		</p>
+
+		<h2 id="interior-configurator">
+			Interieur Konfigurator
+		</h2>
+		<p>
+			Ein neues Symbol für die Berechnung der Abmessung zeigt den Abstand gemäß dem aktiven Volumen im 3D und den in der Fensteransicht angegebenen Werten an. Dieses Symbol befindet sich rechts neben dem Wert für den Abstand.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/15-plugins-and-tools/15-02-00-tools/de/interior-dimension-calculate-de.png" alt="interior-dimension-calculate-de.png" width="335" height="356"><br>
+			<em>Neues Symbol Abmessung im Interieur Konfigurator</em>
+		</p>
+
+		<h2 id="front-configurator">
+			Front Konfigurator
+		</h2>
+		<p>
+			Ein neues Symbol für die Berechnung der Abmessung zeigt die Dimensionen der Fronten vor dem Einfügen an, basierend auf dem aktiven Volumen im 3D und den angegebenen Werten. Dieses Symbol befindet sich unterhalb der Faserrichtung
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/15-plugins-and-tools/15-02-00-tools/de/front-dimension-calculate-de.png" alt="front-dimension-calculate-de.png" width="406" height="447"><br>
+			<em>Neues Symbol Abmessung</em>
+		</p>
+
+		<h2 id="drawer-generator">
+			Schubladengenerator
+		</h2>
+		<p>
+			Das Symbol für die Berechnung der Abmessung befindet sich rechts neben den Schubkastenlängen, die berechnet werden können: Früher wurde die Berechnung für beide Werte gleichzeitig aktualisiert. Jetzt muss die Berechnung für jeden Schubkasten separat erfolgen, abhängig von den Dimensionen des Innenvolumens.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/15-plugins-and-tools/15-02-00-tools/de/drawer-dimension-calculate-de.png" alt="drawer-dimension-calculate-de.png" width="335" height="241"><br>
+			<em>Neues Symbol Abmessung im Schubladen Konfigurator</em>
+		</p>
+
+		<h2 id="fitting-configurator">
+			Beschlag Konfigurator
+		</h2>
+
+		<h3 id="profile-handles">
+			Profilgriffe
+		</h3>
+
+		<h4 id="profile-handles-general">
+			Allgemeines
+		</h4>
+		<p>
+			Neue Profilgriffe können mit dem JTC eingefügt werden. Ihre Länge passt sich der Dimension der Front oder des JTC-Volumens an. Ein Schnittvolumen kann in der 3dc-Datei platziert werden, um die Front oder die Korpusteile je nach gewähltem Griffmodell zu schneiden. Wie bei allen Verbindungen erfolgt die Erstellung eines Profilgriffs über die Funktion <span class="menu-cadwork-window">Beschlag</span>. Über <span class="menu-cadwork-window">Katalog konfigurieren</span> kann nun beim Hinzufügen einer Katalogdatei <kbd>Strg</kbd>&nbsp;+&nbsp;<kbd>Alt</kbd>&nbsp;+&nbsp;<kbd>A</kbd>, die Definition Profilgriff ausgewählt werden.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/15-plugins-and-tools/15-02-00-tools/de/add-handle-new-catalog-de.png" alt="add-handle-new-catalog-de.png" width="406" height="156"><br>
+			<em>Hinzufügen Profilgriff über Hinzufügen Katalog</em>
+		</p>
+		<p>
+			Es gibt die drei folgenden Definitionsmöglichkeiten des Profilgriffs:
+		</p>
+		<ul>
+			<li>Front</li>
+			<li>Außenmaß des Korpus (Master)</li>
+			<li>Innenmaß des Korpus (Innenvolumen)</li>
+		</ul>
+		<p><img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/15-plugins-and-tools/15-02-00-tools/de/add-handle-new-catalog-configuration-de.png" alt="add-handle-new-catalog-configuration-de.png" width="465" height="539"><br>
+			<em>Hinzufügen Profilgriff</em>
+		</p>
+
+		<h4 id="reference-front">
+			Referenz: Front
+		</h4>
+		<p>
+			In der 3dc-Datei des Profilgriffs muss das Volumen des Griffs die größtmögliche Länge haben. Es sollte entlang der X-Achse ausgerichtet sein, wobei der Referenzpunkt der Sichtseite der Front entspricht: Es gibt nur vier mögliche Positionen: Oben, Unten, Links und Rechts. Per Definition wird der Profilgriff an den Rändern der Front platziert. Die Rotation erfolgt automatisch entsprechend der gewählten Position. Ein Versatz entsprechend der gewählten Position ermöglicht es, den Profilgriff innerhalb der Front zu verschieben: Ein Überstand an beiden Enden kann mit positiven oder negativen Werten definiert werden, um das Profil zu verlängern oder zu verkürzen. Wie bei anderen Verbindungen sind die Optionen zur Erstellung der Aussparung, zum Entfernen des Schnittvolumens und zum Hinzufügen des 3D-Objekts verfügbar.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/15-plugins-and-tools/15-02-00-tools/de/new-handle-reference-front-de.png" alt="new-handle-reference-front-de.png" width="406" height="1089"><br>
+			<em>Hinzufügen Profilgriff gemäß Front</em>
+		</p>
+		<h4 id="reference-corpus">
+			Referenz: Korpus
+		</h4>
+		<p>
+			Mit Korpus referenzierten Profilgriffen ist es nun möglich Griffmulden mit in den Korpus des Möbelstücks integrierten Profilen zu erstellen: Die Wahl des Profiltyps hängt von der gewünschten Länge und der Position ab:
+		</p>
+		<ul>
+			<li>
+				<strong>Außenmaß des Korpus:</strong><br> 
+				Das Profil hat die Länge des Mastervolumens, und der Referenzpunkt des 3dc-Objekts wird mit dem Mastervolumen platziert.
+			</li>
+			<li>
+				<strong>Innenmaß des Korpus:</strong><br>
+				Das Profil hat die Länge des Innenvolumens, und der Referenzpunkt des 3dc-Objekts wird mit dem Innenvolumen platziert.
+			</li>
+		</ul>
+		<p>
+			Diese Profile werden immer durch Aktivieren einer Front eingefügt. Wenn das Profil über mehrere Möbelstücke hinweggeführt werden soll, müssen die Überstände links und rechts verwendet werden. Es wird mit dem Master der aktivierten Front verknüpft. Das bedeutet, wenn Sie das Profil nach dem Einfügen löschen, wird nur der Master aktualisiert, der das Profil enthält. Andere Master, die durch das Profil ausgespart wurden, müssen manuell neu generiert werden. In der 3dc-Datei muss das Schnittvolumen alle zu schneidende Elemente berücksichtigen, wie z. B. die Korpusteile und Fronten der angrenzenden Unterschränke. Der Referenzpunkt hängt von der gewählten Referenz ab.
+		</p>
+		<div class="box tip">
+			<p>
+				<strong>Tipp</strong><br>
+				Informieren Sie sich über die vom JTC bereitgestellten Profile, wenn Sie neue Typen erstellen möchten. Dadurch erfahren Sie, welchen Referenzpunkt Sie verwenden müssen. Wie bei Frontreferenzierten Griffen muss die Länge in der Datei so groß wie möglich sein und entlang der X-Richtung ausgerichtet werden.
+			</p>
+		</div>
+
+		<h4 id="show-hide-catalog">
+			Katalog anzeigen/ausblenden
+		</h4>
+		<p>
+			Mit dieser Funktion öffnet ein Dialog, in dem Sie Verbindungen, die Sie nicht verwenden, sichtbar machen oder ausblenden können. Es ist möglich, eine ganze Familie oder nur bestimmte Modelle abzuwählen. Ihre Auswahl wird im Userprofil abgespeichert.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/15-plugins-and-tools/15-02-00-tools/de/connector-catalogue-hide-show-de.png" alt="connector-catalogue-hide-show-de.png" width="406" height="129"><br>
+			<em>Beschläge in Auswahl ein-/ausblenden</em>
+		</p>
+
+		<h4 id="hinges">
+			Scharniere
+		</h4>
+		<p>
+			Es ist nun möglich, Scharniere auf Elemente hinzuzufügen, die nicht vom JTC generiert wurden. Nach der Bestätigung der Auswahl einer Front erscheint im unteren Menü eine Nachricht, die Sie auffordert, das Bauteil auszuwählen, in das das Scharnier eingefügt werden soll.
+		</p>
+		<div class="box warning">
+			<p>
+				<strong>Achtung!</strong><br>
+				Eine korrekte Ausrichtung der Achsen ist entscheidend, um die erwartete Positionierung zu gewährleisten. Orientieren Sie sich an den Achsen eines Korpus mit Front, der mit dem JTC generiert wurde.
+			</p>
+		</div>
+
+		<h4 id="blum-e-service">
+			Blum E-Service
+		</h4>
+		<p>
+			Seit Ende 2024 ermöglicht der E-Service von BLUM die Wahl, Beschläge in einer leichteren Geometrie in das cadwork bzw. in das JTC zu importieren. Wenn Sie Elemente aus dem Blum E Service importieren möchten, wird dringend empfohlen, im Modus Niedrig zu arbeiten.
+		</p>
+
+		<h2 id="finish-configurator">
+			Abschluss Konfigurator
+		</h2>
+
+		<h3 id="activate">
+			Aktivieren
+		</h3>
+		<p>
+			Das Symbol, mit dem Sie die Master aktivieren können, die sich in derselben Ebene wie der bereits aktive Master befinden, wurde geändert, um es besser von der Funktion <span class="menu-cadwork-window">Werte&nbsp;übernehmen</span> zu unterscheiden. Auch der Tooltip wurde für ein besseres Verständnis angepasst.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/15-plugins-and-tools/15-02-00-tools/de/addition-generator-symbol-de.png" alt="addition-generator-symbol-de.png" width="673" height="195"><br>
+			<em>Neues Symbol Aktivieren in Abschluss Konfigurator alt/neu</em>
+		</p>
+	</div>
+
+	<nav id="nav-right" aria-label="Page menu">
+		<!-- Table of content generated automatically. -->
+	</nav>
+
+	<script src="../../../js/main.js"></script>
+</body>
+
+</html>

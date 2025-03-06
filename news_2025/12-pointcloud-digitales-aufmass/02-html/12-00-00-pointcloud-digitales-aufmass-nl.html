@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/063b56bfef.js" crossorigin="anonymous"></script>
+
+	<!-- KB styles -->
+	<link rel="stylesheet" href="https://kb.cadwork.ch/css/app.css?v1">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../../css/style-news.css" />
+
+	<title>12.0.0 - Pointcloud en Digitale opmeting - NL - Article 1821</title>
+</head>
+
+<body>
+	<nav id="nav-left" aria-label="Site menu">
+		<iframe src="../../menu.html" frameborder="0" title="Site-menu"></iframe>
+	</nav>
+
+	<div id="content" class="card-body">
+		<h1>12.0.0 - Pointcloud en Digitale opmeting - Status 2025.01.14</h1>
+
+		<h2 id="import">
+			Importeren
+		</h2>
+
+		<h3 id="file-path-too-long">
+			Bestandspad te lang
+		</h3>
+
+		<p>
+			Als bij het importeren van een pointcloud-bestand het bestandspad / -naam te lang is, ontvangt u in versie
+			2025 een overeenkomstige foutmelding. Een OOC-bestand wordt in dit geval niet gegenereerd. De maximale
+			hoeveelheid tekens is gebaseerd op de door Windows opgegeven tekenlimiet voor een bestandspad (260 tekens)
+			en voor een bestandsnaam (256 tekens). Om de import succesvol te laten verlopen, moet het pad
+			dienovereenkomstig worden ingekort.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/12-pointcloud-and-digital-survey/de/final-path-is-too-long-de.png"
+				alt="final-path-is-too-long-de.png" width="580" height="469" v:shapes="_x0000_i1036"><br>
+			<em>Foutmelding: Bestandspad te lang</em>
+		</p>
+
+		<h3 id="accelerated-import">
+			Versnelde import
+		</h3>
+		<p>
+			Reeds in versie 30 (SP2024) werd overgestapt op een nieuwe Hoops-versie, wat leidde tot een
+			prestatieverhoging van de Pointcloud-import.
+		</p>
+
+		<h3 id="opening-3d-files-with-pointclouds">
+			Openen van 3D-bestanden met pointclouds
+		</h3>
+		<p>
+			Als u een 3D-bestand opent, ontvangt u een waarschuwing als het pointcloud-bestand binnen uw
+			mapstructuur is verplaatst of om andere redenen niet is gevonden. U heeft hier drie mogelijkheden.
+			Met&nbsp;<span class="menu-cadwork-window">Ja</span> kunt u het nieuwe pad selecteren en de koppeling
+			herstellen. Als u&nbsp;<span class="menu-cadwork-window">Nee</span> kiest, wordt het 3D-bestand geopend en
+			kan er zonder de pointcloud worden gewerkt. Het oude pad blijft bestaan, zodat u bij het opnieuw openen van
+			het bestand weer een waarschuwing ontvangt, tenzij het pointcloud-bestand is gevonden. Bij de laatste
+			mogelijkheid&nbsp;<span class="menu-cadwork-window">Pointcloud-link&nbsp;verwijderen</span> wordt de
+			bestaande link permanent verwijderd.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/12-pointcloud-and-digital-survey/de/pointcloud-not-found-de.png"
+				alt="pointcloud-not-found-de.png" width="386" height="127" v:shapes="_x0000_i1035"><br>
+			<em>Waarschuwing: Pointcloud niet gevonden</em>
+		</p>
+
+		<h3 id="working-over-the-server">
+			Werken via de server
+		</h3>
+		<p>
+			Een belangrijke vernieuwing betreft het werken met pointcloud-bestanden die op een server zijn opgeslagen. In
+			het verleden waren er soms problemen bij het opslaan. In versie 2025 wordt bij het opstarten van het
+			3D-bestand een tijdelijk OOC-bestand aangemaakt en lokaal opgeslagen. Hierdoor is de communicatie tussen het
+			3D-bestand en het OOC-bestand aanzienlijk sneller en leidt dit tot een betere stabiliteit. Zorg ervoor dat
+			u voldoende opslagruimte op uw systeemschijf vrijhoudt.
+		</p>
+
+		<h2 id="pointcloud-manager">
+			Pointcloud-Manager
+		</h2>
+
+		<h3 id="adjusting-point-count">
+			Aanpassen van het aantal punten
+		</h3>
+		<p>
+			Als u na het importeren van de pointcloud niet tevreden bent met het aantal ge&iuml;mporteerde punten, hoeft u nu
+			niet meer het OOC-bestand te verwijderen en het importproces volledig opnieuw te starten. In de
+			Pointcloud-Manager is het in versie 2025 mogelijk om de pointcloud met een ander aantal punten opnieuw te
+			laden. Daarnaast wordt hier het huidige aantal punten, het maximaal aantal mogelijke punten en de procentuele waarde van de
+			gebruikte punten weergegeven.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/12-pointcloud-and-digital-survey/de/pointcloud-reloaded-de.png"
+				alt="pointcloud-reloaded-de.png" width="925" height="384" v:shapes="_x0000_i1034"><br>
+			<em>Pointcloud opnieuw laden</em>
+		</p>
+
+		<h3 id="revised-dialog">
+			Hernieuwde dialoog
+		</h3>
+		<p>
+			Over het algemeen is de dialoog&nbsp;<span class="menu-cadwork-window">Pointcloud-Manager</span> herzien.
+			Niet alleen wordt het aantal punten weergegeven in het gedeelte&nbsp;<span class="menu-cadwork-window">Algemeen</span>,
+			maar er is in dit gedeelte ook een extra selectievakje&nbsp;<span
+				class="menu-cadwork-window">Nulpuntrotatie&nbsp;voor&nbsp;snijvlakken&nbsp;niet&nbsp;in&nbsp;acht&nbsp;nemen</span>.
+			Dit bevindt zich nu op deze centrale plaats en niet zoals voorheen als selectievakje "Globaal" in de
+			individuele posities van vlakken, uitsnijdingen of sneden met diepte.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/12-pointcloud-and-digital-survey/de/pointcloud-manager-general-de.png"
+				alt="pointcloud-manager-general-de.png" width="960" height="783" v:shapes="_x0000_i1033"><br>
+			<em>Pointcloud-Manager Algemeen</em>
+		</p>
+		<p>
+			Het gedeelte&nbsp;<span class="menu-cadwork-window">Snijvlakken</span> is aanzienlijk overzichtelijker
+			geworden. Nieuwe vlakken, uitsnijdingen en sneden met diepte worden nu direct in het betreffende gedeelte
+			aangemaakt.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/12-pointcloud-and-digital-survey/de/pointcloud-manager-cutting-planes-de.png"
+				alt="pointcloud-manager-cutting-planes-de.png" width="954" height="778" v:shapes="_x0000_i1032"><br>
+			<em>Pointcloud-Manager Snijvlakken</em>
+		</p>
+		</p>
+
+		<h2 id="modify">
+			Wijzigen
+		</h2>
+
+		<h3 id="extension-of-bim-attributes">
+			Uitbreiding van BIM-attributen
+		</h3>
+		<p>
+			In versie 2025 heeft u de mogelijkheid om een Building en een Storey toe te wijzen aan de
+			Bounding Box/Pointcloud. Dit vereenvoudigt het beheer van meerdere scans binnen één bestand.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/12-pointcloud-and-digital-survey/de/bim-attributes-de.png"
+				alt="bim-attributes-de.png" width="595" height="135" v:shapes="_x0000_i1031"><br>
+			<em>BIM Attributen</em>
+		</p>
+
+		<h3 id="display-clipping-boxes">
+			Weergave van Clipping Boxen
+		</h3>
+		<p>
+			De randen van een berekende Clipping Box worden in versie 2025, zoals te zien is in de onderstaande afbeelding,
+			als een stippellijn weergegeven.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/12-pointcloud-and-digital-survey/all/non-calculated-clipping-box-all.png"
+				alt="non-calculated-clipping-box-all.png" width="581" height="300" v:shapes="_x0000_i1030"><br>
+			<em>Niet berekende Clipping Box</em>
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/12-pointcloud-and-digital-survey/all/new-representation-calculated-clipping-box-all.png"
+				alt="new-representation-calculated-clipping-box-all.png" width="589" height="304"
+				v:shapes="_x0000_i1029"><br>
+			<em>Nieuwe weergave van de berekende Clipping Box</em>
+		</p>
+
+		<h3 id="exporting-calculated-clipping-box">
+			Exporteren van de berekende Clipping Box
+		</h3>
+		<p>
+			De berekende Clipping Box kan vanuit de Viewer-modus worden ge&euml;xporteerd. In de respectieve export, bijvoorbeeld
+			BIMteam, bevinden zich nu uitsluitend de punten die zich binnen de berekende Clipping Box bevinden. In het
+			verleden werd op deze plaats de volledige Pointcloud weergegeven.
+		</p>
+
+		<h2 id="rotate-and-move-pointcloud">
+			Roteren en verplaatsen van de Pointcloud
+		</h2>
+		<p>
+			E&eacute;n van de belangrijkste vernieuwingen in versie 2025 op het gebied van de Pointcloud is de mogelijkheid om uw
+			reeds gee&iuml;mporteerde Pointcloud in 3D te verplaatsen en te roteren. Dit biedt u de mogelijkheid om de scan
+			bijvoorbeeld uit te lijnen met bestaande tachymeter-knooppunten. Voor het verplaatsen of roteren kunnen elk
+			willekeurig punt binnen de Pointcloud en de punten van de Bounding Box worden gebruikt. De uitvoering gebeurt
+			zoals gebruikelijk via het menu of de respectieve sneltoetsen.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/12-pointcloud-and-digital-survey/de/pointcloud-basic-position-de.png"
+				alt="pointcloud-basic-position-de.png" width="815" height="684" v:shapes="Grafik_x0020_1"><br>
+			<em>Pointcloud basispositie</em>
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/12-pointcloud-and-digital-survey/de/pointcloud-rotate-de.png"
+				alt="pointcloud-rotate-de.png" width="815" height="685" v:shapes="Grafik_x0020_3"><br>
+			<em>Pointcloud roteren</em>
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/12-pointcloud-and-digital-survey/de/pointcloud-moving-de.png"
+				alt="pointcloud-moving-de.png" width="815" height="685" v:shapes="Grafik_x0020_4"><br>
+			<em>Pointcloud verplaatsen</em>
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/12-pointcloud-and-digital-survey/de/pointcloud-final-position-de.png"
+				alt="pointcloud-final-position-de.png" width="815" height="684" v:shapes="Grafik_x0020_5"><br>
+			<em>Pointcloud finale positie</em>
+		</p>
+		</p>
+	</div>
+
+	<nav id="nav-right" aria-label="Page menu">
+		<!-- Table of content generated automatically. -->
+	</nav>
+
+	<script src="../../js/main.js"></script>
+
+</html>

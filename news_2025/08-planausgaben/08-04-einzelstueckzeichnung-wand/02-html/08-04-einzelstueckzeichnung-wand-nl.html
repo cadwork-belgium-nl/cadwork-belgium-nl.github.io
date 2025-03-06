@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/063b56bfef.js" crossorigin="anonymous"></script>
+
+	<!-- KB styles -->
+	<link rel="stylesheet" href="https://kb.cadwork.ch/css/app.css?v1">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../../../css/style-news.css" />
+
+	<title>8.4.0 - Einzelstückzeichnung Wand - DE - Article 1800</title>
+</head>
+
+<body>
+	<nav id="nav-left" aria-label="Site menu">
+		<iframe src="../../../menu.html" frameborder="0" title="Site-menu"></iframe>
+	</nav>
+
+	<div id="content" class="card-body">
+		<h1>
+			8.4.0 - Einzelstückzeichnung Wand - Stand 2025.02.01
+		</h1>
+
+		<h2 id="hatching-representation-from-material-dialog">
+			Schraffur-Darstellung aus dem Materialdialog
+		</h2>
+		<p>
+			Die Schraffuren der Ansichten, Längs- und Querschnitte der Elemente, können seit Einführung der Version 30 für einige Planausgaben zentral im Materialdialog eingestellt werden. Mit der Version 2025 steht diese Möglichkeit auch für die Planausgabe Elementfertigung zur Verfügung. Die Schraffuren müssen nicht mehr zwingend in der Layout-Datei definiert werden. Um die Vorgaben aus dem Materialdialog zu nutzen, muss diese Option in den Einstellungen unter <span class="menu-cadwork-window">Darstellung</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork-window">Allgemein</span> aktiviert werden.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-04-00-wall/de/hatching-and-line-settings-de.png" alt="hatching-and-line-settings-de.png" width="870" height="636"><br>
+			<em>Auswahlmöglichkeit, ob Schraffur- und Linien aus dem Materialdialog genutzt werden.</em>
+		</p>
+		<p>
+			Um den Anforderungen der Planausgabe Elementfertigung in allen Belangen gerecht zu werden, wurde der Materialdialog im Bereich der <span class="menu-cadwork-window">Visualisierung</span> erweitert. Es ist nun möglich für jedes Material jeweils drei unterschiedliche Schraffuren für die Bauteilansichten und die Bauteilschnitte zu definieren.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-04-00-wall/de/material-visualisation-de.png" alt="material-visualisation-de.png" width="869" height="653"><br>
+			<em>Für Ansichten und Schnitte können drei unterschiedliche Schraffuren pro Material festgelegt werden</em>
+		</p>
+
+		<h2 id="representation-of-markings">
+			Darstellung von Markierungen
+		</h2>
+		<p>
+			Mit Version 2025 konnte ein oft an uns herangetragener Wunsch umgesetzt werden. Es ist nun möglich, Markierungen in der Planausgabe Elementfertigung darstellen zu lassen. Um die Markierungen in der Planausgabe zu berücksichtigen, muss die Option im Einstellungsdialog im Bereich <span class="menu-cadwork-window">Darstellung</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork-window">Allgemein</span> aktiviert werden. Ist das der Fall werden Markierungen in den entsprechenden Ansichten und in der Axonometrie dargestellt. Die Darstellung der Markierungen kann über die entsprechenden Templates in der Layout-Datei angepasst werden, diese wurden in den aktualisierten Layout-Dateien ergänzt.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-04-00-wall/de/marking-settings-de.png" alt="marking-settings-de.png" width="862" height="631"><br>
+			<em>Einstellungsmöglichkeit für die Anzeige von Markierungen</em>
+		</p>
+
+		<h2 id="axonometry">
+			Axonometrie
+		</h2>
+		<h3 id="list-of-magnification-factors">
+			Liste der Vergrößerungsfaktoren
+		</h3>
+		<p>
+			Die Auswahlmöglichkeiten der Vergrößerungsfaktoren für die Ausgabe von Axonometrien in der OpenGL-Darstellung wurde auf die Faktoren 1 bis 3 reduziert. Durch die Ausgabe von Axonometrien mit den größeren Faktoren 4 bis 6 wurden die 2D-Dateien sehr groß, obwohl die Axonometrien meist in einem kleinen Format gedruckt wurden. Daher wurden die verfügbaren Faktoren auf 1 bis 3 reduziert. Wenn in alten Dateien einer der Vergrößerungsfaktoren 4 bis 6 gewählt wurden, werden diese automatisch auf den Faktor 3 konvertiert. Dasselbe gilt, wenn eine Voreinstellung geladen wird, bei der ein Faktor 4 bis 6 hinterlegt war.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-04-00-wall/de/axonometry-factor-de.png"
+				alt="axonometry-factor-de.png" width="869" height="637"><br>
+			<em>Vergrößerungsfaktor für die OpenGL-Darstellung der Axonometrie</em>
+		</p>
+
+		<h3 id="optimization-of-output">
+			Optimierung der Ausgabe
+		</h3>
+		<p>
+			Werden die Axonometrien als OpenGL ausgegeben, werden nun die Breite und die Höhe des Bildes optimiert. Es gibt nun keine überflüssigen Ränder mehr.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-04-00-wall/all/axonometry-edges-all.png" alt="axonometry-edges-all.png" width="869" height="667"><br>
+			<em>Axonometrie mit optimiertem Bildausschnitt</em>
+		</p>
+
+		<h2 id="output-of-sections-in-layer-representations">
+			Ausgabe von Schnitten bei Schichtdarstellungen
+		</h2>
+		<p>
+			Bislang war es nur in der Darstellung des Riegelwerkes möglich, Horizontal- und Vertikalschnitte auf den Wandplänen auszugeben. Mit der Version 2025 können diese Schnitte auch auf den Plänen für die Darstellung der Schichten ausgegeben werden. Die Schnitte in den Darstellungen der Schichten sind identisch mit denen für die Darstellung des Riegelwerkes, es sind keine zusätzlichen Einstellungen notwendig.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-04-00-wall/de/sections-in-layer-frames-de.png" alt="sections-in-layer-frames-de.png" width="869" height="637"><br>
+			<em>Neue Auswahlfelder, um Schnitte in Schichtenrahmen zu erzeugen</em>
+		</p>
+
+		<h2 id="dimensioning-of-vertical-studs">
+			Bemaßung von vertikalen Stielen
+		</h2>
+		<p>
+			Alle vertikalen Stiele, die einen Sturz oder eine Brüstung berühren, aber keine Schwelle oder Rähm, werden jetzt auch in den Maßketten 5301 und 5315 berücksichtigt.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-04-00-wall/all/dimension-5301-5315-all.png" alt="dimension-5301-5315-all.png" width="869" height="502"><br>
+			<em>Pfostenmaßketten jetzt auch an Sturz und Brüstung möglich</em>
+		</p>
+
+		<h2 id="dimensioning-in-vertical-section">
+			Bemaßungen im Schnitt Vertikal
+		</h2>
+		<p>
+			Die Bemaßungen 5351, vertikale Plattenüberstände und Öffnungen, links und 5352, vertikale Plattenüberstände und Öffnungen, rechts können jetzt einzeln aktiviert und ausgegeben werden.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-04-00-wall/de/dimension-5351-5352-de.png"
+				alt="dimension-5351-5352-de.png" width="869" height="637"><br>
+			<em>Maßketten 5351 und 5352 im Vertikalschnitt</em>
+		</p>
+
+		<h2 id="representation-and-labeling-of-installations">
+			Darstellung und Beschriftung von Installationen
+		</h2>
+		<p>
+			Die Erzeugung und Darstellung von Beschriftungen wurde für die Planausgabe Elementfertigung weiterentwickelt. Es können in der Version 2025 auch Installationen mit einer Beschriftungsfahne und optimiert ausgegeben werden. Außerdem werden die Textpositionen von Beschriftungen aller Elementarten: Stäbe, Platten, Achsen, etc. mit gleicher Einstellung optimiert.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-04-00-wall/de/mep-de.png" alt="mep-de.png" width="869" height="464"><br>
+			<em>Planausgabe mit optimierter Beschriftung für Installationsachsen</em>
+		</p>
+
+		<h2 id="labeling-of-nodes-and-surfaces">
+			Beschriftung von Knoten und Flächen
+		</h2>
+		<p>
+			Die Beschriftungen von Knoten und Flächen können nun analog zu der von Stäben, Platten, Achsen und Öffnungen eingestellt werden. Im Dialog <span class="menu-cadwork-window">Beschriftung</span> gibt es jetzt unter den Punkten <span class="menu-cadwork-window">Wand&nbsp;Holzrahmenbau</span>, <span class="menu-cadwork-window">Wand&nbsp;Massivbau</span> und <span class="menu-cadwork-window">Wand&nbsp;Blockbau</span>, die Punkte <span class="menu-cadwork-window">Knoten</span> bzw. <span class="menu-cadwork-window">Flächen</span>, hier können die Beschriftungseinstellungen für Knoten und Flächen definiert werden.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-04-00-wall/de/labeling-surfaces-nodes-de.png" alt="labeling-surfaces-nodes-de.png" width="862" height="631"><br>
+			<em>Beschriftungsmenü für Knoten- und Flächenbeschriftung</em>
+		</p>
+
+		<h2 id="combined-sills-and-plates-in-multi-walls">
+			Zusammengefasste Schwellen und Rähme bei Multiwänden
+		</h2>
+		<p>
+			Schon länger war es möglich, Wände, die als Multiwand gruppiert waren, zusammen auf einem Wandplan auszugeben. Dabei können Schwelle und Rähm für den Abbund zu einem Bauteil zusammengefasst werden. Es wird eine zusätzliche Produktionsnummer für den Rohling der Schwellen und der Rähme vergeben. Auf dem Plan wurden diese zusammengefassten Bauteile und deren Produktionsnummer bislang nicht mit dargestellt. Zur Version 2025 wurde die Planausgabe für den Bereich Multiwand erweitert. Jetzt werden auch die zusammengeschweißten Schwellen und Rähme mit auf der Riegelwerksansicht ausgegeben. Dabei werden diese zusammengefassten Bauteile mit der zusätzlich vergebenen Positionsnummer des Rohlings beschriftet, insofern die Produktionsnummer als Beschriftung ausgewählt ist.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-04-00-wall/de/multiwalls-de.png" alt="multiwalls-de.png" width="869" height="477"><br>
+			<em>Zusammengefasste Schwellen und Rähme werden mit ihrer Produktionsnummer auf dem Wandplan dargestellt.</em>
+		</p>
+
+		<h2 id="numbering-of-print-frames">
+			Nummerierung von Druckrahmen
+		</h2>
+		<p>
+			Wird ein Layout gewählt, bei dem in der Schichtdarstellung für jede Schicht ein separater Plan erzeugt wird, erfolgt die Nummerierung der Pläne, in der Reihenfolge der jeweiligen Schichten. Das von cadwork mitgelieferte Standardlayout für die Ausgabe mit einzelnen Schichten ist so aufgebaut, dass der Riegelwerksrahmen und die zwei Rahmen für die Darstellung der Bund- und Gegenseite horizontal nebeneinander liegen. Werden mehrere Schichtenrahmen je Seite ausgegeben, so werden diese im 2D vertikal untereinander platziert und die Druckrahmen entsprechend nummeriert.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-04-00-wall/de/layout-layers-individually-de.png" alt="layout-layers-individually-de.png" width="869" height="256"><br>
+			<em>cadwork Standard Layout zur Ausgabe von einzelnen Schichtenplänen</em>
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-04-00-wall/de/esz-wall-vertical-layout-layers-individually-de.png" alt="esz-wall-vertical-layout-layers-individually-de.png" width="869" height="938"><br>
+			<em>Ergebnis im 2D mit vertikal untereinander angeordneten Schichtplänen für Bundseite und Gegenseite mit Reihenfolge der Druckrahmennummern</em>
+		</p>
+		<p>
+			Alternativ ist es möglich ein Layout anzulegen, bei dem die Rahmen der Schichtdarstellung untereinander liegen. So können bei der Ausgabe die einzelnen Schichtenpläne je Seite horizontal nebeneinander erzeugt und entsprechend nummeriert werden. Damit diese horizontale Anordnung verwendet wird, muss in <span class="menu-cadwork-window">Erweiterte&nbsp;Optionen</span> im Bereich <span class="menu-cadwork-window">Ausrichtung&nbsp;von&nbsp;Rahmen&nbsp;mit&nbsp;Schichten</span> der Wert auf <span class="menu-cadwork-window">1</span>&nbsp;=&nbsp;<span class="menu-cadwork-window">horizontale&nbsp;Ausrichtung</span> geändert werden.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-04-00-wall/de/one-printing-frame-per-layer-de.png" alt="one-printing-frame-per-layer-de.png" width="869" height="697"><br>
+			<em>Auswahlmöglichkeit der Ausrichtung für Rahmen mit Schichten gemäß dem gewählten Layout</em>
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-04-00-wall/de/horizontal-layout-layers-individually-de.png" alt="horizontal-layout-layers-individually-de.png" width="869" height="888"><br>
+			<em>Individuelles Layout zur horizontalen Anordnung von einzelnen Schichtenplänen</em>
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-04-00-wall/de/esz-wall-horizontal-layout-layers-individually-de.png" alt="esz-wall-horizontal-layout-layers-individually-de.png" width="869" height="390"><br>
+			<em>Ergebnis im 2D mit horizontal nebeneinander angeordneten Schichtplänen für Bundseite und Gegenseite mit Reihenfolge der Druckrahmennummern</em>
+		</p>
+	</div>
+
+	<nav id="nav-right" aria-label="Page menu">
+		<!-- Table of content generated automatically. -->
+	</nav>
+
+	<script src="../../../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/063b56bfef.js" crossorigin="anonymous"></script>
+
+	<!-- KB styles -->
+	<link rel="stylesheet" href="https://kb.cadwork.ch/css/app.css?v1">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../../css/style-news.css" />
+
+	<title>11.0.0 - Schnittstellen - DE - Article 1820</title>
+
+
+</head>
+
+<body>
+	<nav id="nav-left" aria-label="Site menu">
+		<iframe src="../../menu.html" frameborder="0" title="Site-menu"></iframe>
+	</nav>
+
+	<div id="content" class="card-body">
+		<h1>
+			11.0.0 - Schnittstellen - Stand 2025.01.30
+		</h1>
+
+		<h2 id="rhino-file">
+			Rhino-Datei (*.3dm)
+		</h2>
+		<p>
+			Der Rhino-Einstellungsdialog ist zu Version 2025 überarbeitet worden und enthält neue Einstellungsmöglichkeiten für den Ex- und Import von Rhino-Dateien.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/11-interfaces/de/rhino-dialog-export-import-de.png" alt="rhino-dialog-export-import-de.png" width="869" height="646"><br>
+			<em>Dialog Konfiguration Rhino</em>
+		</p>
+		<p>
+			<span class="bullet-number">1</span> – <span class="bullet-number">2</span> Eine grundlegende Änderung ist, dass die Einstellungen für den Export <span class="bullet-number">1</span> und den Import <span class="bullet-number">2</span> separiert wurden und somit auch abweichend voneinander eingestellt werden können. So können z.B. die Attribut-Zuordnung beim Import umfangreicher sein, da häufig Rhino-Dateien mit unterschiedlichen Attributen eingelesen werden, während beim Export die Attribut-Zuordnung übersichtlich bleibt. <br>
+			<span class="bullet-number">3</span> Um dadurch entstehende doppelte Arbeit zu vermeiden, gibt es unter <span class="menu-cadwork-window">Export-Einstellungen</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork-window">Attribut-Zuordnungen</span> den Button <span class="menu-cadwork-window">Import-Einstellungen&nbsp;übernehmen</span>, um Zuordnungen aus den Import-Einstellungen für den Export zu übernehmen. Genauso gibt es unter <span class="menu-cadwork-window">Import-Einstellungen</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork-window">Attribut-Zuordnungen</span> den Button <span class="menu-cadwork-window">Export-Einstellungen&nbsp;übernehmen</span>, um die Zuordnungen vom Export auf den Import zu übertragen.<br>
+			<span class="bullet-number">4</span> Eine weitere Neuerung des Dialogs ist, dass Einstellungen im Userprofil gespeichert und aus diesem geladen werden können. Dazu wurden dem Dialog in der unteren linken Ecke zwei entsprechende Buttons hinzugefügt.<br>
+			<span class="bullet-number">5</span> In diesem Bereich können in der Tabelle links cadwork-Textattribute (z.B. Name, Baugruppe, benutzerdefinierte Attribute, …) mit den rechts stehenden Bezeichnungen in eine Rhino-Datei exportiert werden.<br>
+			<span class="bullet-number">6</span> Über diesen Button werden weitere cadwork-Attribute zugewiesen.<br>
+			<span class="bullet-number">7</span> Mit diesem Button wird die blau markierte Attributzuweisung gelöscht.&nbsp;
+		</p>
+
+		<h3 id="text-attributes">
+			Textattribute
+		</h3>
+		<p>
+			Eine weitere Besonderheit des neuen Rhino-Einstellungsdialog ist eine neue Darstellung der Attribut-Zuordnung während des Imports einer Datei. <br>
+			<span class="bullet-number">1</span> Beim Import einer Datei deutet ein Hinweissymbol im linken Menü des Dialogs daraufhin, dass Attribute in der Datei gefunden worden sind, die noch keinem Attribut im cadwork zugeordnet worden sind.<br>
+			<span class="bullet-number">2</span> In der oberen Tabelle werden diese Attribute dargestellt und können einem cadwork Attribut zugewiesen werden.<br>
+			<span class="bullet-number">3</span> In der unteren Tabelle sind die bereits eingestellten Attributzuordnungen aufgelistet.<br>
+			<span class="bullet-number">4</span> Sollen Attributzuordnungen aus der importierten Datei auch für zukünftige Importe übernommen werden, ist der entsprechende Pfeil in der Spalte <span class="menu-cadwork-window">Für&nbsp;alle&nbsp;Importe&nbsp;übernehmen</span> zu klicken. Anderenfalls wird diese Zuordnung nur für den laufenden Import berücksichtigt und müsste beim nächsten Import wieder neu zugeordnet werden.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/11-interfaces/de/rhino-import-assign-text-attributes-de.png" alt="rhino-import-assign-text-attributes-de.png" width="869" height="646"><br>
+			<em>Attribut-Zuordnungen beim Import einer Rhino-Datei mit Warnung</em>
+		</p>
+		<p>
+			Nachdem alle Zuordnungen getroffen worden sind, verschwindet das Hinweissymbol wieder. Dies soll verhindern, dass ungewollt eine Zuordnung vergessen worden ist. Bei Bedarf kann das übernommene Textattribut mit dem Pfeil nach oben wieder entfernt werden.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/11-interfaces/de/rhino-import-used-text-attributes-de.png" alt="rhino-import-used-text-attributes-de.png" width="869" height="646"><br>
+			<em>Vervollständigte Attribut-Zuordnungen für den Rhino-Import</em>
+		</p>
+
+		<h3 id="standard-attributes">
+			Standard-Attribute
+		</h3>
+		<p>
+			Neben der Möglichkeit, Textattribute zu exportieren/importieren, gibt es seit einigen Versionen die Möglichkeit, sogenannte Standardattribute, zu exportieren/importieren. Bisher war es nur möglich, immer alle oder keine Standardattribute zu im- bzw. exportieren. In Version 2025 kann individuell entschieden werden, welche Standardattribute berücksichtigt werden sollen.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/11-interfaces/de/rhino-import-standard-attribute-de.png" alt="rhino-import-standard-attribute-de.png" width="869" height="646"><br>
+			<em>Standard-Attribute beim Import einer Rhino-Datei mit Warnung</em>
+		</p>
+		<p>
+			<span class="bullet-number">1</span> In den <span class="menu-cadwork-window">Import-Einstellungen</span> erscheint auch für die Standard-Attribute im linken Menü des Dialogs ein Hinweis, wenn in der Rhino-Datei vorhandene Standardattribute mit den aktuellen Einstellungen nicht importiert werden. <br>
+			<span class="bullet-number">2</span> Auf der Seite <span class="menu-cadwork-window">Standard-Attribute</span> wird hinter jedem nicht importierten Attribut ein Hinweis angezeigt.<br>
+			<span class="bullet-number">3</span> All diese Standard-Attribute sind einem fest vordefinierten Textattribut im Rhino zugeordnet. Durch das Hovern über ein Standardattribut auf der Seite <span class="menu-cadwork-window">Standard-Attribute</span> erhalten Sie einen Tooltip mit dem Namen im Rhino. <br>
+			<span class="bullet-number">4</span> Auch diese Einstellungen können für den Import und den Export separat eingestellt werden und es gibt auch hier die Möglichkeit, die Einstellungen zwischen Im- und Export zu übertragen.
+		</p>
+
+		<h2 id="revit-file">
+			Revit-Datei (*.rvt, .rfa)
+		</h2>
+		<p>
+			Auch im Jahr 2024 hat Autodesk eine neue Version von Revit (Revit 2025) veröffentlicht. Unsere Schnittstelle wurde entsprechend erweitert, sodass diese Version vollständig unterstützt wird. Aktuell können Revit-Dateien der Versionen 2014 bis 2025 eingelesen werden.<br>
+			Der Import von Revit-Dateien im *.rvt- und *.rfa-Format erfolgt über ein externes Tool. Die nächste Revit-Version, die voraussichtlich im Jahr 2025 erscheint, werden wir ebenfalls unterstützen. Das setzt voraus, dass das externe Tool die entsprechende Funktionalität zur Verfügung stellt. Basierend auf den Erfahrungen der vergangenen Jahre rechnen wir damit, dass dies im Herbst 2025 der Fall sein wird.
+		</p>
+		<h2 id="interface-overview">
+			Übersicht Schnittstellen
+		</h2>
+		<p>
+			Nachfolgend finden Sie eine Übersicht der von cadwork unterstützten Datenformate für den Import und/oder Export sowie der Softwareanbindungen mit direkter Kommunikation. <br>
+			Den genauen Leistungsumfang erfragen Sie bitte bei Ihrem zuständigen Support.
+		</p>
+		<figure class="table">
+			<table class="table table-bordered th-vertical">
+				<thead>
+					<tr>
+						<th>
+							<strong>Dateiendung</strong>
+						</th>
+						<th>
+							<strong>Beschreibung</strong>
+						</th>
+						<th>
+							<strong>Version</strong>
+						</th>
+						<th>
+							<strong>Import</strong>
+						</th>
+						<th>
+							<strong>Export</strong>
+						</th>
+						<th>
+							<strong>direkte Kommunikation</strong>
+						</th>
+						<th>
+							<strong>In Modul</strong>
+						</th>
+						<th>
+							<strong>Kostenpflichtig</strong>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>--</td>
+						<td>RSTAB-COM</td>
+						<td>RSTAB 8 und RFM 5</td>
+						<td></td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td>
+							3D
+						</td>
+						<td>
+							Nein
+						</td>
+					</tr>
+					<tr>
+						<td>--</td>
+						<td>Kalkulationsdaten</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>.3dm</td>
+						<td>Rhinoceros®</td>
+						<td>5, 6, 7 und 8</td>
+						<td>
+							x
+						</td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>.atl</td>
+						<td>Artlantis-Rendering</td>
+						<td>4,5, 6.5, 8 &lpar;2019&rpar;</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Nein
+						</td>
+					</tr>
+					<tr>
+						<td>.bnd</td>
+						<td>BND, Minda Lamellenpresse</td>
+						<td></td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							2D/Lamelle
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>.bte</td>
+						<td>BIMteam</td>
+						<td></td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Nein
+						</td>
+					</tr>
+					<tr>
+						<td>.btl</td>
+						<td>BTL Wand</td>
+						<td>10.x</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>.btl</td>
+						<td>Datenaustausch mit OptiNest</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Nein
+						</td>
+					</tr>
+					<tr>
+						<td>.btlx</td>
+						<td>Datenaustausch mit OptiPanel</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Nein
+						</td>
+					</tr>
+					<tr>
+						<td>.btl</td>
+						<td>BTL</td>
+						<td>1, 5, 6</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>.btl</td>
+						<td>BTL</td>
+						<td>10.1-10.6</td>
+						<td>
+							x
+						</td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>.btlx</td>
+						<td>BTLxml</td>
+						<td>1.0, 1.1, <br>
+							2.0, 2.1, 2.2, 2.3</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>.bv/.bvn/.bvx</td>
+						<td>BV/BVN/BVX</td>
+						<td>bis BVX 2.1</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>.bxf/.bxf2</td>
+						<td>Blum</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td>
+							3D
+						</td>
+						<td>
+							Nein
+						</td>
+					</tr>
+					<tr>
+						<td>.cdt</td>
+						<td>Randek</td>
+						<td></td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>.dth</td>
+						<td>DTH (Architektur)</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Nein
+						</td>
+					</tr>
+					<tr>
+						<td>.dxf</td>
+						<td>DXF für Maschine</td>
+						<td></td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>.dxf</td>
+						<td>DXF für CNC</td>
+						<td></td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>.dxf/.dwg</td>
+						<td>DXF/DWG-Datei</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							2D
+						</td>
+						<td>
+							Nein
+						</td>
+					</tr>
+					<tr>
+						<td>.fbx</td>
+						<td>Mixed Reality<br>
+							(u.a. Lumion)</td>
+						<td></td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Nein
+						</td>
+					</tr>
+					<tr>
+						<td>.gsi</td>
+						<td>Leica GSI</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							2D/3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>--</td>
+						<td>Leica GeoCom</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>.glb</td>
+						<td>GL Transmission Format</td>
+						<td></td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Nein
+						</td>
+					</tr>
+					<tr>
+						<td>.html</td>
+						<td>WebViewer</td>
+						<td></td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Nein
+						</td>
+					</tr>
+					<tr>
+						<td>.html</td>
+						<td>WebViewer Pro</td>
+						<td></td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.hsf/.hmf
+						</td>
+						<td>
+							Hoops File Format
+						</td>
+						<td></td>
+						<td>
+							Exchange-Objekt
+						</td>
+						<td></td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Nein
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.ifc
+						</td>
+						<td>
+							IFC-Datei
+						</td>
+						<td>
+							2x3, 4
+						</td>
+						<td>
+							x
+						</td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.igs
+						</td>
+						<td>
+							IGES
+						</td>
+						<td></td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Nein
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.nc
+						</td>
+						<td>
+							DSTV-NC
+						</td>
+						<td></td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.obj
+						</td>
+						<td>
+							Wave Front
+						</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Nein
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.part
+						</td>
+						<td>
+							CATIA
+						</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.pdf
+						</td>
+						<td>
+							PDF-Datei
+						</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							2D
+						</td>
+						<td>
+							Nein
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.pdf
+						</td>
+						<td>
+							3D-PDF
+						</td>
+						<td></td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Nein/Ja
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.ply
+						</td>
+						<td>
+							Polygon file format
+						</td>
+						<td></td>
+						<td>
+							Exchange-Objekt
+						</td>
+						<td></td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Nein
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.rce
+						</td>
+						<td>
+							Roofcon <br>
+							Exchange-Datei
+						</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.rfa/.rvt
+						</td>
+						<td>
+							Autodesk Revit
+						</td>
+						<td>
+							2014-2025
+						</td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.sat
+						</td>
+						<td>
+							SAT für Maschine
+						</td>
+						<td>
+							7
+						</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.sat
+						</td>
+						<td>
+							Acis/SAT
+						</td>
+						<td>
+							1-34
+						</td>
+						<td>
+							x
+						</td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Nein
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.stl
+						</td>
+						<td>
+							STL
+						</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Nein
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.stp
+						</td>
+						<td>
+							STEP-Datei
+						</td>
+						<td>
+							203/214
+						</td>
+						<td>
+							x
+						</td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.stp
+						</td>
+						<td>
+							DSTV-Datei
+						</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.stp
+						</td>
+						<td>
+							VI 2000
+						</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.skp
+						</td>
+						<td>
+							Sketchup
+						</td>
+						<td>
+							bis 2024
+						</td>
+						<td>
+							Exchange-Objekt
+						</td>
+						<td></td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Nein
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.txt
+						</td>
+						<td>
+							Text Datei
+						</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td></td>
+						<td>
+							2D
+						</td>
+						<td>
+							Nein
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.wup
+						</td>
+						<td>
+							WUP
+						</td>
+						<td>
+							2.0, 3.1, 3.2, 3.3, 3.4, 3.5
+						</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.xml
+						</td>
+						<td>
+							CEDXM
+						</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.xyz, .las,&nbsp; .laz, .pts,&nbsp; .e57
+						</td>
+						<td>
+							Pointcloud
+						</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td></td>
+						<td>
+							Lexocad
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.e57, .pts, .ptx, .xyz
+						</td>
+						<td>
+							Pointcloud
+						</td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Ja
+						</td>
+					</tr>
+					<tr>
+						<td>
+							.tif, .jpg
+						</td>
+						<td>
+							Bildausschnitt
+						</td>
+						<td></td>
+						<td></td>
+						<td>
+							x
+						</td>
+						<td></td>
+						<td>
+							3D
+						</td>
+						<td>
+							Nein
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</figure>
+	</div>
+
+	<nav id="nav-right" aria-label="Page menu">
+		<!-- Table of content generated automatically. -->
+	</nav>
+
+	<script src="../../js/main.js"></script>
+</body>
+
+</html>

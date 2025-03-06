@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/063b56bfef.js" crossorigin="anonymous"></script>
+
+	<!-- KB styles -->
+	<link rel="stylesheet" href="https://kb.cadwork.ch/css/app.css?v1">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../../../css/style-news.css" />
+
+	<title>7.2.0 - Nesting Manager - NL - Article 1793</title>
+</head>
+
+<body>
+	<nav id="nav-left" aria-label="Site menu">
+		<iframe src="../../../menu.html" frameborder="0" title="Site-menu"></iframe>
+	</nav>
+
+	<div id="content" class="card-body">
+		<h1>
+			7.2.0 - Nesting Manager - Status 2025.01.23
+		</h1>
+
+		<h2 id="continuous-numbering-of-nesting-volumes">
+			Doorlopende nummering van nestingvolumes
+		</h2>
+
+		<h3 id="general">
+			Algemeen
+		</h3>
+		<p>
+			Nestingvolumes krijgen bij hun creatie automatisch positienummers beginnend met nummer 2.000.001.
+			Dit hoge getal is bewust gekozen om overlappingen met de eigenlijke constructie-elementen uit te
+			sluiten.<br>
+			Tot nu toe werden de positienummers voor nestingvolumes uitsluitend per groep per nestinggroep
+			toegekend. Voor elke nestinggroep wordt een bereik van 1.000 nummers gereserveerd, dat indien nodig
+			automatisch met nog eens 1.000 nummers wordt uitgebreid.
+		</p>
+		<p>
+			Naast de methode van "groepsgewijze nummering" van nestingvolumes wordt met versie 2025 de mogelijkheid van
+			"doorlopende nummering" ge&iuml;ntroduceerd.
+		</p>
+		<p>
+			Dit betekent dat de nestingvolumes doorlopend over alle nestinggroepen heen worden genummerd, waardoor een
+			ononderbroken nummering van de volumes mogelijk is. Het kleinste mogelijke positienummer is nog steeds
+			2.000.001. De stapgrootte is 1. De volgorde van de nestinggroepen kan vrij worden gedefinieerd en wordt bij
+			het toekennen van de positienummers in acht genomen (zie hieronder "<a
+				href="#management-of-continuous-volume-numbers">Beheer van doorlopende positienummers</a>").
+		</p>
+		<div class="box warning">
+			<p>
+				<strong>Opmerking</strong><br>
+				Houd er rekening mee dat staaf- en paneelnestingen gezamenlijk worden behandeld. Een duidelijke
+				scheiding van de nummerbereiken voor staaf- en paneelnestingen kan alleen worden gerealiseerd door de
+				lijst over alle nestinggroepen handmatig zo op te stellen dat er geen vermenging van staaf- en
+				paneelnestingen binnen deze lijst plaatsvindt.
+			</p>
+		</div>
+
+		<h3 id="selection-of-method">
+			Selectie van de methode
+		</h3>
+		<p>
+			In het gedeelte <span class="menu-cadwork-window">Overige</span> van de Nesting Manager kan onder <span
+				class="menu-cadwork-window">Beheren positienummers nestingvolumes</span> <span
+				class="arrow arrow-right">&rarr;</span>
+			<span class="menu-cadwork-window">Instellingen</span> gekozen worden tussen groepsgewijze en doorlopende
+			nummering.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/07-nesting/07-02-00-nesting-manager/de/nesting-manager-dlg-other-de.png"
+				alt="nesting-manager-dlg-other-de.png" width="1002" height="632" class="img-79"><br>
+			<em>Nesting Manager <span class="arrow arrow-right">&rarr;</span> Overige <span
+					class="arrow arrow-right">&rarr;</span> Beheren positienummers nestingvolumes <span
+					class="arrow arrow-right">&rarr;</span> Instellingen</em>
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/07-nesting/07-02-00-nesting-manager/de/nv-numbering-settings-de.png"
+				alt="nv-numbering-settings-de.png" width="702" height="432" class="img-89"><br>
+			<em>Selectie van de methode voor nummering van nestingvolumes</em>
+		</p>
+		<p>
+			Als de dialoog met <span class="menu-cadwork-window">OK</span> wordt verlaten, moet in geval van een
+			wijziging van de instelling een daaropvolgende vraag worden bevestigd. Als de vraag met <span
+				class="menu-cadwork-window">Nee</span> wordt beantwoord, wordt de bewerking geannuleerd.
+		</p>
+		<p>
+			De standaardmethode blijft groepsgewijze nummering.<br>
+			De gemaakte instelling wordt opgeslagen voor het huidige 3D-bestand.
+		</p>
+		<div class="box tip">
+			<p>
+				<strong>Tip</strong><br>
+				Als de standaardinstelling voor nieuwe projecten doorlopende nummering moet zijn, kan dit worden
+				aangepast via de instelling in uw init-bestand.
+			</p>
+		</div>
+
+		<h3 id="change-of-method">
+			Wijziging van de methode
+		</h3>
+		<p>
+			Als er al positienummers zijn toegewezen volgens de methode <span class="menu-cadwork-window">Groepsgewijze
+				nummering</span>, worden de nestingvolumes na wijziging van de methode naar <span
+				class="menu-cadwork-window">Doorlopende nummering</span> en na bevestiging van de wijziging opnieuw
+			genummerd.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/07-nesting/07-02-00-nesting-manager/de/query-nv-renumbering-de.png"
+				alt="query-nv-renumbering-de.png" width="502" height="132" class="img-83"><br>
+			<em>Wijziging van de methode leidt noodzakelijkerwijs tot hernummering van alle nestingvolumes</em>
+		</p>
+		<p>
+			Op basis van de alfabetische sortering van de nestinggroepen in de Nesting Manager worden de positienummers
+			over de nestinggroepen heen doorlopend opnieuw toegewezen. De volgorde binnen een nestinggroep wordt
+			bepaald door de sorteervolgorde in de nesting-module. Zoals hierboven al vermeld, is het eerste nummer
+			altijd 2.000.001, de stapgrootte altijd 1.
+		</p>
+		<p>
+			Ook in het omgekeerde geval, een wijziging van de methode van <span class="menu-cadwork-window">Doorlopende
+				nummering</span> naar <span class="menu-cadwork-window">Groepsgewijze nummering</span>, verschijnt
+			bovenstaande vraag. Als deze met <span class="menu-cadwork-window">Ja</span> wordt beantwoord, worden
+			bestaande nestingvolumes volgens de bekende methode groepsgewijs opnieuw genummerd.
+		</p>
+
+		<h3 id="management-of-continuous-volume-numbers">
+			Beheer van doorlopende positienummers
+		</h3>
+		<p>
+			In de loop van het constructiewerk en de bewerking van de nestingen kunnen door het verwijderen en/of het
+			toevoegen van nieuwe nestingvolumes gaten in de nummering binnen de betreffende nestinggroepen
+			ontstaan.<br>
+			(Bij bestaande gaten krijgt elk nieuw nestingvolume altijd eerst het volgende nummer na het hoogste
+			bestaande nummer.)
+		</p>
+		<p>
+			Het kan daarom aan het einde van de werkzaamheden zinvol zijn om een hernummering van alle volumes uit te
+			voeren.
+		</p>
+		<p>
+			In de Nesting Manager kunt u in het gedeelte <span class="menu-cadwork-window">Overige</span> via <span
+				class="menu-cadwork-window">Beheren positienummers nestingvolumes</span> <span
+				class="arrow arrow-right">&rarr;</span> <span class="menu-cadwork-window">Beheren</span> naar de
+			overeenkomstige dialoog gaan.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/07-nesting/07-02-00-nesting-manager/de/nv-position-numbers-manager-de.png"
+				alt="nv-position-numbers-manager-de.png" width="623" height="447" class="img-80"><br>
+			<em>Beheren van positienummers van nestingvolumes</em>
+		</p>
+		<p>
+			<span class="bullet-number">1</span> Als <span class="menu-cadwork-window">Doorlopende nummering</span>
+			gekozen is, wordt dit bovenaan tussen haakjes weergegeven.
+		</p>
+		<p>
+			<span class="bullet-number">2</span> Hier kan een automatische, alfabetische sortering van de lijst van
+			nestinggroepen worden uitgevoerd.
+		</p>
+		<p>
+			<span class="bullet-number">3</span> Voor elke nestinggroep wordt het laagste en het hoogste positienummer
+			weergegeven.
+		</p>
+		<p>
+			<span class="bullet-number">4</span> Het laagste en het hoogste van alle bestaande positienummers worden
+			weergegeven.
+		</p>
+		<p>
+			<span class="bullet-number">5</span> Alle nestingvolumes worden doorlopend opnieuw genummerd. De volgorde
+			voor het toekennen van de nieuwe nummers wordt bepaald door de momenteel ingestelde volgorde van de lijst
+			van nestinggroepen van boven naar beneden.
+		</p>
+		<p>
+			<span class="bullet-number">6</span> De volgorde kan met ingedrukte muisknop <span
+				class="mouse-button">L</span> via slepen en neerzetten worden aangepast.
+		</p>
+		<div class="box warning">
+			<p>
+				<strong>Opmerking</strong><br>
+				Als <span class="menu-cadwork-window">Doorlopende nummering</span> als methode is gekozen, kan de
+				functie voor hernummering van bestaande nestingvolumes alleen vanuit de Nesting Manager worden
+				opgeroepen
+				en niet vanuit de nesting-module.<br>Bij de methode <span class="menu-cadwork-window">Groepsgewijze
+					nummering</span> zijn, zoals voorheen, beide beschikbaar.
+			</p>
+		</div>
+
+		<h2 id="deleting-nesting-volumes">
+			Nestingvolumes verwijderen
+		</h2>
+		<p>
+			Tot nu toe konden nestingvolumes, die al voor nestingen in gebruik zijn, alleen in de
+			nesting-module worden verwijderd.
+		</p>
+		<p>
+			Met versie 2025 kunnen in de Nesting Manager via het contextmenu voor een nestinggroep
+			alle volumes van deze groep worden verwijderd.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/07-nesting/07-02-00-nesting-manager/de/delete-nesting-volumes-de.png"
+				alt="delete-nesting-volumes-de.png" width="1027" height="636" class="img-80"><br>
+			<em>Contextmenu voor een nestinggroep</em>
+		</p>
+		<div class="box warning">
+			<p>
+				<strong>Let op</strong><br>
+				Alle nestingvolumes van de betreffende nestinggroep worden verwijderd. Deze functie
+				wordt niet als afzonderlijke stap in het ongedaan maken-geheugen opgeslagen.<br>
+				Met <span class="menu-cadwork">Ongedaan maken nesting</span> in het rechter menu in 3D kunnen
+				alleen alle in de Nesting Manager gemaakte wijzigingen in hun geheel ongedaan worden gemaakt.
+			</p>
+		</div>
+
+		<h2 id="height-or-width-as-second-sorting-criterion-for-beam-nesting-groups">
+			Hoogte of breedte als tweede sorteercriterium voor staaf-nestinggroepen
+		</h2>
+		<p>
+			Als de lijst van staaf-nestinggroepen is gesorteerd op de <span class="menu-cadwork-window">Breedte</span>
+			van de doorsnede, wordt als tweede sorteercriterium binnen de nestinggroepen met dezelfde breedte de
+			<span class="menu-cadwork-window">Hoogte</span> in aanmerking genomen.<br>
+			Als bijvoorbeeld "oplopend" volgens de breedte is gekozen, dan wordt de sortering volgens de hoogte binnen
+			de nestinggroepen met dezelfde breedte ook "oplopend" uitgevoerd.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/07-nesting/07-02-00-nesting-manager/de/height-width-sorting-de.png"
+				alt="height-width-sorting-de.png" width="787" height="632" class="img-81"><br>
+			<em>Bij sortering volgens breedte (oplopend) wordt ook volgens oplopende hoogte gesorteerd</em>
+		</p>
+		<p>
+			In het omgekeerde geval, met <span class="menu-cadwork-window">Hoogte</span> als gekozen sorteercriterium,
+			gedraagt de sortering zich analoog. In dit geval wordt de <span class="menu-cadwork-window">Breedte</span>
+			als tweede sorteercriterium binnen de nestinggroepen met dezelfde hoogte gebruikt.
+		</p>
+
+		<h2 id="labeling-settings-for-working-in-the-nesting-module">
+			Instellingen voor de weergave van attributen in de nesting-module
+		</h2>
+		<p>
+			In de instellingen voor een nestinggroep is het gedeelte <span class="menu-cadwork-window">Instellingen voor
+				de weergave van attributen in de nesting-module</span> toegevoegd. Via de knop met de drie punten kan
+			een eerder in
+			het gebruikersprofiel opgeslagen set van attribuut-instellingen voor de nestinggroep worden geladen.
+		</p>
+		<p>
+			Deze mogelijkheid is ook toegevoegd aan de standaardinstellingen voor nestinggroepen
+			(<span class="menu-cadwork-window">Nesting Manager</span> <span class="arrow arrow-right">&rarr;</span>
+			<span class="menu-cadwork-window">Overige</span> <span class="arrow arrow-right">&rarr;</span> <span
+				class="menu-cadwork-window">Standaardinstellingen nestinggroepen</span>).<br>
+			Een uitgebreide beschrijving van attributen in de nestingmodule en het gebruik van sets vindt u in de
+			paragraaf <a
+				href="../../07-03-schachtelungsmodul/02-html/07-03-schachtelungsmodul-nl.html#attribute-display-nesting-module">"Weergave
+				attributen in de nesting-module".</a>
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/07-nesting/07-02-00-nesting-manager/de/nesting-manager-user-set-de.png"
+				alt="nesting-manager-user-set-de.png" width="1035" height="632" class="img-58"><br>
+			<em>Selectie van een set voor het werken in de nesting-module</em>
+		</p>
+
+		<h2 id="separate-default-settings-for-beam-and-panel-nesting-groups">
+			Afzonderlijke standaardinstellingen voor staaf- en paneel-nestinggroepen
+		</h2>
+		<p>
+			Voor nieuw te cre&euml;ren nestinggroepen kunnen in de Nesting Manager onder <span
+				class="menu-cadwork-window">Overige</span> <span class="arrow arrow-right">&rarr;</span> <span
+				class="menu-cadwork-window">Standaardinstellingen nestinggroepen</span>
+			standaardinstellingen worden gedefinieerd. Deze werden tot nu toe zowel voor paneel- als voor
+			staaf-nestinggroepen gebruikt.<br>
+			Met versie 2025 is het mogelijk om verschillende standaardinstellingen voor paneel- en
+			staaf-nestinggroepen vast te leggen. Hierdoor zal de workflow voor gebruikers die beide
+			soorten nestingen bewerken verbeteren, omdat de instellingen bij het wisselen tussen paneel- en
+			staaf-nestinggroepen niet meer hoeven te worden aangepast of opnieuw geladen.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/07-nesting/07-02-00-nesting-manager/de/default-nesting-settings-de.png"
+				alt="default-nesting-settings-de.png" width="1004" height="835" class="img-60"><br>
+			<em>Standaardinstellingen voor staaf- en paneel-nestinggroepen</em>
+		</p>
+	</div>
+
+	<nav id="nav-right" aria-label="Page menu">
+		<!-- Table of content generated automatically. -->
+	</nav>
+
+	<script src="../../../js/main.js"></script>
+</body>
+
+</html>

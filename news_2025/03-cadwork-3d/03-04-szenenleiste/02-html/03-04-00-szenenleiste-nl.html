@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/063b56bfef.js" crossorigin="anonymous"></script>
+
+	<!-- KB styles -->
+	<link rel="stylesheet" href="https://kb.cadwork.ch/css/app.css?v1">
+	<link rel="icon" href="https://kb.cadwork.ch/img/favicons/kb-favicon.ico" type="image/x-icon">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../../../css/style-news.css" />
+
+	<title>3.4.0 - Scene-balk - DE - Article 1775</title>
+</head>
+
+<body>
+	<nav id="nav-left" aria-label="Site menu">
+		<iframe src="../../../menu.html" frameborder="0" title="Site-menu"></iframe>
+	</nav>
+
+	<div id="content" class="card-body">
+		<h1>
+			3.4.0 - Scene-balk - Status 2025.01.13
+		</h1>
+
+		<h2 id="assign-new-elements-by-attribute">
+			Nieuwe elementen toewijzen op basis van attribuut
+		</h2>
+		<p>
+			Het weergeven van elementen op basis van attributen in de scene is herzien.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/03-cadwork-3d/03-04-00-scene-bar/de/scene-context-menu-one-attribute-de.png"
+				alt="scene-context-menu-one-attribute-de.png" width="546" height="475"><br>
+			<em>Nieuwe elementen toewijzen op basis van attribuut</em>
+		</p>
+		<p>
+			<span class="bullet-number">1</span> Alle functies die betrekking hebben op attributen, vindt u in versie
+			2025 in het rechtergedeelte van het contextmenu. De selectie van het attribuut is nu overzichtelijk boven de
+			attributenlijst geplaatst. <br>
+			<span class="bullet-number">2</span> In het vrije tekstveld boven de lijst kunnen de items worden
+			gefilterd.<br>
+			<span class="bullet-number">3</span> De attributenlijst is opgedeeld in 2 delen. In het bovenste gedeelte
+			worden de attributen weergegeven die in het huidige bestand in gebruik zijn. <br>
+			<span class="bullet-number">4</span> Hieronder staan alle attributen die wel in het bestand zijn
+			gedefinieerd, maar momenteel niet worden gebruikt. <br>
+			<span class="bullet-number">5</span> Met de knop <span class="menu-cadwork">+Alle</span> worden alle
+			attributen in de lijst geselecteerd. Met de knop <span class="menu-cadwork">-Alle</span> wordt de selectie
+			opgeheven. <br>
+			<span class="bullet-number">6</span> Met de knop <span class="menu-cadwork">Attributen van actieve
+				elementen</span> worden alleen de attributen
+			geselecteerd die aan de actieve elementen zijn toegewezen. De vorige selectie wordt daarbij overschreven.
+			<br>
+			<span class="bullet-number">7</span> Als het selectievakje <span class="menu-cadwork">Nieuwe attributen
+				automatisch selecteren</span> is ingeschakeld,
+			worden nieuw aangemaakte attributen automatisch geselecteerd.
+		</p>
+		<h2 id="assign-new-elements-by-multiple-attributes">
+			Nieuwe elementen toewijzen op basis van meerdere attributen
+		</h2>
+		<p>
+			Een andere nieuwe functie in versie 2025 is de mogelijkheid om meerdere attributen voor een scene te
+			defini&euml;ren.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/03-cadwork-3d/03-04-00-scene-bar/de/scene-context-menu-two-attributes-de.png"
+				alt="scene-context-menu-two-attributes-de.png" width="777" height="475"><br>
+			<em>Nieuwe elementen aan de scene toewijzen volgens meerdere attributen</em>
+		</p>
+		<p>
+			<span class="bullet-number">1</span> Met de knop <span class="menu-cadwork">+</span> wordt een extra
+			sectie aan het contextmenu toegevoegd. In deze sectie kan een extra attribuut worden geselecteerd. Met de
+			knop <span class="menu-cadwork">-</span> kan de sectie voor een attribuut weer worden verwijderd.
+			Er blijft altijd minimaal één attribuut-sectie aanwezig. <br>
+			<span class="bullet-number">2</span> Zodra meerdere attributen zijn aangemaakt, kan in het hoofdgedeelte
+			worden gedefinieerd of <span class="menu-cadwork">minstens &eacute;&eacute;n attribuut (of)</span>
+			of <span class="menu-cadwork">alle attributen (en)</span> moeten zijn ingesteld.<br>
+			In het bovenstaande voorbeeld worden in de geselecteerde scene alle onderdelen met <span
+				class="menu-cadwork">Materiaal</span> "KVH" en
+			<span class="menu-cadwork">Groep</span> "EG" toegevoegd, als de optie <span class="menu-cadwork">alle
+				attributen (en)</span> is
+			geselecteerd. Als hier de optie <span class="menu-cadwork">minstens één attribuut (of)</span>
+			wordt gekozen, worden alle elementen met <span class="menu-cadwork">Materiaal</span> "KVH" ongeacht
+			hun <span class="menu-cadwork">groep</span>
+			en bovendien alle elementen van de span class="menu-cadwork">Groep</span> "EG" ongeacht hun <span
+				class="menu-cadwork">Materiaal</span> in de
+			scene weergegeven. Dit komt overeen met de werkwijze om een scene met het materiaal "KVH" op te
+			roepen en elementen van een scene met de groep "EG" extra weer te geven
+			(<kbd>Shift</kbd> + <span class="mouse-button">R</span>).<br>
+			<br>
+			In het volgende voorbeeld worden in de geselecteerde scene alle onderdelen met "KVH", "EG" en "woonhuis"
+			toegevoegd:
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/03-cadwork-3d/03-04-00-scene-bar/de/scene-context-menu-three-attributes-de.png"
+				alt="scene-context-menu-three-attributes-de.png" width="1008" height="475"><br>
+			<em>Nieuwe elementen in de scene toewijzen volgens meerdere attributen</em>
+		</p>
+
+		<h2 id="scene-groups">
+			Scene-groepen
+		</h2>
+		<p>
+			Het contextmenu voor scenegroepen is uitgebreid.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/03-cadwork-3d/03-04-00-scene-bar/de/scene-context-menu-group-de.png"
+				alt="scene-context-menu-group-de.png" width="322" height="319"><br>
+			<em>Nieuwe elementen in de scene toewijzen volgens meerdere attributen</em>
+		</p>
+		<p>
+			In versie 2025 kan in het contextmenu van een scenegroep met de nieuwe functie <span
+				class="menu-cadwork">Groep en toegewezen scenes verwijderen</span> de gehele
+			groep inclusief de scenes worden verwijderd. Hierbij verschijnt een beveiligingsvraag die u kunt
+			configureren onder <span class="menu-cadwork-window">Extra</span> <span
+				class="arrow arrow-right">&rarr;</span> <span class="menu-cadwork-window">Controleren en vragen</span>
+			<span class="arrow arrow-right">&rarr;</span> <span class="menu-cadwork-window">Scenes</span> (zie ook het
+			gedeelte Scenes in <a
+				href="../../03-02-x-windows-menue/03-02-06-extra/02-html/03-02-06-extra-nl.html#scenes-in-general"
+				target="_blank">3.2.6 Extra</a>).<br>
+			In het contextmenu zijn ook de functies <span class="menu-cadwork">Alle groepen uitvouwen</span> en <span
+				class="menu-cadwork">Alle groepen dichtklappen</span> toegevoegd. Dit dient voor snelle en
+			eenvoudige navigatie in de scenebalk, omdat de afzonderlijke groepen niet meer apart hoeven te worden
+			uitgevouwen of dichtgeklapt. Individuele groepen kunnen nog steeds worden uitgebreid door erop te klikken
+			met <span class="mouse-button">L</span>
+			of met behulp van de cursortoetsen <kbd>&uarr;</kbd> of ingeklapt met <kbd>&darr;</kbd>.
+		</p>
+
+		<h2 id="create-new-scene-groups">
+			Nieuwe scene-groepen maken
+		</h2>
+		<p>
+			De nieuwe knop <span class="menu-cadwork">++</span> maakt een scenegroep voor een te kiezen attribuut. Voor
+			elke waarde van dit attribuut wordt een eigen scene aangemaakt en de onderdelen met dit attribuut worden aan
+			de scene toegewezen. Hierbij worden alle attribuutwaardes van de zichtbare elementen in aanmerking genomen.
+			Als elementen actief zijn, worden alleen de attribuutwaardes van de actieve elementen in aanmerking
+			genomen.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/03-cadwork-3d/03-04-00-scene-bar/de/scene-plusplus-de.png"
+				alt="scene-plusplus-de.png" width="1059" height="57"><br>
+			<em>Scenegroep maken volgens een attribuut</em>
+		</p>
+		<p>
+			Na het klikken op de knop <span class="menu-cadwork">++</span> wordt het attribuut <span
+				class="menu-cadwork">Materiaal</span> geselecteerd.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/03-cadwork-3d/03-04-00-scene-bar/de/scene-plusplus-attributes-material-de.png"
+				alt="scene-plusplus-attributes-material-de.png" width="167" height="530"><br>
+			<em>Scenegroep maken volgens materiaal</em>
+		</p>
+		<p>
+			In dit voorbeeld wordt een scenegroep "Materiaal" met zeven scenes voor de gebruikte materialen van de
+			actieve of zichtbare elementen aangemaakt en de elementen worden toegevoegd aan de overeenkomstige scenes
+			van hun materiaal.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/03-cadwork-3d/03-04-00-scene-bar/de/scene-plusplus-attributes-material-new-group-with-scenes-de.png"
+				alt="scene-plusplus-attributes-material-new-group-with-scenes-de.png" width="1059" height="59"><br>
+			<em>Scenegroep uit het attribuut Materiaal</em>
+		</p>
+	</div>
+
+	<nav id="nav-right" aria-label="Page menu">
+		<!-- Table of content generated automatically. -->
+	</nav>
+
+	<script src="../../../js/main.js"></script>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/063b56bfef.js" crossorigin="anonymous"></script>
+
+	<!-- KB styles -->
+	<link rel="stylesheet" href="https://kb.cadwork.ch/css/app.css?v1">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../../../css/style-news.css" />
+
+	<title>10.5.0 - Export der Maschinendaten - DE - Article 1818</title>
+</head>
+
+<body>
+	<nav id="nav-left" aria-label="Site menu">
+		<iframe src="../../../menu.html" frameborder="0" title="Site-menu"></iframe>
+	</nav>
+
+	<div id="content" class="card-body">
+		<h1>
+			10.5.0 - Export der Maschinendaten - Stand 2025.02.03
+		</h1>
+
+		<h2 id="export-hundegger">
+			Export Hundegger
+		</h2>
+
+		<h3 id="asymmetric-scarf-joint">
+			Asymmetrisches Hakenblatt
+		</h3>
+		<p>
+			Die Bearbeitung Hakenblatt im CAMBIUM<sup>®</sup> kann nur auf symmetrische Hakenblätter angewendet werden. Wird im cadwork ein asymmetrisches Hakenblatt erkannt, wird es in Version 2025 beim Export in die bvx-2-Schnittstelle mit Blättern und einem Abschnitt realisiert.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-05-00-export-machine-data/de/scarf-joint-example-1-de.png" alt="scarf-joint-example-1-de.png" width="869" height="736"><br>
+			<em>Hakenblatt Beispiel 2</em>
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-05-00-export-machine-data/de/scarf-joint-example-2-de.png" alt="scarf-joint-example-2-de.png" width="869" height="787"><br>
+			<em>Hakenblatt Beispiel 2</em>
+		</p>
+
+		<h3 id="standard-profile-log-beam">
+			Standardprofil als Typ Blockbohle
+		</h3>
+		<p>
+			Bei Verwendung des Bauteiltyps Blockbohle im CAMBIUM<sup>®</sup> können jetzt auch die Querschnitte mit konstruierten Nuten und Federn im cadwork als Standardstab-Fertigprofil verwendet werden. Beim Export wird die im Userattribut hinterlegte Anzahl an Federn, deren Abstand und Breite mit übergeben. Die Höhe der Federn ergibt sich wie bisher aus der Querschnittskorrektur auf der entsprechenden Bauteilseite.
+		</p>
+		<div class="box warning">
+			<p>
+				<strong>Achtung</strong><br>
+				Wird ein Standardstab-Fertigprofil als Blockbohle exportiert, muss ein <strong>negativer</strong> Wert als Querschnittskorrektur eingegeben werden, um im CAMBIUM<sup>®</sup> ein korrektes Ergebnis zu erzielen.
+			</p>
+		</div>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-05-00-export-machine-data/de/log-beam-std-profile-de.png" alt="log-beam-std-profile-de.png" width="869" height="660"><br>
+			<em>Standardstab-Fertigprofil als Blockbohle</em>
+		</p>
+		<p>
+			So erhalten Sie mit Version 2025 eine realitätsnahe Darstellung der Blockbohlen sowohl im cadwork als auch im CAMBIUM<sup>®</sup>.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-05-00-export-machine-data/de/log-beam-cambium-de.png" alt="log-beam-cambium-de.png" width="870" height="513"><br>
+			<em>Standardstab-Fertigprofil im CAMBIUM<sup>®</sup></em>
+		</p>
+
+		<h3 id="tangential-contour">
+			Tangential-Kontur
+		</h3>
+		<p>
+			Unter <span class="menu-cadwork">Schneiden</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork">Kantenbearbeitung</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork">Kante&nbsp;profilieren</span> wurde in den Werkzeug-Eigenschaften der Konturtyp <span class="menu-cadwork-window">Tangential-Kontur</span> ergänzt. Dieser Konturtyp ermöglicht die Weitergabe einer in der Werkzeugform-Definition erstellten Werkzeug-Geometrie an die Maschine. Bei Ausführung dieser Schneidfunktion wird eine BTL-Bearbeitungsgruppe mit dem geschnittenen Bauteil verknüpft. Die daraus resultierende Kontur-Bearbeitung kann ins CAMBIUM<sup>®</sup> exportiert werden. CAMBIUM<sup>®</sup> wird in den Maschinendaten nach einem Werkzeug mit dieser Profilierung suchen. Ist das Werkzeug vorhanden, wird die Bearbeitung mit diesem ausgeführt.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-05-00-export-machine-data/de/tangential-kontur-cambium-de.png" alt="tangential-kontur-cambium-de.png" width="870" height="513"><br>
+			<em>Tangential-Kontur im CAMBIUM<sup>®</sup></em>
+		</p>
+
+		<h2 id="export-btl-btlx">
+			Export BTL/BTLX
+		</h2>
+
+		<h3 id="version-btlx-2-3">
+			Version BTLx 2.3
+		</h3>
+		<p>
+			Zu Version 2025 ist die neueste BTLx-Schnittstellenversion 2.3 unter <span class="menu-cadwork">Exportieren</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork">Maschine</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork">BTL-Ausgabe…</span> hinzugefügt worden. Diese Version befindet sich aktuell in der Betaphase und wird in Kürze offiziell auf <a href="https://www.design2machine.com/" target="_blank" >www.design2machine.com</a> veröffentlicht.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-05-00-export-machine-data/de/btl-general-de.png" alt="btl-general-de.png" width="203" height="592"><br>
+			<em>Neue Exportschnittstelle BTLx&nbsp;2.3</em>
+		</p>
+		<p>
+			Bitte überprüfen Sie vor Verwendung, ob die weiterverarbeitende CAM-Software bzw. Maschine diese Version unterstützt.<br>
+			Die Version BTLx&nbsp;2.3 ist in weiteren Maschinenausgaben auswählbar und ersetzt hier die Version BTLx&nbsp;1.1:
+		</p>
+		<ul>
+			<li>
+				<span class="menu-cadwork">Exportieren</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork">Maschine</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork">Technowood…</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork">TW-Mill&nbsp;M</span>
+			</li>
+			<li>
+				<span class="menu-cadwork">Exportieren</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork">Maschine</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork">Technowood…</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork">TW-Mill&nbsp;C</span>
+			</li>
+			<li>
+				<span class="menu-cadwork">Exportieren</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork">Maschine</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork">Technowood…</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork">TW-Agil</span>
+			</li>
+			<li>
+				<span class="menu-cadwork">Exportieren</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork">Maschine</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork">Lignocam…</span>
+			</li>
+			<li>
+				<span class="menu-cadwork">Exportieren</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork">Maschine</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork">Elementfertigung…</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork">Technowood&nbsp;TW-Mill&nbsp;E</span>
+			</li>
+		</ul>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-05-00-export-machine-data/de/btl-lignocam-de.png" alt="btl-lignocam-de.png" width="203" height="496"><br>
+			<em>BTLx 2.3 Maschinenausgaben</em>
+		</p>
+		<p>
+			In der Version BTLx&nbsp;2.3 sind die Attribute für Befestigungen (Nageln, Schrauben, Klammern) vervollständigt worden, sodass erst mit dieser Version eine Unterscheidung der Befestigungsmittel sinnvoll ist.<br>
+			Weitere Ergänzungen sind für den Einsatz von Verbindungsmitteln, die spezielle Bearbeitungen erfordern, entwickelt worden. Um von diesen Beschreibungen zu profitieren, müssen Verbindungsmittelhersteller die geforderten Bearbeitungen im BTLx-Format liefern. Bis hier die notwendigen Informationen zwischen diesen und den CAM-Software-Herstellern ausgetauscht sind, können in cadwork Bearbeitungsgruppen (wie z.B. für die X-Fix-Verbinder) verwendet werden.<br>
+			Eine Neuerung der BTLx&nbsp;2.3 Schnittstelle ist der "PatternContourType" mit dem Akustikflächen sehr effektiv beschrieben werden können. Mit diesem Thema werden wir uns in naher Zukunft auseinandersetzen und Einsatzmöglichkeiten zur Verfügung stellen.
+		</p>
+
+		<h3 id="export-nc-hops">
+			Export NC-Hops
+		</h3>
+		<p>
+			Für die Ansteuerung des CAM-Systems NC-Hops sind in Version 2025 zwei BTLx-Schnittstellenversionen auswählbar.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-05-00-export-machine-data/de/btl-nc-hops-de.png" alt="btl-nc-hops-de.png" width="203" height="464"><br>
+			<em>BTLx-Export für NC-Hops</em>
+		</p>
+	</div>
+
+	<nav id="nav-right" aria-label="Page menu">
+		<!-- Table of content generated automatically. -->
+	</nav>
+
+	<script src="../../../js/main.js"></script>
+</body>
+
+</html>

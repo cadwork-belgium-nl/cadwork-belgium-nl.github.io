@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/063b56bfef.js" crossorigin="anonymous"></script>
+
+	<!-- KB styles -->
+	<link rel="stylesheet" href="https://kb.cadwork.ch/css/app.css?v1">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../../../css/style-news.css" />
+
+	<title>8.2.0 - Stuktekening - NL - Article 1798</title>
+</head>
+
+<body>
+	<nav id="nav-left" aria-label="Site menu">
+		<iframe src="../../../menu.html" frameborder="0" title="Site-menu"></iframe>
+	</nav>
+
+	<div id="content" class="card-body">
+		<h1>
+			8.2.0 - Stuktekening - Status 2025.01.22
+		</h1>
+
+		<h2 id="shortened-component-representation">
+			Verkorte weergave van elementen
+		</h2>
+		<p>
+			In versie 2025 wordt de stuktekening uitgebreid met een functie die het mogelijk maakt om gebieden
+			van een onderdeel uit te sluiten van een verkorte weergave. Tot nu toe was dit niet door de gebruiker te
+			regelen.<br>
+			Deze verbetering kan zorgen voor een overzichtelijkere weergave en verhoogt de flexibiliteit bij het maken
+			van werktekeningen.
+		</p>
+		<p>
+			Om een verkorte weergave in een gebied te onderdrukken, wordt een waarde voor een afstand bepaald, vanaf
+			welke een verkorte weergave toegestaan is. In een nieuw invoerveld in het dialoogvenster achter <span
+				class="menu-cadwork-window">Weergave</span> <span class="arrow arrow-right">&rarr;</span> <span
+				class="menu-cadwork-window">Algemeen</span> <span class="arrow arrow-right">&rarr;</span> <span
+				class="menu-cadwork-window">Verkorte weergave van elementen</span> kan deze afstand worden ingesteld.
+			De afstand kan niet kleiner zijn dan 100 mm.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-02-00-dpp/de/dpp-shortening-dialog-de.png"
+				alt="dpp-shortening-dialog-de.png" width="862" height="632" class="img-80"><br>
+			<em>Verkorte weergave van elementen</em>
+		</p>
+		<p>
+			Voor de nieuwe functie worden de afstanden tussen alle bewerkingen van een element bepaald. Een verkorting
+			tussen twee bewerkingen vindt alleen plaats als de bepaalde afstand groter is dan de ingevoerde afstand.
+		</p>
+		<div class="box tip">
+			<p>Opmerking<br>
+				De instelling <span class="menu-cadwork-window">Elementen mogen in alle gebieden worden verkort</span>
+				is onafhankelijk van de opgegeven afstand. Als deze optie is ingeschakeld, worden ook elementen met
+				lengtebewerkingen verkort weergegeven. De afstand tussen de bewerkingen wordt nog steeds in acht
+				genomen.
+			</p>
+		</div>
+		<p>
+			De volgende afbeeldingen tonen het effect aan de hand van een voorbeeld:<br>
+			De bepaalde afstand tussen de uitsparing en de keep is 206,7 mm, de ingestelde afstand is 100 mm, dus wordt
+			het element tussen deze twee bewerkingen verkort weergegeven.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-02-00-dpp/de/dpp-shortening1-de.png"
+				alt="dpp-shortening1-de.png" width="884" height="626"><br>
+			<em>Verkorte weergave van een element met een afstand van 100 mm</em>
+		</p>
+		<p>
+			Als voor de afstand een waarde van 210 mm wordt opgegeven, vindt er geen verkorte weergave plaats tussen de
+			uitsparing en de keep.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-02-00-dpp/de/dpp-shortening2-de.png"
+				alt="dpp-shortening2-de.png" width="884" height="626"><br>
+			<em>Verkorte weergave van een element met een afstand van 210 mm</em>
+		</p>
+
+		<h2 id="optimized-countersink-drilling-labeling">
+			Geoptimaliseerde labeling van verzonken boorgaten
+		</h2>
+		<p>
+			Een belangrijke verbetering betreft de labeling van verzonken boorgaten. In versie 2025 worden de diameters
+			van het boorgat en de verzinking samengevoegd in &eacute;&eacute;n tekstveld, in plaats van zoals voorheen
+			apart gelabeld
+			te worden.
+		</p>
+		<p>
+			Als onderscheid tussen de diameter van het doorlopende boorgat en de diameter van de verzinking wordt de
+			afkorting "<strong>vers</strong>." gebruikt. Dit zorgt voor een duidelijke herkenning.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-02-00-dpp/de/countersunk-drilling-de.png"
+				alt="countersunk-drilling-de.png" width="1067" height="572" class="img-80"><br>
+			<em>Labeling van verzonken boorgaten</em>
+		</p>
+
+		<h2 id="hip-and-valley-rafter-output-according-to-scribing-method">
+			Noordboom en kilkeper volgens afschrijf-methode
+		</h2>
+		<p>
+			De vernieuwingen voor de noordboom en kilkeper volgens afschrijf-methode omvatten extra opties
+			en uitgebreide visualisatie- en configuratiemogelijkheden om de flexibiliteit en gebruiksvriendelijkheid van
+			de export te verhogen.
+		</p>
+		<p>
+			De nieuwe functies zijn beschikbaar in het bijgewerkte dialoogvenster <span
+				class="menu-cadwork-window">Noordboom/kilkeper</span>. Gebruikers kunnen blijven kiezen tussen de oude
+			en de nieuwe export.
+		</p>
+
+		<h3 id="integration-of-fly-rafters">
+			Integratie van vliegende spanten
+		</h3>
+		<p>
+			De belangrijkste vernieuwing is de mogelijkheid om vliegende spanten met de afschrijf-methode uit te voeren.
+			Deze toevoeging maakt het mogelijk om ook complexe dakconstructies nauwkeurig weer te geven en de spanten
+			optimaal voor handmatige montage voor te bereiden. Hierbij moet worden opgemerkt dat het werkstuk-type
+			"Noordboom/Kilkeper" aan de vliegende spanten moet worden toegewezen. Vliegende spanten kunnen worden
+			uitgevoerd met de <span class="menu-cadwork-window">Ingang en uitgang</span> en <span
+				class="menu-cadwork-window">Bewerking op
+				ruw materiaal projecteren</span> afschrijf-methode.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-02-00-dpp/all/skew-fly-rafter-floor-plan-all.png"
+				alt="skew-fly-rafter-floor-plan-all.png" width="878" height="626" class="img-80"><br>
+			<em>Vliegende spanten in plattegrond</em>
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-02-00-dpp/de/skew-fly-rafter-drawing-entry-exit-de.png"
+				alt="skew-fly-rafter-drawing-entry-exit-de.png" width="1179" height="885" class="img-80"><br>
+			<em>Vliegende spanten tekening met de ingang- en uitgangsmethode</em>
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-02-00-dpp/de/skew-fly-rafter-drawing-rough-part-de.png"
+				alt="skew-fly-rafter-drawing-rough-part-de.png" width="1182" height="616" class="img-80"><br>
+			<em>Vliegende spanten tekening met de bewerking op ruw materiaal projecteren methode</em>
+		</p>
+
+		<h3 id="improvements-for-offset-and-interrupted-hip-valley-lines">
+			Verbeteringen voor verplaatste en onderbroken noordboom/kilkeper
+		</h3>
+		<p>
+			De export is geoptimaliseerd zodat verplaatste of onderbroken noordboom-/kilkeper-lijnen beter worden weergegeven en
+			de bijbehorende afschrijfpunten met betrekking tot het ruwe materiaal worden gemeten. Hierdoor kunnen
+			bijvoorbeeld ook noordbomen/kilkepers met verzonken dakrand volledig met alle vier afschrijfmethoden worden
+			uitgevoerd.
+		</p>
+		<p>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/08-shop-drawings/08-02-00-dpp/all/valley-rafter-eave-all.png"
+				alt="valley-rafter-eave-all.png" width="1063" height="875" class="img-80"><br>
+
+		</p>
+	</div>
+
+	<nav id="nav-right" aria-label="Page menu">
+		<!-- Table of content generated automatically. -->
+	</nav>
+
+	<script src="../../../js/main.js"></script>
+</body>
+
+</html>
