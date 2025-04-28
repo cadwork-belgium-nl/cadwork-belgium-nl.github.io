@@ -13,11 +13,12 @@
 
 	<!-- KB styles -->
 	<link rel="stylesheet" href="https://kb.cadwork.ch/css/app.css?v1">
+	<link rel="icon" href="https://kb.cadwork.ch/img/favicons/kb-favicon.ico" type="image/x-icon">
 
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="../../../css/style-news.css" />
 
-	<title>10.3.0 - Maschinendatenberechnung - DE - Article 1817</title>
+	<title>10.3.0 - Machinegegevensberekening - NL - Artikel 1817</title>
 </head>
 
 <body>
@@ -27,115 +28,186 @@
 
 	<div id="content" class="card-body">
 		<h1>
-			10.3.0 - Maschinendatenberechnung - Stand 2025.02.03
+			10.3.0 - Machinegegevensberekening - Status 2025.02.03
 		</h1>
 
 		<h2 id="calculate-tenon-with-laps">
-			Zapfen mit Blättern berechnen
+			Pennen met bladen berekenen
 		</h2>
 		<p>
-			Im Dialog&nbsp;<span class="menu-cadwork-window">Konfiguration&nbsp;Maschine</span> unter <span class="menu-cadwork-window">Endbearbeitungen</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork-window">Endtypen/Zapfen…</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork-window">Weitere&nbsp;Einstellungen&nbsp;für&nbsp;Zapfen</span> ist die Option&nbsp;<span class="menu-cadwork-window">eckige&nbsp;lange&nbsp;Zapfen&nbsp;mit&nbsp;Blattbearbeitungen&nbsp;berechnen</span>&nbsp;hinzugefügt worden. Hierbei werden Zapfen ab einer einzustellenden Länge nicht als Zapfenbearbeitung, sondern mithilfe von Blättern berechnet. Dadurch kann eine bessere Fertigungsstrategie angesteuert werden. Der Zapfen muss mit einer eckigen Form und ohne Housing ausgebildet sein.
+			In de dialoog <span class="menu-cadwork-window">Configuratie Machine</span> onder <span
+				class="menu-cadwork-window">Eindbewerkingen</span> <span class="arrow arrow-right">→</span> <span
+				class="menu-cadwork-window">Eindtypen/Pennen…</span> <span class="arrow arrow-right">→</span> <span
+				class="menu-cadwork-window">Verdere instellingen voor pennen</span> is de optie <span
+				class="menu-cadwork-window">rechthoekige lange pennen met bladbewerkingen berekenen</span> toegevoegd.
+			Hierbij worden pennen vanaf een instelbare lengte niet als penbewerking, maar met behulp van bladen
+			berekend. Hierdoor kan een betere productiestrategie worden aangestuurd. De pen moet met een rechthoekige
+			vorm en zonder housing worden uitgevoerd.
 		</p>
 		<p>
-			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/de/tenon-by-lap-menu-de.png" alt="tenon-by-lap-menu-de.png" width="869" height="519"><br>
-			<em>Option Zapfen mit Blättern berechnen</em>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/de/tenon-by-lap-menu-de.png"
+				alt="tenon-by-lap-menu-de.png" width="869"><br>
+			<em>Optie Pennen met bladen berekenen</em>
 		</p>
 		<p>
-			<span class="bullet-number">1</span> Für diesen beidseitig abgesteckten eckigen Zapfen mit 80&nbsp;mm Länge werden die Maschinendaten mit der neuen Option berechnet. <br>
-			<span class="bullet-number">2</span> Es werden vier Blätter berechnet.<br>
-			<span class="bullet-number">3</span> Zur Verdeutlichung des Ergebnisses werden im Einzelstab das Originalbauteil und der Rohling mit den berechneten Blättern mithilfe der Tastenkombination <kbd>Strg</kbd>&nbsp;+&nbsp;<kbd>T</kbd> überlagert.&nbsp;
+			<span class="bullet-number">1</span> Voor deze aan beide zijden afgetekende rechthoekige pen met een lengte
+			van 80 mm worden de machinedata met de nieuwe optie berekend. <br>
+			<span class="bullet-number">2</span> Er worden vier bladen berekend.<br>
+			<span class="bullet-number">3</span> Ter verduidelijking van het resultaat worden in de enkelstaaf het
+			originele onderdeel en de ruwe vorm met de berekende bladen overlapt met behulp van de toetscombinatie
+			<kbd>Ctrl</kbd> + <kbd>T</kbd>.
 		</p>
 		<p>
-			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/all/tenon-by-lap-calculation-all.png" alt="tenon-by-lap-calculation-all.png" width="602" height="791"><br>
-			<em>Zapfen mit Blättern berechnet</em>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/all/tenon-by-lap-calculation-all.png"
+				alt="tenon-by-lap-calculation-all.png" width="602"><br>
+			<em>Pennen met bladen berekend</em>
 		</p>
 		<div class="box tip">
 			<p>
-				<strong>Tipp</strong><br>
-				Mit dieser Option können einfache Zapfen auf einer zusätzlich mit Fräser ausgestatten Kappanlage (z.B. Stromab, Tiger Stop) gefertigt werden.
+				<strong>Tip</strong><br>
+				Met deze optie kunnen eenvoudige pennen worden vervaardigd op een afkortinstallatie die is uitgerust met
+				een extra frees (bijv. Stromab, Tiger Stop).
 			</p>
 		</div>
 
 		<h2 id="contour-processing">
-			Konturbearbeitungen
+			Contourbewerkingen
 		</h2>
 
 		<h3 id="contour-pockets-with-islands">
-			Konturtaschen mit Inseln
+			Contournesten met eilanden
 		</h3>
 		<p>
-			Konturtaschen mit Inseln werden in Version 2025 automatisch berechnet.<br>
-			Dieses Beispiel besteht aus einer großen Konturtasche mit den Buchstaben jeweils als Inseln. Zusätzlich befinden sich in den Buchstaben e und b sowie in der Zahl 0 kleine Konturtaschen, die ebenfalls mit dem Werkzeug geräumt werden müssen.
+			Contournesten met eilanden worden in versie 2025 automatisch berekend.<br>
+			Dit voorbeeld bestaat uit een grote contournest met de letters als eilanden. Bovendien bevinden zich in de
+			letters e en b en in het cijfer 0 kleine contournesten, die ook met het gereedschap moeten worden geruimd.
 		</p>
 		<p>
-			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/all/contour-pocket-with-island-example-all.png" alt="contour-pocket-with-island-example-all.png" width="775" height="1086"><br>
-			<em>Konturtasche mit Inseln</em>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/all/contour-pocket-with-island-example-all.png"
+				alt="contour-pocket-with-island-example-all.png" width="775"><br>
+			<em>Contournest met eilanden</em>
 		</p>
 
 		<h3 id="determine-start-point">
-			Startpunkt bestimmen
+			Startpunt bepalen
 		</h3>
 		<p>
-			Für die automatische Berechnung geschlossener Konturen können verschiedene Lagen des Startpunktes vorgegeben werden. Mit dieser Einstellung kann bereits im cadwork Einfluss auf die Bearbeitungsstrategie genommen werden.
+			Voor de automatische berekening van gesloten contouren kunnen verschillende posities van het startpunt
+			worden opgegeven. Met deze instelling kan al in cadwork invloed worden uitgeoefend op de
+			bewerkingsstrategie.
 		</p>
 		<p>
-			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/de/contour-pocket-start-point-de.png" alt="contour-pocket-start-point-de.png" width="866" height="646"><br>
-			<em>Startpunkt der Kontur bestimmen</em>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/de/contour-pocket-start-point-de.png"
+				alt="contour-pocket-start-point-de.png" width="866"><br>
+			<em>Startpunt van de contour bepalen</em>
 		</p>
 		<p>
-			Der Startpunkt der Innenkontur soll in der Mitte eines möglichst langen Kontursegmentes in der Nähe der Bezugskante der Referenzseite (hier die blaue Kante der Referenzseite 3 in Längsrichtung) liegen.
+			Het startpunt van de binnencontour moet in het midden van een zo lang mogelijk contoursegment in de buurt
+			van de referentierand van de referentiezijde (hier de blauwe rand van referentiezijde 3 in lengterichting)
+			liggen.
 		</p>
 		<p>
-			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/all/contour-pocket-start-point-example-all.png" alt="contour-pocket-start-point-example-all.png" width="869" height="390"><br>
-			<em>Innenkontur mit Startpunkt in einer Kantenmitte</em>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/all/contour-pocket-start-point-example-all.png?v2"
+				alt="Binnencontour met startpunt in een randmidden" width="860"><br>
+			<em>Binnencontour met startpunt in een randmidden</em>
 		</p>
 		<p>
-			Die Option&nbsp;<span class="menu-cadwork-window">Startpunkt&nbsp;der&nbsp;Kontur&nbsp;bestimmen</span> steht für die&nbsp;<span class="menu-cadwork-window">Rohlingskontur</span>, die&nbsp;<span class="menu-cadwork-window">Außenkontur</span>, die&nbsp;<span class="menu-cadwork-window">Innenkontur</span>, die&nbsp;<span class="menu-cadwork-window">Konturtasche</span>, sowie den&nbsp;<span class="menu-cadwork-window">Umriss</span> und den&nbsp;<span class="menu-cadwork-window">Ausschnitt</span> zur Verfügung.
+			De optie <span class="menu-cadwork-window">Startpunt van de contour bepalen</span> is beschikbaar voor de
+			<span class="menu-cadwork-window">Ruwcontour</span>, de <span
+				class="menu-cadwork-window">Buitencontour</span>,
+			de <span class="menu-cadwork-window">Binnencontour</span>, de <span
+				class="menu-cadwork-window">Contournest</span>,
+			alsook de <span class="menu-cadwork-window">Omtrek</span> en de <span
+				class="menu-cadwork-window">Uitsnede</span>.
 		</p>
 
 		<h3 id="segment-contour-lines">
-			Konturlinien segmentieren
+			Contourlijnen segmenteren
 		</h3>
 		<p>
-			Enthält die zu analysierende Geometrie gekrümmte Flächen, werden die Bearbeitungen in der Regel als Konturbearbeitungen mit Konturzügen bestehend aus Kreisbögen und Geraden berechnet. Oft entstehen in der Konstruktion durch Freiformen oder Verschneidungen mit runden Bauteilen unter einem Winkel jedoch Ellipsen oder Splines. Diese müssen für die Maschinenausgabe mit Hilfe von Bögen und Geraden angenähert werden. Bisher konnte die Genauigkeit, mit der die Konturlinien segmentiert werden sollen, nur bei der automatischen Maschinendatenberechnung von Fünfachskonturen oder während der manuellen Definition von Konturbearbeitungen beeinflusst werden. <br>
-			In Version 2025 können Sie für jede Konturart separat eine Genauigkeit für die Segmentierung angeben. Die Einstellungen finden Sie unter&nbsp;<span class="menu-cadwork-window">Konfiguration&nbsp;Maschine</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork-window">Optionen…</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork-window">Konturlinien&nbsp;segmentieren</span>.
+			Bevat de te analyseren geometrie gebogen vlakken, dan worden de bewerkingen meestal berekend als
+			contourbewerkingen met contourlijnen bestaande uit cirkelbogen en rechte lijnen. Vaak ontstaan in de
+			constructie door vrije vormen of doorsnijdingen met ronde onderdelen onder een hoek echter ellipsen of
+			splines. Deze moeten voor de machine-uitvoer worden benaderd met behulp van bogen en rechte lijnen. Tot nu
+			toe kon de nauwkeurigheid waarmee de contourlijnen worden gesegmenteerd alleen worden beïnvloed bij de
+			automatische machinedataberekening van vijfassige contouren of tijdens de handmatige definitie van
+			contourbewerkingen. <br>
+			In versie 2025 kunt u voor elk type contour afzonderlijk een nauwkeurigheid voor de segmentering opgeven.
+			De instellingen vindt u onder <span class="menu-cadwork-window">Configuratie Machine</span> <span
+				class="arrow arrow-right">→</span> <span class="menu-cadwork-window">Opties…</span> <span
+				class="arrow arrow-right">→</span> <span class="menu-cadwork-window">Contourlijnen segmenteren</span>.
 		</p>
 		<p>
-			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/de/contour-line-segmentation-de.png" alt="contour-line-segmentation-de.png" width="869" height="649"><br>
-			<em>Konfiguration Maschine -&gt; Optionen… -&gt; Konturlinien segmentieren</em>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/de/contour-line-segmentation-de.png"
+				alt="contour-line-segmentation-de.png" width="869"><br>
+			<em>Configuratie Machine -&gt; Opties… -&gt; Contourlijnen segmenteren</em>
 		</p>
 		<p>
-			<span class="bullet-number">1</span> Im oberen Bereich legen Sie eine Default-Einstellung für alle Konturbearbeitungen fest. <br>
-			<span class="bullet-number">2</span> Im unteren Bereich können Sie für jede Konturart getrennt unterschiedliche Einstellungen vornehmen.<br>
-			<span class="bullet-number">3</span> Grundsätzlich können Sie Konturlinien&nbsp;<span class="menu-cadwork-window">mit&nbsp;Kreisbögen&nbsp;und&nbsp;Geraden&nbsp;aufteilen</span>&nbsp;oder&nbsp;<span class="menu-cadwork-window">nur&nbsp;mit&nbsp;Geraden&nbsp;aufteilen</span>&nbsp;lassen. Mit Kreisbögen kann eine bessere Annäherung bei gleichzeitig weniger Kontursegmenten erreicht werden. Jedoch können Kreissegmente unter Umständen bei einem weiterverarbeitenden CAM-System zu Problemen führen.<br>
-			<span class="bullet-number">4</span> Für die zugelassene&nbsp;<span class="menu-cadwork-window">Maximale&nbsp;Abweichung</span> stellen Sie als Wert eine maximal erlaubte Segmenthöhe&nbsp;<span class="menu-cadwork-window">h</span> ein, der größte Abstand eines Kontursegmentes zu der realen Kurve in diesem Bereich. Hier sind maximal 1&nbsp;mm Abweichung voreingestellt, die in Kombination mit Kreisbögen in der Regel gut erreichbar sind, ohne zu kleine Segmentlängen zu erhalten.<br>
-			<span class="bullet-number">5</span> Der&nbsp;<span class="menu-cadwork-window">Maximaler&nbsp;Übergangswinkel</span> steuert, wie stark Knicke zwischen zwei aufeinanderfolgenden Kontursegmenten sein dürfen. Hier sind 5 Grad voreingestellt.<br>
-			Je nach Bauteilgeometrie kann eine "sehr feine" Einstellung zu vielen kurzen Kontursegmenten und einer langen Bearbeitungszeit führen, während eine "zu grobe" Einstellung die Form nicht genügend wiedergibt.
+			<span class="bullet-number">1</span> In het bovenste gedeelte stelt u een standaardinstelling in voor alle
+			contourbewerkingen. <br>
+			<span class="bullet-number">2</span> In het onderste gedeelte kunt u voor elk type contour afzonderlijk
+			verschillende instellingen maken.<br>
+			<span class="bullet-number">3</span> In principe kunt u contourlijnen <span class="menu-cadwork-window">met
+				cirkelbogen en rechte lijnen opdelen</span> of <span class="menu-cadwork-window">alleen met rechte
+				lijnen opdelen</span>. Met cirkelbogen kan een betere
+			benadering worden bereikt met tegelijkertijd minder contoursegmenten. Echter kunnen cirkelsegmenten
+			onder bepaalde omstandigheden bij een verder verwerkend CAM-systeem tot problemen leiden.<br>
+			<span class="bullet-number">4</span> Voor de toegestane <span class="menu-cadwork-window">Maximale
+				afwijking</span> stelt u een maximaal toegestane segmenthoogte <span
+				class="menu-cadwork-window">h</span> in, de grootste afstand van een contoursegment tot de werkelijke
+			curve in dit gebied. Hier is standaard maximaal 1 mm afwijking ingesteld, wat in combinatie met cirkelbogen
+			in de regel goed haalbaar is zonder te korte segmentlengtes te krijgen.<br>
+			<span class="bullet-number">5</span> De <span class="menu-cadwork-window">Maximale overgangshoek</span>
+			bepaalt hoe scherp de hoeken tussen twee opeenvolgende contoursegmenten mogen zijn. Hier is standaard 5
+			graden ingesteld.<br>
+			Afhankelijk van de geometrie van het onderdeel kan een "zeer fijne" instelling leiden tot veel korte
+			contoursegmenten en een lange bewerkingstijd, terwijl een "te grove" instelling de vorm niet voldoende
+			weergeeft.
 		</p>
 
 		<h3 id="five-axis-contour">
-			Fünfachskontur
+			Vijfassige contour
 		</h3>
 		<p>
-			Bei einer Fünfachskontur wird die Bearbeitung mit einer oberen und einer unteren Konturlinie beschrieben, die Segment für Segment verbunden werden. Das Werkzeug wird entlang der oberen Kontursegmente fahren und dabei die Werkzeugspitze an den unteren Kontursegmenten ausrichten. Sind oberes und unteres Segment unterschiedlich lang oder versetzt, muss das Werkzeug während der Bearbeitung die Neigung ändern oder fräst in einem ungünstigen Winkel zum Werkstück. Um dieses zu vermeiden, müssen die obere und untere Konturlinie in der Länge angepasst werden. Hierfür steht in Version 2025 eine neue Option unter&nbsp;<span class="menu-cadwork-window">Konfiguration&nbsp;Maschine</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork-window">Fünfachskontur</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork-window">Fünfachskontur&nbsp;verlängern</span> zur Verfügung.
+			Voor een vijfassige contour wordt de bewerking beschreven met een bovenste en een onderste contourlijn, die
+			segment voor segment met elkaar worden verbonden. Het gereedschap zal langs de bovenste contoursegmenten
+			rijden en tegelijkertijd de gereedschapspunt uitlijnen op de onderste contoursegmenten. Als het bovenste en
+			onderste segment verschillend lang of verschoven zijn, moet het gereedschap tijdens de bewerking de helling
+			aanpassen of frezen onder een ongunstige hoek ten opzichte van het werkstuk. Om dit te voorkomen, moeten de
+			bovenste en onderste contourlijn in lengte worden aangepast. Hiervoor is in versie 2025 een nieuwe optie
+			beschikbaar onder <span class="menu-cadwork-window">Configuratie Machine</span> <span
+				class="arrow arrow-right">→</span> <span class="menu-cadwork-window">Vijfassige contour</span> <span
+				class="arrow arrow-right">→</span> <span class="menu-cadwork-window">Vijfassige contour
+				verlengen</span>.
 		</p>
 		<p>
-			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/de/five-axis-contour-extend-de.png" alt="five-axis-contour-extend-de.png" width="869" height="649"><br>
-			<em>Fünfachskontur verlängern</em>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/de/five-axis-contour-extend-de.png"
+				alt="five-axis-contour-extend-de.png" width="869"><br>
+			<em>Vijfassige contour verlengen</em>
 		</p>
 		<p>
-			<span class="bullet-number">1</span> Wählen Sie&nbsp;<span class="menu-cadwork-window">Kante&nbsp;verlängern</span>, wird je nach Geometrie die obere oder untere Kante am Ende verlängert.<br>
-			<span class="bullet-number">2</span> Wählen Sie&nbsp;<span class="menu-cadwork-window">Fläche&nbsp;verlängern</span>, wird zunächst eine möglichst gleichmäßige Segmentierung berechnet und die Fläche am Ende gestreckt.<br>
-			Je nach Geometrie kann die eine oder die andere Option zu besseren Ergebnissen führen.
+			<span class="bullet-number">1</span> Kies <span class="menu-cadwork-window">Rand verlengen</span>, dan wordt
+			afhankelijk van de geometrie de bovenste of onderste rand aan het einde verlengd.<br>
+			<span class="bullet-number">2</span> Kies <span class="menu-cadwork-window">Vlak verlengen</span>, dan wordt
+			eerst een zo gelijkmatig mogelijke segmentering berekend en het vlak aan het einde uitgerekt.<br>
+			Afhankelijk van de geometrie kan de ene of de andere optie tot betere resultaten leiden.
 		</p>
 		<p>
-			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/all/five-axis-contour-extend-example-all.png" alt="five-axis-contour-extend-example-all.png" width="869" height="1491"><br>
-			<em>Fünfachskontur verlängern am Beispiel</em>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/10-machine/10-03-00-machine-data-calculation/all/five-axis-contour-extend-example-all.png"
+				alt="five-axis-contour-extend-example-all.png" width="869"><br>
+			<em>Vijfassige contour verlengen aan de hand van een voorbeeld</em>
 		</p>
 		<p>
-			<span class="bullet-number">1</span> Die Fünfachskonturen an dem Sparren einer Fledermausgaube sind <strong>ohne&nbsp;</strong>die Option&nbsp;<span class="menu-cadwork-window">Fünfachskontur&nbsp;verlängern</span> berechnet worden. Besonders in der Draufsicht ist zu erkennen, dass die Verbindungslinien der Kontursegmente zu den Bauteilenden hin schräger und dadurch länger werden.<br>
-			<span class="bullet-number">2</span> Die Fünfachskonturen an dem Sparren sind mit der Option&nbsp;<span class="menu-cadwork-window">Kante&nbsp;verlängern</span> berechnet worden. Die Verbindungslinien sind gleichmäßig über das gesamte Bauteil. Die kürzere Konturlinie ist für die Berechnung an den Bauteilenden verlängert worden.<br>
-			<span class="bullet-number">3</span> Die Fünfachskonturen sind mit der Option&nbsp;<span class="menu-cadwork-window">Fläche&nbsp;verlängern</span> berechnet worden. Das Ergebnis ist ähnlich gleichmäßig. Die beiden äußersten Kontursegmente sind am Ende der Berechnung mit dem gleichen Winkel vervollständigt worden.
+			<span class="bullet-number">1</span> De vijfassige contouren op de spant van een vleermuisdakkapel zijn
+			<strong>zonder </strong>de optie <span class="menu-cadwork-window">Vijfassige contour verlengen</span>
+			berekend. Vooral in het bovenaanzicht is te zien dat de verbindingslijnen van de contoursegmenten naar de
+			uiteinden van het onderdeel toe schuiner en daardoor langer worden.<br>
+			<span class="bullet-number">2</span> De vijfassige contouren op de spant zijn berekend met de optie <span
+				class="menu-cadwork-window">Rand verlengen</span>. De verbindingslijnen zijn gelijkmatig over het gehele
+			onderdeel. De kortere contourlijn is voor de berekening aan de uiteinden van het onderdeel verlengd.<br>
+			<span class="bullet-number">3</span> De vijfassige contouren zijn berekend met de optie <span
+				class="menu-cadwork-window">Vlak verlengen</span>. Het resultaat is vergelijkbaar gelijkmatig. De twee
+			uiterste contoursegmenten zijn aan het einde van de berekening met dezelfde hoek voltooid.
 		</p>
 	</div>
 

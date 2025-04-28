@@ -13,6 +13,7 @@
 
 	<!-- KB styles -->
 	<link rel="stylesheet" href="https://kb.cadwork.ch/css/app.css?v1">
+	<link rel="icon" href="https://kb.cadwork.ch/img/favicons/kb-favicon.ico" type="image/x-icon">
 
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="../../css/style-news.css" />
@@ -63,11 +64,11 @@
 		<p>
 			Als u een 3D-bestand opent, ontvangt u een waarschuwing als het pointcloud-bestand binnen uw
 			mapstructuur is verplaatst of om andere redenen niet is gevonden. U heeft hier drie mogelijkheden.
-			Met&nbsp;<span class="menu-cadwork-window">Ja</span> kunt u het nieuwe pad selecteren en de koppeling
-			herstellen. Als u&nbsp;<span class="menu-cadwork-window">Nee</span> kiest, wordt het 3D-bestand geopend en
+			Met <span class="menu-cadwork-window">Ja</span> kunt u het nieuwe pad selecteren en de koppeling
+			herstellen. Als u <span class="menu-cadwork-window">Nee</span> kiest, wordt het 3D-bestand geopend en
 			kan er zonder de pointcloud worden gewerkt. Het oude pad blijft bestaan, zodat u bij het opnieuw openen van
 			het bestand weer een waarschuwing ontvangt, tenzij het pointcloud-bestand is gevonden. Bij de laatste
-			mogelijkheid&nbsp;<span class="menu-cadwork-window">Pointcloud-link&nbsp;verwijderen</span> wordt de
+			mogelijkheid <span class="menu-cadwork-window">Pointcloud-link verwijderen</span> wordt de
 			bestaande link permanent verwijderd.
 		</p>
 		<p>
@@ -80,12 +81,18 @@
 			Werken via de server
 		</h3>
 		<p>
-			Een belangrijke vernieuwing betreft het werken met pointcloud-bestanden die op een server zijn opgeslagen. In
+			Een belangrijke vernieuwing betreft het werken met pointcloud-bestanden die op een server zijn opgeslagen.
+			In
 			het verleden waren er soms problemen bij het opslaan. In versie 2025 wordt bij het opstarten van het
 			3D-bestand een tijdelijk OOC-bestand aangemaakt en lokaal opgeslagen. Hierdoor is de communicatie tussen het
-			3D-bestand en het OOC-bestand aanzienlijk sneller en leidt dit tot een betere stabiliteit. Zorg ervoor dat
-			u voldoende opslagruimte op uw systeemschijf vrijhoudt.
+			3D-bestand en het OOC-bestand aanzienlijk sneller en leidt dit tot een betere stabiliteit.
 		</p>
+		<div class="box warning">
+			<p>
+				<strong>Let op:</strong><br>
+				Zorg ervoor dat u voldoende opslagruimte op uw systeemschijf vrijhoudt.
+			</p>
+		</div>
 
 		<h2 id="pointcloud-manager">
 			Pointcloud-Manager
@@ -95,10 +102,12 @@
 			Aanpassen van het aantal punten
 		</h3>
 		<p>
-			Als u na het importeren van de pointcloud niet tevreden bent met het aantal ge&iuml;mporteerde punten, hoeft u nu
+			Als u na het importeren van de pointcloud niet tevreden bent met het aantal ge&iuml;mporteerde punten, hoeft
+			u nu
 			niet meer het OOC-bestand te verwijderen en het importproces volledig opnieuw te starten. In de
 			Pointcloud-Manager is het in versie 2025 mogelijk om de pointcloud met een ander aantal punten opnieuw te
-			laden. Daarnaast wordt hier het huidige aantal punten, het maximaal aantal mogelijke punten en de procentuele waarde van de
+			laden. Daarnaast wordt hier het huidige aantal punten, het maximaal aantal mogelijke punten en de
+			procentuele waarde van de
 			gebruikte punten weergegeven.
 		</p>
 		<p>
@@ -111,12 +120,16 @@
 			Hernieuwde dialoog
 		</h3>
 		<p>
-			Over het algemeen is de dialoog&nbsp;<span class="menu-cadwork-window">Pointcloud-Manager</span> herzien.
-			Niet alleen wordt het aantal punten weergegeven in het gedeelte&nbsp;<span class="menu-cadwork-window">Algemeen</span>,
-			maar er is in dit gedeelte ook een extra selectievakje&nbsp;<span
-				class="menu-cadwork-window">Nulpuntrotatie&nbsp;voor&nbsp;snijvlakken&nbsp;niet&nbsp;in&nbsp;acht&nbsp;nemen</span>.
-			Dit bevindt zich nu op deze centrale plaats en niet zoals voorheen als selectievakje "Globaal" in de
-			individuele posities van vlakken, uitsnijdingen of sneden met diepte.
+			De dialoog <span class="menu-cadwork-window">Pointcloud-Manager</span> is volledig herzien. Naast het aantal
+			punten, dat wordt weergegeven in het gedeelte <span class="menu-cadwork-window">Algemeen</span>, is er in
+			dit gedeelte een extra checkbox toegevoegd voor de uitlijning van de snijvlakken <span
+				class="menu-cadwork-window">Uitlijning volgens Boundingbox</span>. Deze bevindt zich nu op deze centrale
+			plaats en niet zoals voorheen als checkbox "Globaal" in de respectieve individuele posities van vlakken,
+			uitsnijdingen of sneden met diepte. <br>Aangezien Pointcloud-bestanden voor een betrouwbare verwerking bij
+			het starten van het bestand van het netwerk naar de lokale TEMP-map worden gekopieerd, wordt in de dialoog
+			de opslagbehoefte van het Pointcloud-bestand op de harde schijf weergegeven. Via de knop <span
+				class="menu-cadwork-window">Locatie in Verkenner openen</span> wordt een Verkenner in de TEMP-map
+			geopend.
 		</p>
 		<p>
 			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/12-pointcloud-and-digital-survey/de/pointcloud-manager-general-de.png"
@@ -124,7 +137,7 @@
 			<em>Pointcloud-Manager Algemeen</em>
 		</p>
 		<p>
-			Het gedeelte&nbsp;<span class="menu-cadwork-window">Snijvlakken</span> is aanzienlijk overzichtelijker
+			Het gedeelte <span class="menu-cadwork-window">Snijvlakken</span> is aanzienlijk overzichtelijker
 			geworden. Nieuwe vlakken, uitsnijdingen en sneden met diepte worden nu direct in het betreffende gedeelte
 			aangemaakt.
 		</p>
@@ -156,7 +169,8 @@
 			Weergave van Clipping Boxen
 		</h3>
 		<p>
-			De randen van een berekende Clipping Box worden in versie 2025, zoals te zien is in de onderstaande afbeelding,
+			De randen van een berekende Clipping Box worden in versie 2025, zoals te zien is in de onderstaande
+			afbeelding,
 			als een stippellijn weergegeven.
 		</p>
 		<p>
@@ -175,7 +189,8 @@
 			Exporteren van de berekende Clipping Box
 		</h3>
 		<p>
-			De berekende Clipping Box kan vanuit de Viewer-modus worden ge&euml;xporteerd. In de respectieve export, bijvoorbeeld
+			De berekende Clipping Box kan vanuit de Viewer-modus worden ge&euml;xporteerd. In de respectieve export,
+			bijvoorbeeld
 			BIMteam, bevinden zich nu uitsluitend de punten die zich binnen de berekende Clipping Box bevinden. In het
 			verleden werd op deze plaats de volledige Pointcloud weergegeven.
 		</p>
@@ -184,10 +199,13 @@
 			Roteren en verplaatsen van de Pointcloud
 		</h2>
 		<p>
-			E&eacute;n van de belangrijkste vernieuwingen in versie 2025 op het gebied van de Pointcloud is de mogelijkheid om uw
-			reeds gee&iuml;mporteerde Pointcloud in 3D te verplaatsen en te roteren. Dit biedt u de mogelijkheid om de scan
+			E&eacute;n van de belangrijkste vernieuwingen in versie 2025 op het gebied van de Pointcloud is de
+			mogelijkheid om uw
+			reeds gee&iuml;mporteerde Pointcloud in 3D te verplaatsen en te roteren. Dit biedt u de mogelijkheid om de
+			scan
 			bijvoorbeeld uit te lijnen met bestaande tachymeter-knooppunten. Voor het verplaatsen of roteren kunnen elk
-			willekeurig punt binnen de Pointcloud en de punten van de Bounding Box worden gebruikt. De uitvoering gebeurt
+			willekeurig punt binnen de Pointcloud en de punten van de Bounding Box worden gebruikt. De uitvoering
+			gebeurt
 			zoals gebruikelijk via het menu of de respectieve sneltoetsen.
 		</p>
 		<p>

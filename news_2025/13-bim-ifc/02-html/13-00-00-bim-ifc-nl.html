@@ -13,11 +13,12 @@
 
 	<!-- KB styles -->
 	<link rel="stylesheet" href="https://kb.cadwork.ch/css/app.css?v1">
+	<link rel="icon" href="https://kb.cadwork.ch/img/favicons/kb-favicon.ico" type="image/x-icon">
 
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="../../css/style-news.css" />
 
-	<title>13.0.0 - BIM - IFC - DE - Article 1822</title>
+	<title>13.0.0 - BIM - IFC - NL - Artikel 1822</title>
 </head>
 
 <body>
@@ -27,92 +28,155 @@
 
 	<div id="content" class="card-body">
 		<h1>
-			13.0.0 - BIM - IFC - Stand 2025.02.01
+			13.0.0 - BIM - IFC - Status 2025.02.01
 		</h1>
 
 		<h2 id="ifc-export">
 			IFC-Export
 		</h2>
 		<p>
-			Der IFC-Export wurde in V2025 komplett überarbeitet. Die Struktur und Datenqualität der exportierten Daten ist optimiert worden und damit einhergehend hat sich sowohl die Datenmenge (Dateigröße) wie auch die Ausgabedauer von IFC-Dateien reduziert.
+			De IFC-export is in V2025 volledig herzien. De structuur en gegevenskwaliteit van de geëxporteerde gegevens
+			zijn geoptimaliseerd, wat heeft geleid tot een vermindering van zowel de gegevensomvang (bestandsgrootte)
+			als
+			de uitvoertijd van IFC-bestanden.
 		</p>
 		<p>
-			Neben der Information des "Autorenprogramms" cadwork steht nun auch die Versions- und Buildnummer in den Dateieigenschaften der IFC-Datei.
+			Naast de informatie over het "auteursprogramma" cadwork wordt nu ook het versienummer en het buildnummer in
+			de bestandskenmerken van het IFC-bestand weergegeven.
 		</p>
 		<p>
-			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/13-bim-ifc/all/build-and-version-all.png" alt="build-and-version-all.png" width="402" height="55"><br>
-			<em>Anzeige der Version und Buildnummer im IFC-Viewer</em>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/13-bim-ifc/all/build-and-version-all.png"
+				alt="build-and-version-all.png" width="402" height="55"><br>
+			<em>Weergave van de versie en het buildnummer in de IFC-viewer</em>
 		</p>
 		<p>
-			Die bei mehrschichtigen Wänden, Dächern und Decken definierten Schichten werden mit Version 2025 in die IFC-Datei exportiert. Dies gilt sowohl für die Ausgabe als Material Layer Set, mit dem die Schichtinformationen nur informativ an der Wandhülle stehen, als auch für die Ausgabe als Material Constituent Set, bei dem die einzelnen Schichtelemente als separate Elemente in der IFC-Datei enthalten sind. Wenn es nicht anders gefordert ist, sollte in den meisten Fällen der Material Layer Set Standard sein.
+			De lagen die zijn gedefinieerd in meerlaagse wanden, daken en plafonds worden met versie 2025 geëxporteerd
+			naar het IFC-bestand. Dit geldt zowel voor de uitvoer als Material Layer Set, waarbij de laaginformatie
+			alleen informatief aan de enveloppe wordt gekoppeld, als voor de uitvoer als Material Constituent Set,
+			waarbij
+			de afzonderlijke laagelementen als aparte elementen in het IFC-bestand worden opgenomen. Als er geen andere
+			eis is, zou in de meeste gevallen de Material Layer Set standaard moeten zijn.
 		</p>
 		<p>
-			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/13-bim-ifc/de/roof-and-floor-de.png" alt="roof-and-floor-de.png" width="869" height="375"><br>
-			<em>Anzeigen der Schichten von Dach- und Deckenelementen im IFC-Viewer.</em>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/13-bim-ifc/de/roof-and-floor-de.png"
+				alt="roof-and-floor-de.png" width="869" height="375"><br>
+			<em>Weergave van de lagen van dak- en vloerelementen in de IFC-viewer.</em>
 		</p>
 		<p>
-			IfcBaseQuantities, auch Ifc Quantity Sets, enthalten berechnete Geometriewerte zu jedem Bauteil. Anders als in früheren Versionen werden diese Base Quantities nun nicht mehr standardmäßig mit in die IFC-Dateien exportiert. Die Werte wie Volumen, Querschnittsflächen, Oberflächen und weitere können im Allgemeinen von importierenden Softwaresystemen selbst für notwendige Bauteile ermittelt werden. Da die Berechnung der Quantity Sets für jedes Bauteil einer Konstruktion unter Umständen viel Zeit verlangt, sollten diese nur noch dann ausgegeben werden, wenn sie gefordert werden.
+			IfcBaseQuantities, ook wel Ifc Quantity Sets genoemd, bevatten berekende geometriewaarden voor elk element.
+			In tegenstelling tot eerdere versies worden deze Base Quantities nu niet meer standaard geëxporteerd naar
+			IFC-bestanden. Waarden zoals volume, doorsnedeoppervlakken, oppervlakken en andere kunnen over het algemeen
+			door importerende softwaresystemen zelf worden berekend voor de benodigde elementen. Aangezien de berekening
+			van de Quantity Sets voor elk element van een constructie veel tijd kan kosten, moeten deze alleen nog
+			worden geëxporteerd als ze vereist zijn.
 		</p>
 		<p>
-			Für eine korrekte Ausgabe von IFC-Dateien ist es wichtig, dass jedem Element ein IFC-Typ zugeordnet ist. Abhängig vom IFC-Typ bekommen Elemente bei vielen Softwareherstellern unterschiedliche Attribute oder Eigenschaften. Um zu vermeiden, dass Elemente ohne IFC-Typ exportiert werden, erscheint beim Export nun gegebenenfalls ein neuer Dialog. Hier können Sie wählen, ob alle Elemente ohne IFC-Typ automatisch den IFC-Typ IfcBuildingElementProxy bekommen sollen (<span class="menu-cadwork-window">Automatisch&nbsp;IfcBuildingElementProxy&nbsp;zuweisen</span>), oder ob eine Automatik entscheiden soll, nach Lage und Elementtyp den richtigen IFC-Typ für diese Elemente zu vergeben (<span class="menu-cadwork-window">IFC-Typ&nbsp;automatisch&nbsp;zuweisen</span>). Die dritte Möglichkeit besteht in einem <span class="menu-cadwork-window">Abbruch</span>, bei der das Attribut der Bauteile nicht verändert wird und die betroffenen Bauteile aktiv bleiben. In diesem Fall können Sie selbst jeweils den richtigen IFC-Typ über <span class="menu-cadwork">Modifizieren</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork">BIM</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork">IFC-Typ</span> definieren. Für einen "schnellen" Export sollte die Option <span class="menu-cadwork-window">IFC-Typ&nbsp;automatisch&nbsp;zuweisen</span> oft die richtige Option sein.
+			Voor een correcte uitvoer van IFC-bestanden is het belangrijk dat elk element een IFC-type toegewezen
+			krijgt. Afhankelijk van het IFC-type krijgen elementen bij veel softwarefabrikanten verschillende attributen
+			of eigenschappen. Om te voorkomen dat elementen zonder IFC-type worden geëxporteerd, verschijnt er nu een
+			nieuwe dialoog tijdens de export. Hier kunt u kiezen of alle elementen zonder IFC-type automatisch het
+			IFC-type IfcBuildingElementProxy moeten krijgen (<span class="menu-cadwork-window">Automatisch
+				IfcBuildingElementProxy toewijzen</span>), of dat een automatische toewijzing moet worden gedaan op
+			basis van locatie en elementtype (<span class="menu-cadwork-window">IFC-type automatisch toewijzen</span>).
+			De derde mogelijkheid is een <span class="menu-cadwork-window">Annuleren</span>, waarbij het attribuut van
+			de elementen niet wordt veranderd en de betreffende elementen actief blijven. In dit geval kunt u zelf het
+			juiste IFC-type definiëren via <span class="menu-cadwork">Wijzigen</span> <span
+				class="arrow arrow-right">&rarr;</span> <span class="menu-cadwork">BIM</span> <span
+				class="arrow arrow-right">&rarr;</span> <span class="menu-cadwork">IFC-type</span>. Voor een "snelle"
+			export is de optie <span class="menu-cadwork-window">IFC-type automatisch toewijzen</span> vaak de juiste
+			keuze.
 		</p>
 		<p>
-			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/13-bim-ifc/de/missing-ifc-type-de.png" alt="missing-ifc-type-de.png" width="399" height="231"><br>
-			<em>Möglichkeiten zur automatischen Vergabe des IFC-Typs.</em>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/13-bim-ifc/de/missing-ifc-type-de.png"
+				alt="missing-ifc-type-de.png" width="399" height="231"><br>
+			<em>Mogelijkheden voor automatische toewijzing van het IFC-type.</em>
 		</p>
 
 		<h3 id="container-and-ifcassembly">
-			Containerelemente und IfcAssembly
+			Container en IfcAssembly
 		</h3>
 		<p>
-			Wenn Containerelemente exportiert werden, werden diese als IfcAssembly in die IFC-Datei geschrieben. Die zugeordneten Bauteile sollten dann in der Hierarchie alle im IfcAssembly zusammengefasst sein. Im cadwork können Elemente aus beliebigen Geschossen einem Containerelement zugeordnet werden. Dem steht die IFC-Schnittstelle entgegen: Durch die hierarchische Struktur im IFC sind nur Elemente mit der gleichen Geschosszuordnung in einem IfcAssembly erlaubt.
+			Als containers worden geëxporteerd, worden deze als IfcAssembly in het IFC-bestand geschreven. De toegewezen
+			elementen zouden dan in de hiërarchie allemaal in de IfcAssembly moeten worden samengevoegd. In cadwork
+			kunnen elementen van willekeurige verdiepingen aan een containerelement worden toegewezen. Dit staat
+			echter haaks op de IFC-interface: Door de hiërarchische structuur in IFC zijn alleen elementen met dezelfde
+			verdiepingstoewijzing in een IfcAssembly toegestaan.
 		</p>
 		<p>
-			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/13-bim-ifc/all/rod-system-container-all.png" alt="rod-system-container-all.png" width="590" height="386"><br>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/13-bim-ifc/all/rod-system-container-all.png"
+				alt="rod-system-container-all.png" width="590" height="386"><br>
 			<em>
-				Containerelement und zugewiesene Anschlussplatten im Obergeschoss OG, <br>
-				ebenfalls zugewiesener Gabelkopf mit Zugstange im Erdgeschoss EG.
+				Containerelement en toegewezen aansluitplaten op de bovenverdieping OG, <br>
+				eveneens toegewezen vorkkop met trekstang op de begane grond EG.
 			</em>
 		</p>
 		<p>
-			In der Vergangenheit führte das in manchen Fällen dazu, dass Elemente mit anderen Geschosszuordnungen als der Container in der IFC-Datei nicht richtig platziert waren.<br>
-			Mit Version 2025 werden die Containerelemente und Bauteile mit gleicher Geschosszuordnung weiterhin als IfcAssembly ausgegeben, dem Container zugeordnete Elemente mit anderer Geschosszuordnung jedoch werden aus dem IfcAssembly gelöst und als normale Bauteile in Ihrem jeweiligen Geschoß in der IFC-Datei gespeichert.
+			In het verleden leidde dit in sommige gevallen ertoe dat elementen met andere verdiepingstoewijzingen dan
+			het container in het IFC-bestand niet correct werden geplaatst.<br> Met versie 2025 worden de
+			containerelementen en elementen met dezelfde verdiepingstoewijzing nog steeds als IfcAssembly uitgevoerd,
+			maar aan het container toegewezen elementen met een andere verdiepingstoewijzing worden uit de IfcAssembly
+			gehaald en als normale elementen in hun respectieve verdieping in het IFC-bestand opgeslagen.
 		</p>
 		<p>
-			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/13-bim-ifc/de/rod-system-ifc-de.png" alt="rod-system-ifc-de.png" width="949" height="376"><br>
-			<em> Zuordnung im Projekt-Tree des IFC-Viewers: Assembly "Zugstabanschluss" mit untergeordneten Anschlussplatten im Obergeschoss OG, losgelöst davon „normale“ Zuordnung von Gabelkopf und Zugstab dem Erdgeschoss EG zugeordnet.</em>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/13-bim-ifc/de/rod-system-ifc-de.png"
+				alt="rod-system-ifc-de.png" width="949" height="376"><br>
+			<em> Toewijzing in de projectboom van de IFC-viewer: Assembly "Trekstangaansluiting" met ondergeschikte
+				aansluitplaten op de bovenverdieping OG, los daarvan „normale“ toewijzing van vorkkop en trekstang aan
+				de begane grond EG.</em>
 		</p>
 
 		<h2 id="ifc-import">
 			IFC-Import
 		</h2>
 		<p>
-			Wenn die IFC-Datei eingelesen ist, sind die Elemente zunächst noch als Exchange-Elemente in der Datei visualisiert. Um Elemente zu Bauteilen der Konstruktion zu konvertieren, müssen Sie diese zunächst aktivieren. Sinnvoll konnten und können bislang Gruppen von Bauteilen über die Struktur des IFC-trees aktiviert werden. Es können aber auch einzelne Elemente im 3D durch Anklicken oder durch Verwendung der <kbd>Strg</kbd>&nbsp;+&nbsp;<kbd>A</kbd>-Funktionen aktiviert und konvertiert werden. Vielen Anwendern fehlte aber bislang die Möglichkeit, Exchange Elemente über die Lasso-Funktion oder die Aktivierlinie auszuwählen, was in Version 2025 nun ebenfalls implementiert ist.
+			Als het IFC-bestand is ingelezen, worden de elementen aanvankelijk nog als Exchange-elementen in het bestand
+			weergegeven. Om elementen naar constructieonderdelen te converteren, moet u deze eerst activeren. Tot nu toe
+			was het mogelijk en zinvol om groepen van onderdelen via de structuur van de IFC-boom te activeren. Maar het
+			was ook mogelijk om individuele elementen in 3D te selecteren door erop te klikken of door gebruik te maken
+			van de <kbd>Ctrl</kbd> + <kbd>A</kbd>-functies. Veel gebruikers misten echter de mogelijkheid om
+			Exchange-elementen te selecteren met de lasso-functie of de selectielijn, wat nu in versie 2025 ook is
+			geïmplementeerd.
 		</p>
 		<p>
-			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/13-bim-ifc/all/lasso-exchange-all.png" alt="lasso-exchange-all.png" width="466" height="479"><br>
-			<em>Exchange Objekte können mit Lasso oder Aktivierlinie markiert werden.</em>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/13-bim-ifc/all/lasso-exchange-all.png"
+				alt="lasso-exchange-all.png" width="466" height="479"><br>
+			<em>Exchange-objecten kunnen worden geactiveerd met de lasso of selectielijn.</em>
 		</p>
 		<p>
-			Häufig finden Sie Textobjekte wie IfcAnnotation oder IfcTextLiteral in zu importierenden IFC-Dateien. Diese wurden beim Import nicht richtig skaliert und führten in vielen Fällen zu deutlichem Mehraufwand beim Dateiimport. Mit der aktuellen Version werden diese Objekte nicht mehr importiert, bis eine funktionierende Lösung für die Skalierung entwickelt wurde.
+			Vaak vindt u tekstobjecten zoals IfcAnnotation of IfcTextLiteral in te importeren IFC-bestanden. Deze werden
+			bij de import niet correct geschaald en leidden in veel gevallen tot aanzienlijk meer werk bij het
+			importeren van bestanden. In de huidige versie worden deze objecten niet meer geïmporteerd totdat een
+			werkende oplossing voor de schaalvergroting is ontwikkeld.
 		</p>
 
 		<h2 id="bcf-bimcollab-plugin">
 			BCF – BIMcollab-Plugin
 		</h2>
 		<p>
-			Über das Windows-Menü <span class="menu-cadwork">Fenster</span>&nbsp;<span class="arrow arrow-right">&rarr;</span>&nbsp;<span class="menu-cadwork">BCF&nbsp;Manager&nbsp;BIMcollab</span> öffnet sich ein neuer Dialog zum Anlegen, Verwalten und Im-/Exportieren von BCF-Dateien. Es ist das von BIMcollab zur Verfügung gestellte SDK (Software Development Kit). Die Vorteile bei der Verwendung solcher SDK´s liegen darin, dass auf vorhandene, vielfach bewährte und damit stabile Ressourcen und Funktionalitäten zugegriffen werden kann, ohne sie komplett neu entwickeln zu müssen. Die Dialoge selbst wurden zur letzten Version bereits vorgestellt (Dokumentation "News cadwork Version 30 (SP2024), Kapitel Plugins", Youtube-Kanäle,…) und ersetzen nun den alten selbst entwickelten Standard im Menü.
+			Via het Windows-menu <span class="menu-cadwork">Venster</span> <span class="arrow arrow-right">&rarr;</span>
+			<span class="menu-cadwork">BCF Manager BIMcollab</span> opent zich een nieuwe dialoog voor het aanmaken,
+			beheren en importeren/exporteren van BCF-bestanden. Dit is het door BIMcollab beschikbaar gestelde SDK
+			(Software Development Kit). De voordelen van het gebruik van dergelijke SDK's zijn dat er gebruik kan worden
+			gemaakt van bestaande, vaak bewezen en daarmee stabiele bronnen en functionaliteiten, zonder deze volledig
+			opnieuw te hoeven ontwikkelen. De dialoogvensters zelf werden al in de vorige versie geïntroduceerd
+			(documentatie "Nieuws cadwork Versie 30 (SP2024), Hoofdstuk Plugins", YouTube-kanalen, ...) en vervangen nu
+			de oude zelfontwikkelde standaard in het menu.
 		</p>
 		<p>
-			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/13-bim-ifc/de/bcf-manger-de.png" alt="bcf-manger-de.png" width="863" height="773"><br>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/13-bim-ifc/de/bcf-manger-de.png"
+				alt="bcf-manger-de.png" width="863" height="773"><br>
 			<em>BCF Manager BIMcollab.</em>
 		</p>
 		<p>
-			Das Benutzerinterface des BCF Manager BIMcollab entspricht daher genau dem entsprechenden Werkzeug aus BIMcollab. Im Allgemeinen sollten die Issues über eine Cloud verwaltet werden. Weiterhin können Sie auch ohne Anbindung an eine CDE (Common Data Environment) die BCF-Issues offline nutzen und als Datei exportieren und importieren.
+			De gebruikersinterface van de BCF Manager BIMcollab komt daarom exact overeen met het bijbehorende
+			gereedschap van BIMcollab. Over het algemeen moeten de issues via een cloud worden beheerd. Verder kunt u
+			ook zonder verbinding met een CDE (Common Data Environment) de BCF-issues offline gebruiken en als bestand
+			exporteren en importeren.
 		</p>
 		<p>
-			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/13-bim-ifc/de/new-issue-de.png" alt="new-issue-de.png" width="1058" height="447"><br>
-			<em>Anlegen eines neuen BCF-Eintrags.</em>
+			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/13-bim-ifc/de/new-issue-de.png"
+				alt="new-issue-de.png" width="1058" height="447"><br>
+			<em>Het aanmaken van een nieuwe BCF-invoer.</em>
 		</p>
 	</div>
 
