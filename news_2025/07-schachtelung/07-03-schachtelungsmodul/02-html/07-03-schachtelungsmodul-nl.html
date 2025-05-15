@@ -140,8 +140,8 @@
 			Algemeen
 		</h3>
 		<p>
-			In de standaardinstellingen van de nestinggroepen kunnen zogenaamde ruwe materiaal generatie regels worden
-			gedefinieerd om de afmetingen van ruwe materialen vast te leggen.
+			In de standaardinstellingen van de nestinggroepen kunnen zogenaamde nestingvolume-generatie regels worden
+			gedefinieerd om de afmetingen van nestingvolumes vast te leggen.
 		</p>
 		<p>
 			De regels (<span class="menu-cadwork-window">Extra</span> <span class="arrow arrow-right">&rarr;</span>
@@ -150,142 +150,138 @@
 				class="menu-cadwork-window">Generatie-regels voor nestingvolumes</span> <span
 				class="arrow arrow-right">&rarr;</span> <span class="menu-cadwork-window">Beheren</span>) zijn bedoeld
 			om nestingvolumes uitsluitend in vooraf gedefinieerde vaste maten of volgens een vooraf gedefinieerde
-			regelset te genereren.<br>
-			Op deze manier gegenereerde nestingvolumes zijn gekoppeld aan de gebruikte regel.
+			regelset te genereren.<br> Op deze manier gegenereerde nestingvolumes zijn gekoppeld aan de gebruikte regel.
 		</p>
 		<p>
 			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/07-nesting/07-03-00-nesting-module/de/nesting-manager-other-de.png"
 				alt="nesting-manager-other-de.png" width="1002" height="632" class="img-80"><br>
 			<em>Nestingbeheer <span class="arrow arrow-right">&rarr;</span> Overige <span
-					class="arrow arrow-right">&rarr;</span> Ruwe materiaal generatie regels</em>
+					class="arrow arrow-right">&rarr;</span> Generatie regels voor nestingvolumes</em>
 		</p>
 		<p>
 			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/07-nesting/07-03-00-nesting-module/de/rule-example-de.png"
 				alt="rule-example-de.png" width="842" height="545" class="img-80"><br>
-			<em>Beispiel einer Rohlingserzeugungsregel</em>
+			<em>Voorbeeld van een regel voor het genereren van een nestingvolume</em>
 		</p>
 		<p>
-			Regeln können in Kombination mit der 2D-Optimierung über OptiPanel und ebenfalls im Schachtelungsmodul beim
-			Erzeugen eines Schachtelungsrohlings eingesetzt werden (<span class="menu-cadwork">Hinzufügen
-				Rohling…</span> <span class="arrow arrow-right">&rarr;</span> <span class="menu-cadwork">Gemäß
-				Regel</span>).
+			Regels kunnen in combinatie met de 2D-optimalisatie via OptiPanel en ook in de nesting-module worden
+			gebruikt bij het genereren van een nestingvolume (<span class="menu-cadwork">Toevoegen volume...</span>
+			<span class="arrow arrow-right">&rarr;</span> <span class="menu-cadwork">Volgens regel</span>).
 		</p>
 		<p>
-			Die so erzeugten regelbasierten Rohlinge dürfen stets nur solche Abmessungen haben, die der verknüpften
-			Regel entsprechen. Nachträgliche geometrische Veränderungen sind also nur zulässig, sofern sie den
-			Randbedingungen der verwendeten Regel noch entsprechen.<br>
-			Eine Regel kann für eine Abmessung entweder ein fixes Maß vorgeben oder einen minimalen und maximalen Wert
-			sowie eine Schrittweite, siehe Beispiel oben.
+			De op deze manier gegenereerde regelgebaseerde nestingvolumes mogen altijd alleen die afmetingen hebben die
+			overeenkomen met de gekoppelde regel. Achteraf geometrische wijzigingen zijn dus alleen toegestaan als ze
+			nog voldoen aan de randvoorwaarden van de gebruikte regel.<br> Een regel kan voor een afmeting ofwel een
+			vaste maat specificeren of een minimale en maximale waarde en een stapgrootte, zie voorbeeld hierboven.
 		</p>
 		<p>
-			Schachtelungsrohlinge mit Verknüpfung zu einer Regel, welche die Abmessungen über Minimal- und Maximalwert
-			sowie eine Schrittweite definiert, können nur in den vorgegebenen Schrittweiten und bis zum Minimal- oder
-			Maximalwert gestreckt werden.
+			Nestingvolumes met een koppeling aan een regel die de afmetingen definieert via minimale en maximale waarde
+			en een stapgrootte, kunnen alleen worden uitgerekt in de opgegeven stapgroottes en tot de minimale of
+			maximale waarde.
 		</p>
 		<p>
 			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/07-nesting/07-03-00-nesting-module/de/stretch-according-rules-de.png"
 				alt="stretch-according-rules-de.png" width="842" height="267" class="img-80"><br>
-			<em>Regelbasierten Rohling gemäß seiner Regel strecken.</em>
+			<em>Regelgebaseerd volume uitrekken volgens zijn regel.</em>
 		</p>
 		<p>
-			Ein regelbasierter Rohling mit fixen Abmessungen lässt sich nicht strecken.
+			Een regelgebaseerd volume met vaste afmetingen kan niet worden uitgerekt.
 		</p>
 
 		<h3 id="decouple-generation-rule">
-			Erzeugungsregel abkoppeln
+			Generatieregel loskoppelen
 		</h3>
 		<p>
-			Um dennoch im Schachtelungsmodul ein freies Strecken mit Abweichungen zu den durch eine Regel vorgegebenen
-			Werten zu ermöglichen, lässt sich ein regelbasierter Rohling über <span class="menu-cadwork">Modifizieren
-				Attribute…</span> <span class="arrow arrow-right">&rarr;</span> <span
-				class="menu-cadwork">Erzeugungsregel abkoppeln</span> von seiner Erzeugungsregel lösen.</p>
+			Om in de nesting-module toch een vrije uitrekking met afwijkingen van de door een regel opgegeven waarden
+			mogelijk te maken, kan een regelgebaseerd volume via <span class="menu-cadwork">Wijzigen
+				Attributen...</span> <span class="arrow arrow-right">&rarr;</span> <span
+				class="menu-cadwork">Generatieregel loskoppelen</span> van zijn generatieregel worden losgekoppeld.
+		</p>
 		<p>
 			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/07-nesting/07-03-00-nesting-module/de/remove-rule-de.png"
 				alt="remove-rule-de.png" width="202" height="430" class="img-80"><br>
-			<em>Erzeugungsregel abkoppeln</em>
+			<em>Generatieregel loskoppelen</em>
 		</p>
 		<p>
-			Hiermit verliert der Schachtelungsrohling die Verknüpfung zu seiner Erzeugungsregel und kann anschließend
-			beliebig gestreckt werden.<br>
-			Der Vorgang des Abkoppelns wird im Undo-Speicher aufgezeichnet und lässt sich - solange das
-			Schachtelungsmodul nicht verlassen wird - mit <span class="menu-cadwork">Rückgängig Modifizieren</span>
-			rückgängig machen.
+			Hiermee verliest het nestingvolume de koppeling met zijn generatieregel en kan het vervolgens vrij worden
+			uitgerekt.<br> De handeling van het loskoppelen wordt in het undo-geheugen opgeslagen en kan - zolang de
+			nesting-module niet wordt verlaten - met <span class="menu-cadwork">Ongedaan maken Wijzigen</span> ongedaan
+			worden gemaakt.
 		</p>
 
 		<h2 id="mirror-with-h-and-v-keys">
-			Spiegeln mit Tasten H und V bei aktivem "Gleiten direkt"
+			Spiegelen met toetsen H en V bij actieve "Direct glijden"
 		</h2>
 		<p>
-			Mit aktivierter Option <span class="menu-cadwork">Gleiten direkt</span> (<span
-				class="menu-cadwork">Benutzereinstellungen</span> <span class="arrow arrow-right">&rarr;</span> <span
-				class="menu-cadwork">Optionen…</span> <span class="arrow arrow-right">&rarr;</span> <span
-				class="menu-cadwork">Kopieren…</span>) steigt der
-			Nutzer über <span class="menu-cadwork">Verschieben Bauteil</span> bzw. Shortcut <kbd>5</kbd>
-			unmittelbar im "Gleiten-Modus" in die Verschiebefunktionalität ein.
+			Met de geactiveerde optie <span class="menu-cadwork">Direct glijden</span> (<span
+				class="menu-cadwork">Gebruikersinstellingen</span> <span class="arrow arrow-right">&rarr;</span> <span
+				class="menu-cadwork">Opties…</span> <span class="arrow arrow-right">&rarr;</span> <span
+				class="menu-cadwork">Kopiëren…</span>) start de gebruiker via <span class="menu-cadwork">Verplaatsen
+				element</span> of sneltoets <kbd>5</kbd> direct in de "Glijmodus" binnen de verplaatsfunctionaliteit.
 		</p>
 		<p>
 			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/07-nesting/07-03-00-nesting-module/de/glide-de.png"
 				alt="glide-de.png" width="201" height="298" class="img-80"><br>
-			<em>Gleiten direkt ist aktiviert</em>
+			<em>Direct glijden is geactiveerd</em>
 		</p>
 		<p>
-			In diesem Fall stehen jetzt auch im Schachtelungsmodul das horizontale bzw. vertikale Spiegeln eines
-			Bauteils über die Tasten <kbd>H</kbd> bzw. <kbd>V</kbd> zur Verfügung.
+			In dit geval is het nu ook in de nesting-module mogelijk om een element horizontaal of verticaal te
+			spiegelen
+			met de toetsen <kbd>H</kbd> of <kbd>V</kbd>.
 		</p>
 		<p>
 			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/07-nesting/07-03-00-nesting-module/de/glide-2-de.png"
 				alt="glide-2-de.png" width="687" height="360" class="img-80"><br>
-			<em>Spiegeln eines Bauteils über die Tasten H oder V im Gleiten-Modus</em>
+			<em>Spiegelen van een element met de toetsen H of V in de Glijmodus</em>
 		</p>
 
 		<h2 id="renumber-nesting-volumes">
-			Rohlinge renummerieren
+			Hernummeren van nestingvolumes
 		</h2>
 		<p>
-			Sollte die neue Methode "Fortlaufende Nummerierung" gewählt sein (siehe dazu Kapitel <a
-				href="https://kb.cadwork.ch/cadwork_news_documentation/manual/1793#selection-of-method"
-				target="_blank">"Schachtelungsverwaltung <span class="arrow arrow-right">&rarr;</span> Auswahl
-				der Methode"</a>), lässt sich die Funktionalität zur Neunummerierung vorhandener Schachtelungsrohlinge
-			<strong>nur</strong> aus der Schachtelungsverwaltung aufrufen (<span
-				class="menu-cadwork-window">Sonstiges</span> <span class="arrow arrow-right">&rarr;</span> <span
-				class="menu-cadwork-window">Rohlingsnummern verwalten</span> <span
-				class="arrow arrow-right">&rarr;</span> <span class="menu-cadwork-window">Verwalten</span>).
+			Als de nieuwe methode "Opeenvolgende nummering" is geselecteerd (zie hoofdstuk <a
+				href="../../07-02-schachtelungsverwaltung/02-html/07-02-schachtelungsverwaltung-nl.html"
+				target="_blank">"Nestingbeheer <span class="arrow arrow-right">&rarr;</span> Selectie van de
+				methode"</a>), kan de functionaliteit voor het hernummeren van bestaande nestingvolumes
+			<strong>alleen</strong> worden opgeroepen vanuit het nestingbeheer (<span
+				class="menu-cadwork-window">Overige</span> <span class="arrow arrow-right">&rarr;</span> <span
+				class="menu-cadwork-window">Beheer van volumennummers</span> <span
+				class="arrow arrow-right">&rarr;</span> <span class="menu-cadwork-window">Beheren</span>).
 		</p>
 		<p>
-			Im Schachtelungsmodul erscheint in diesem Fall der entsprechende Menüpunkt ausgegraut.
+			In de nesting-module wordt in dit geval het betreffende menu-item grijs weergegeven.
 		</p>
 		<p>
 			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/07-nesting/07-03-00-nesting-module/de/renumber-nesting-volumes-de.png"
 				alt="renumber-nesting-volumes-de.png" class="img-79" width="202" height="492"><br>
-			<em>Menü im Schachtelungsmodul mit fortlaufender Nummerierung</em>
+			<em>Menu in de nesting-module met opeenvolgende nummering</em>
 		</p>
 		<p>
-			Bei der Methode "Gruppenweise Nummerierung" kann eine Neunummerierung der Schachtelungsrohlinge sowohl aus
-			dem Schachtelungsmodul als auch aus der Schachtelungsverwaltung gestartet werden.
+			Bij de methode "Groepsgewijze nummering" kan een hernummering van de nestingvolumes zowel vanuit de
+			nesting-module als vanuit het nestingbeheer worden gestart.
 		</p>
 
 		<h2 id="shortcut-alt-w">
-			Shortcut <kbd>Alt</kbd> + <kbd>W</kbd>
+			Sneltoets <kbd>Alt</kbd> + <kbd>W</kbd>
 		</h2>
 		<p>
-			Der aus dem 3D bekannte Shortcut <kbd>Alt</kbd> + <kbd>W</kbd> zum schnellen Aufrufen der
-			Grafik-Optionen steht auch im Schachtelungsmodul zur Verfügung.
+			De uit 3D bekende sneltoets <kbd>Alt</kbd> + <kbd>W</kbd> voor het snel openen van de
+			Grafische opties is ook beschikbaar in de Nesting-module.
 		</p>
 		<p>
 			<img src="https://kb.cadwork.ch/storage/images/shares/cadwork-news-documentation/2025/07-nesting/07-03-00-nesting-module/de/alt-w-de.png"
 				alt="alt-w-de.png" width="1054" height="782" class="img-80"><br>
-			<em>Konfigurationsdialog für die Grafik-Optionen aufrufbar über <kbd>Alt</kbd> + <kbd>W</kbd></em>
+			<em>Configuratiedialoog voor de grafische opties toegankelijk via <kbd>Alt</kbd> + <kbd>W</kbd></em>
 		</p>
 
 		<h2 id="function-key-for-ifc-export">
-			Funktionstaste für IFC-Export
+			Functietoets voor IFC-export
 		</h2>
 		<p>
-			Mit der Version 2025 lässt sich über eine entsprechend belegte F-Taste (Kategorie <span
-				class="menu-cadwork-window">Exportieren</span>, <span class="menu-cadwork-window">Dateien… <span
-					class="arrow arrow-right">&rarr;</span> IFC-Datei</span>) ein IFC-Export aus dem
-			Schachtelungsmodul starten.<br>
-			Es werden die Bauteile der aktuellen Schachtelungsgruppe als IFC-Datei exportiert.
+			Met versie 2025 kan via een overeenkomstig toegewezen functietoets (Categorie <span
+				class="menu-cadwork-window">Exporteren</span>, <span class="menu-cadwork-window">Bestanden… <span
+					class="arrow arrow-right">&rarr;</span> IFC-bestand</span>) een IFC-export vanuit de Nesting-module
+			worden gestart.<br> De onderdelen van de huidige nestinggroep worden als IFC-bestand geëxporteerd.
 		</p>
 	</div>
 
